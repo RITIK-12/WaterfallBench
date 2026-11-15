@@ -2,7 +2,7 @@
 
 **Can a model execute an asset-backed securities waterfall to the cent, from the deal documents alone?**
 
-📊 **[Leaderboard & methodology →](https://ritik-12.github.io/WaterfallBench/)**
+📊 **[Leaderboard & methodology →](https://ritik-12.github.io/WaterfallBench/)** · 🤗 **[Dataset on Hugging Face →](https://huggingface.co/datasets/ritik12/WaterfallBench)**
 
 An asset-backed security turns thousands of car loans or leases into bonds sold in classes, senior (A) to junior
 (B, C). Every month the collections are paid out in a fixed order, the **waterfall**: servicing fee, interest, principal
@@ -146,6 +146,7 @@ service/                   grading service (Valkyrie benchmark service)
 tools/eval/                leaderboard + site data
 tools/data-prep/wfb/       pipeline that built the tasks from SEC EDGAR
 site/                      the leaderboard page (deployed by GitHub Actions)
+hf/                        Hugging Face release: build script, dataset card, submission helper
 dataset/tasks/             WaterfallBench-Pilot: 100 monthly tasks with the prior report given (see DATASET_CARD.md)
 ```
 

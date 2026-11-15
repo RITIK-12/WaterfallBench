@@ -42,3 +42,4 @@ tools/eval/results/runs/
 # first-waterfall bench: private answer keys
 dataset-fw/meta/
 .firecrawl/
+build/
