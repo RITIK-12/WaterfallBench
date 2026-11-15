@@ -5,6 +5,7 @@
 | openai/gpt-6-astra | 20 | 95.0 | 99.2 | 99.6 | 100.0 | 100.0 | 407,039 | 2,558 | 64 | 8.33 | 166.65 |
 | anthropic/claude-fable-5-2 | 20 | 95.0 | 99.1 | 99.6 | 100.0 | 100.0 | 632,454 | 3,053 | 35 | 5.18 | 103.64 |
 | openai/gpt-6-luna | 20 | 90.0 | 99.2 | 98.7 | 98.7 | 100.0 | 407,039 | 7,811 | 87 | 0.09 | 1.75 |
+| fireworks/minimax-m3p1-flash | 20 | 50.0 | 89.0 | 89.1 | 90.1 | 95.0 | 400,871 | 17,419 | 106 | 0.07 | 1.41 |
 | fireworks/kimi-k3p1-pro | 20 | 45.0 | 92.3 | 96.1 | 96.1 | 100.0 | 412,055 | 6,632 | 107 | 0.89 | 17.81 |
 | anthropic/claude-haiku-5-5 | 20 | 40.0 | 85.8 | 93.8 | 95.7 | 100.0 | 632,454 | 10,714 | 59 | 0.34 | 6.86 |
 
@@ -112,3 +113,23 @@
 | fireworks/kimi-k3p1-pro | fw-worldomni-2026-a-2026-02 | C1 | no | 89% | 95% | 95% | 22 | 405,930 | 6,296 | 0.87 | 107 |  |
 | fireworks/kimi-k3p1-pro | fw-worldomni-2026-b-2026-05 | C1 | yes | 100% | 100% | 100% | 22 | 410,311 | 10,130 | 0.92 | 158 |  |
 | fireworks/kimi-k3p1-pro | fw-worldomni-2026-c-2026-08 | C1 | no | 78% | 91% | 91% | 22 | 413,064 | 5,162 | 0.88 | 75 |  |
+| fireworks/minimax-m3p1-flash | fw-carmax-2025-2-2025-04 | C1 | yes | 100% | 100% | 100% | 24 | 392,007 | 5,713 | 0.06 | 44 |  |
+| fireworks/minimax-m3p1-flash | fw-carmax-2025-3-2025-07 | C1 | no | 0% | 0% | 0% | 27 | 394,580 | 14,088 | 0.07 | 80 | ValueError: no JSON object in the reply |
+| fireworks/minimax-m3p1-flash | fw-carmax-2025-4-2025-10 | C1 | no | 83% | 93% | 93% | 27 | 395,401 | 16,231 | 0.07 | 98 |  |
+| fireworks/minimax-m3p1-flash | fw-carmax-2026-1-2026-01 | C1 | yes | 100% | 100% | 100% | 27 | 403,661 | 17,031 | 0.07 | 104 |  |
+| fireworks/minimax-m3p1-flash | fw-carmax-2026-2-2026-04 | C1 | no | 83% | 93% | 100% | 27 | 403,866 | 14,147 | 0.07 | 88 |  |
+| fireworks/minimax-m3p1-flash | fw-carmax-2026-3-2026-07 | C1 | no | 73% | 88% | 100% | 24 | 384,547 | 16,891 | 0.07 | 98 |  |
+| fireworks/minimax-m3p1-flash | fw-deere-2025-b-2025-08 | C1 | yes | 100% | 100% | 100% | 16 | 318,842 | 27,209 | 0.06 | 162 |  |
+| fireworks/minimax-m3p1-flash | fw-deere-2026-2026-04 | C1 | yes | 100% | 100% | 100% | 16 | 317,805 | 21,757 | 0.06 | 133 |  |
+| fireworks/minimax-m3p1-flash | fw-deere-2026-b-2026-08 | C1 | yes | 100% | 100% | 100% | 16 | 331,999 | 18,155 | 0.06 | 110 |  |
+| fireworks/minimax-m3p1-flash | fw-nissanlease-2025-a-2025-01 | C1 | yes | 100% | 100% | 100% | 24 | 477,652 | 6,556 | 0.08 | 48 |  |
+| fireworks/minimax-m3p1-flash | fw-nissanlease-2025-b-2025-07 | C1 | yes | 100% | 100% | 100% | 24 | 464,683 | 5,885 | 0.07 | 50 |  |
+| fireworks/minimax-m3p1-flash | fw-nissanlease-2026-a-2026-02 | C1 | yes | 100% | 100% | 100% | 24 | 486,477 | 8,723 | 0.08 | 59 |  |
+| fireworks/minimax-m3p1-flash | fw-nissanlease-2026-b-2026-07 | C1 | yes | 100% | 100% | 100% | 24 | 480,565 | 7,653 | 0.08 | 53 |  |
+| fireworks/minimax-m3p1-flash | fw-worldomni-2025-a-2025-01 | C1 | no | 86% | 95% | 95% | 21 | 385,037 | 18,679 | 0.07 | 108 |  |
+| fireworks/minimax-m3p1-flash | fw-worldomni-2025-b-2025-05 | C1 | no | 100% | 95% | 95% | 21 | 390,227 | 14,036 | 0.07 | 85 |  |
+| fireworks/minimax-m3p1-flash | fw-worldomni-2025-c-2025-08 | C1 | no | 100% | 80% | 80% | 20 | 395,338 | 43,102 | 0.09 | 251 |  |
+| fireworks/minimax-m3p1-flash | fw-worldomni-2025-d-2025-10 | C1 | no | 100% | 76% | 76% | 21 | 401,471 | 34,636 | 0.08 | 208 |  |
+| fireworks/minimax-m3p1-flash | fw-worldomni-2026-a-2026-02 | C1 | no | 78% | 73% | 73% | 22 | 393,957 | 11,620 | 0.07 | 72 |  |
+| fireworks/minimax-m3p1-flash | fw-worldomni-2026-b-2026-05 | C1 | no | 78% | 91% | 91% | 22 | 398,217 | 27,797 | 0.08 | 158 |  |
+| fireworks/minimax-m3p1-flash | fw-worldomni-2026-c-2026-08 | C1 | yes | 100% | 100% | 100% | 22 | 401,080 | 18,463 | 0.07 | 108 |  |

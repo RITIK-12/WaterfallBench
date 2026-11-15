@@ -26,71 +26,6 @@
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-worldomni-2026-c-2026-08": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-worldomni-2026-b-2026-05": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-worldomni-2026-a-2026-02": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-worldomni-2025-c-2025-08": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-worldomni-2025-b-2025-05": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-worldomni-2025-a-2025-01": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-nissanlease-2026-b-2026-07": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-nissanlease-2026-a-2026-02": {
-     "ok": false,
-     "nt": 83.3,
-     "li": 91.7
-    },
-    "fw-nissanlease-2025-b-2025-07": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-deere-2025-b-2025-08": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-deere-2026-2026-04": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-nissanlease-2025-a-2025-01": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-carmax-2026-3-2026-07": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
     "fw-carmax-2025-2-2025-04": {
      "ok": true,
      "nt": 100.0,
@@ -111,12 +46,77 @@
      "nt": 100.0,
      "li": 100.0
     },
+    "fw-carmax-2026-2-2026-04": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2026-3-2026-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-deere-2025-b-2025-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-deere-2026-2026-04": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2025-a-2025-01": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2025-b-2025-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2026-a-2026-02": {
+     "ok": false,
+     "nt": 83.3,
+     "li": 91.7
+    },
+    "fw-nissanlease-2026-b-2026-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-a-2025-01": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-b-2025-05": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-c-2025-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
     "fw-worldomni-2025-d-2025-10": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-carmax-2026-2-2026-04": {
+    "fw-worldomni-2026-a-2026-02": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2026-b-2026-05": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2026-c-2026-08": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
@@ -140,30 +140,20 @@
    "output_tokens": 3053,
    "seconds": 35.4,
    "results": {
-    "fw-nissanlease-2025-a-2025-01": {
+    "fw-carmax-2025-2-2025-04": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-deere-2026-b-2026-08": {
+    "fw-carmax-2025-3-2025-07": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-deere-2026-2026-04": {
+    "fw-carmax-2025-4-2025-10": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
-    },
-    "fw-deere-2025-b-2025-08": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-carmax-2026-3-2026-07": {
-     "ok": false,
-     "nt": 81.8,
-     "li": 91.7
     },
     "fw-carmax-2026-1-2026-01": {
      "ok": true,
@@ -175,47 +165,27 @@
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-carmax-2025-4-2025-10": {
+    "fw-carmax-2026-3-2026-07": {
+     "ok": false,
+     "nt": 81.8,
+     "li": 91.7
+    },
+    "fw-deere-2025-b-2025-08": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-carmax-2025-3-2025-07": {
+    "fw-deere-2026-2026-04": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-carmax-2025-2-2025-04": {
+    "fw-deere-2026-b-2026-08": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-worldomni-2026-c-2026-08": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-worldomni-2026-a-2026-02": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-worldomni-2025-c-2025-08": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-worldomni-2026-b-2026-05": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-worldomni-2025-d-2025-10": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-nissanlease-2026-a-2026-02": {
+    "fw-nissanlease-2025-a-2025-01": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
@@ -225,7 +195,7 @@
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-worldomni-2025-a-2025-01": {
+    "fw-nissanlease-2026-a-2026-02": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
@@ -235,7 +205,37 @@
      "nt": 100.0,
      "li": 100.0
     },
+    "fw-worldomni-2025-a-2025-01": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
     "fw-worldomni-2025-b-2025-05": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-c-2025-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-d-2025-10": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2026-a-2026-02": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2026-b-2026-05": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2026-c-2026-08": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
@@ -259,17 +259,77 @@
    "output_tokens": 7811,
    "seconds": 86.6,
    "results": {
-    "fw-worldomni-2026-b-2026-05": {
+    "fw-carmax-2025-2-2025-04": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-worldomni-2026-c-2026-08": {
+    "fw-carmax-2025-3-2025-07": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-worldomni-2026-a-2026-02": {
+    "fw-carmax-2025-4-2025-10": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2026-1-2026-01": {
+     "ok": false,
+     "nt": 83.3,
+     "li": 92.6
+    },
+    "fw-carmax-2026-2-2026-04": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2026-3-2026-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-deere-2025-b-2025-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-deere-2026-2026-04": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-deere-2026-b-2026-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2025-a-2025-01": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2025-b-2025-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2026-a-2026-02": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2026-b-2026-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-a-2025-01": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-b-2025-05": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
@@ -284,37 +344,71 @@
      "nt": 100.0,
      "li": 81.0
     },
-    "fw-worldomni-2025-a-2025-01": {
+    "fw-worldomni-2026-a-2026-02": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-worldomni-2025-b-2025-05": {
+    "fw-worldomni-2026-b-2026-05": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-nissanlease-2026-b-2026-07": {
+    "fw-worldomni-2026-c-2026-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    }
+   }
+  },
+  {
+   "key": "fireworks/minimax-m3p1-flash",
+   "name": "MiniMax M3.1 Flash",
+   "lab": "MiniMax",
+   "tasks": 20,
+   "fully_resolved": 50.0,
+   "se": 11.18,
+   "nontrivial": 89.03,
+   "line_item": 89.15,
+   "tolerance": 90.14,
+   "cost": 0.0706,
+   "cost_total": 1.41,
+   "tokens": 418289,
+   "input_tokens": 400871,
+   "output_tokens": 17419,
+   "seconds": 105.9,
+   "results": {
+    "fw-carmax-2025-2-2025-04": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-nissanlease-2026-a-2026-02": {
+    "fw-carmax-2025-3-2025-07": {
+     "ok": false,
+     "nt": 0.0,
+     "li": 0.0
+    },
+    "fw-carmax-2025-4-2025-10": {
+     "ok": false,
+     "nt": 83.3,
+     "li": 92.6
+    },
+    "fw-carmax-2026-1-2026-01": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-nissanlease-2025-b-2025-07": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
+    "fw-carmax-2026-2-2026-04": {
+     "ok": false,
+     "nt": 83.3,
+     "li": 92.6
+    },
+    "fw-carmax-2026-3-2026-07": {
+     "ok": false,
+     "nt": 72.7,
+     "li": 87.5
     },
     "fw-deere-2025-b-2025-08": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-deere-2026-b-2026-08": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
@@ -324,37 +418,62 @@
      "nt": 100.0,
      "li": 100.0
     },
+    "fw-deere-2026-b-2026-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
     "fw-nissanlease-2025-a-2025-01": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-carmax-2026-3-2026-07": {
+    "fw-nissanlease-2025-b-2025-07": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-carmax-2026-2-2026-04": {
+    "fw-nissanlease-2026-a-2026-02": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-carmax-2025-3-2025-07": {
+    "fw-nissanlease-2026-b-2026-07": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-carmax-2026-1-2026-01": {
+    "fw-worldomni-2025-a-2025-01": {
      "ok": false,
-     "nt": 83.3,
-     "li": 92.6
+     "nt": 85.7,
+     "li": 95.2
     },
-    "fw-carmax-2025-2-2025-04": {
-     "ok": true,
+    "fw-worldomni-2025-b-2025-05": {
+     "ok": false,
      "nt": 100.0,
-     "li": 100.0
+     "li": 95.2
     },
-    "fw-carmax-2025-4-2025-10": {
+    "fw-worldomni-2025-c-2025-08": {
+     "ok": false,
+     "nt": 100.0,
+     "li": 80.0
+    },
+    "fw-worldomni-2025-d-2025-10": {
+     "ok": false,
+     "nt": 100.0,
+     "li": 76.2
+    },
+    "fw-worldomni-2026-a-2026-02": {
+     "ok": false,
+     "nt": 77.8,
+     "li": 72.7
+    },
+    "fw-worldomni-2026-b-2026-05": {
+     "ok": false,
+     "nt": 77.8,
+     "li": 90.9
+    },
+    "fw-worldomni-2026-c-2026-08": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
@@ -383,20 +502,75 @@
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-worldomni-2026-b-2026-05": {
+    "fw-carmax-2025-2-2025-04": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-worldomni-2026-c-2026-08": {
-     "ok": false,
-     "nt": 77.8,
-     "li": 90.9
+    "fw-carmax-2025-3-2025-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
     },
-    "fw-worldomni-2026-a-2026-02": {
+    "fw-carmax-2025-4-2025-10": {
      "ok": false,
-     "nt": 88.9,
-     "li": 95.5
+     "nt": 75.0,
+     "li": 88.9
+    },
+    "fw-carmax-2026-1-2026-01": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2026-2-2026-04": {
+     "ok": false,
+     "nt": 83.3,
+     "li": 92.6
+    },
+    "fw-carmax-2026-3-2026-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-deere-2025-b-2025-08": {
+     "ok": false,
+     "nt": 85.7,
+     "li": 93.8
+    },
+    "fw-deere-2026-2026-04": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2025-a-2025-01": {
+     "ok": false,
+     "nt": 83.3,
+     "li": 91.7
+    },
+    "fw-nissanlease-2025-b-2025-07": {
+     "ok": false,
+     "nt": 91.7,
+     "li": 95.8
+    },
+    "fw-nissanlease-2026-a-2026-02": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2026-b-2026-07": {
+     "ok": false,
+     "nt": 75.0,
+     "li": 87.5
+    },
+    "fw-worldomni-2025-a-2025-01": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-b-2025-05": {
+     "ok": false,
+     "nt": 100.0,
+     "li": 95.2
     },
     "fw-worldomni-2025-c-2025-08": {
      "ok": false,
@@ -408,75 +582,20 @@
      "nt": 100.0,
      "li": 95.2
     },
-    "fw-worldomni-2025-b-2025-05": {
+    "fw-worldomni-2026-a-2026-02": {
      "ok": false,
-     "nt": 100.0,
-     "li": 95.2
+     "nt": 88.9,
+     "li": 95.5
     },
-    "fw-deere-2026-2026-04": {
+    "fw-worldomni-2026-b-2026-05": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
     },
-    "fw-deere-2025-b-2025-08": {
+    "fw-worldomni-2026-c-2026-08": {
      "ok": false,
-     "nt": 85.7,
-     "li": 93.8
-    },
-    "fw-worldomni-2025-a-2025-01": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-nissanlease-2026-b-2026-07": {
-     "ok": false,
-     "nt": 75.0,
-     "li": 87.5
-    },
-    "fw-nissanlease-2026-a-2026-02": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-nissanlease-2025-b-2025-07": {
-     "ok": false,
-     "nt": 91.7,
-     "li": 95.8
-    },
-    "fw-nissanlease-2025-a-2025-01": {
-     "ok": false,
-     "nt": 83.3,
-     "li": 91.7
-    },
-    "fw-carmax-2026-3-2026-07": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-carmax-2026-2-2026-04": {
-     "ok": false,
-     "nt": 83.3,
-     "li": 92.6
-    },
-    "fw-carmax-2025-3-2025-07": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-carmax-2026-1-2026-01": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-carmax-2025-2-2025-04": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-carmax-2025-4-2025-10": {
-     "ok": false,
-     "nt": 75.0,
-     "li": 88.9
+     "nt": 77.8,
+     "li": 90.9
     }
    }
   },
@@ -497,72 +616,27 @@
    "output_tokens": 10714,
    "seconds": 58.7,
    "results": {
-    "fw-worldomni-2026-c-2026-08": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-worldomni-2025-d-2025-10": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-worldomni-2026-b-2026-05": {
-     "ok": false,
-     "nt": 55.6,
-     "li": 81.8
-    },
-    "fw-worldomni-2026-a-2026-02": {
+    "fw-carmax-2025-2-2025-04": {
      "ok": false,
      "nt": 88.9,
-     "li": 95.5
+     "li": 95.8
     },
-    "fw-worldomni-2025-c-2025-08": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
+    "fw-carmax-2025-3-2025-07": {
+     "ok": false,
+     "nt": 83.3,
+     "li": 92.6
     },
-    "fw-nissanlease-2026-b-2026-07": {
+    "fw-carmax-2025-4-2025-10": {
+     "ok": false,
+     "nt": 83.3,
+     "li": 92.6
+    },
+    "fw-carmax-2026-1-2026-01": {
      "ok": false,
      "nt": 75.0,
-     "li": 87.5
+     "li": 88.9
     },
-    "fw-worldomni-2025-b-2025-05": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-worldomni-2025-a-2025-01": {
-     "ok": false,
-     "nt": 57.1,
-     "li": 85.7
-    },
-    "fw-nissanlease-2026-a-2026-02": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-nissanlease-2025-b-2025-07": {
-     "ok": false,
-     "nt": 75.0,
-     "li": 87.5
-    },
-    "fw-deere-2026-b-2026-08": {
-     "ok": true,
-     "nt": 100.0,
-     "li": 100.0
-    },
-    "fw-deere-2026-2026-04": {
-     "ok": false,
-     "nt": 85.7,
-     "li": 93.8
-    },
-    "fw-nissanlease-2025-a-2025-01": {
-     "ok": false,
-     "nt": 75.0,
-     "li": 87.5
-    },
-    "fw-deere-2025-b-2025-08": {
+    "fw-carmax-2026-2-2026-04": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0
@@ -572,27 +646,72 @@
      "nt": 72.7,
      "li": 87.5
     },
-    "fw-carmax-2026-1-2026-01": {
+    "fw-deere-2025-b-2025-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-deere-2026-2026-04": {
+     "ok": false,
+     "nt": 85.7,
+     "li": 93.8
+    },
+    "fw-deere-2026-b-2026-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2025-a-2025-01": {
      "ok": false,
      "nt": 75.0,
-     "li": 88.9
+     "li": 87.5
     },
-    "fw-carmax-2025-4-2025-10": {
+    "fw-nissanlease-2025-b-2025-07": {
      "ok": false,
-     "nt": 83.3,
-     "li": 92.6
+     "nt": 75.0,
+     "li": 87.5
     },
-    "fw-carmax-2025-3-2025-07": {
+    "fw-nissanlease-2026-a-2026-02": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2026-b-2026-07": {
      "ok": false,
-     "nt": 83.3,
-     "li": 92.6
+     "nt": 75.0,
+     "li": 87.5
     },
-    "fw-carmax-2025-2-2025-04": {
+    "fw-worldomni-2025-a-2025-01": {
+     "ok": false,
+     "nt": 57.1,
+     "li": 85.7
+    },
+    "fw-worldomni-2025-b-2025-05": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-c-2025-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-d-2025-10": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2026-a-2026-02": {
      "ok": false,
      "nt": 88.9,
-     "li": 95.8
+     "li": 95.5
     },
-    "fw-carmax-2026-2-2026-04": {
+    "fw-worldomni-2026-b-2026-05": {
+     "ok": false,
+     "nt": 55.6,
+     "li": 81.8
+    },
+    "fw-worldomni-2026-c-2026-08": {
      "ok": true,
      "nt": 100.0,
      "li": 100.0

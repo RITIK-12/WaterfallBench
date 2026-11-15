@@ -79,6 +79,9 @@ h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(40px, 7vw, 56
 .seg .btn + .btn { border-left: 1px solid var(--line-2); }
 .legend { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; padding: 8px 14px; border-bottom: 1px solid var(--line); }
 .legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend .fr-key { margin-left: auto; }
+.legend .fr-key i { width: 18px; height: 2px; background: var(--accent); display: inline-block; }
+.legend .se-key { width: 2px; height: 12px; background: var(--muted); display: inline-block; opacity: .6; }
 #chart { position: relative; }
 #chart svg { display: block; width: 100%; }
 .tip { position: absolute; pointer-events: none; background: var(--panel); border: 1px solid var(--line-2); padding: 10px 12px; font-family: var(--sans); font-size: 13px; line-height: 1.45; box-shadow: 0 6px 24px rgba(0,0,0,.08); min-width: 190px; opacity: 0; transition: opacity .12s; z-index: 5; }
@@ -610,7 +613,8 @@ function prose() {
   document.getElementById("families").innerHTML = `<thead><tr><th>Issuer</th><th class="num">Deals</th><th class="num">First distributions</th><th class="num">Classes</th><th class="num">Tokens</th><th class="num">Fields</th></tr></thead><tbody>${fr2}</tbody>`;
   const nu = T.reduce((a, t) => a + t.ungraded, 0), tu = T.filter(t => t.ungraded).length;
   document.getElementById("ungraded").insertAdjacentHTML("beforeend", ` In all, ${nu} of ${nf + nu} fields across ${tu} tasks are not graded.`);
-  document.getElementById("legend").innerHTML = "Lab: " + [...new Set(ms.map(m => m.lab))].map(l => `<span>${logo(l, 13)}${esc(l)}</span>`).join("");
+  document.getElementById("legend").innerHTML = "Lab: " + [...new Set(ms.map(m => m.lab))].map(l => `<span>${logo(l, 13)}${esc(l)}</span>`).join("")
+    + `<span class="fr-key"><i></i>Frontier: best score at each cost</span><span><i class="se-key"></i>±1 SE</span>`;
 }
 
 function renderAll() { chart(); board(); dumbbell(); grid(); }

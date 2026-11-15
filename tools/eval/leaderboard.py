@@ -99,8 +99,8 @@ def main() -> None:
     for run_id in a.runs:
         res, usage = fetch(run_id, out / "runs")
         evals = res.get("evaluation_results") or {}
-        if a.regrade:
-            evals = regrade(out / "runs" / run_id, Path(a.regrade), list(evals))
+        if a.regrade:   # also tasks whose harness ran but failed (e.g. an empty reply): they score zero, not vanish
+            evals = regrade(out / "runs" / run_id, Path(a.regrade), sorted(set(evals) | set(usage)))
         for tid, r in evals.items():
             u = usage.get(tid, {})
             model = u.get("model") or (res.get("benchmark_arguments") or {}).get("model") or "unknown"
