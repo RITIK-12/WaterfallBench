@@ -4,16 +4,21 @@
 
 📊 **[Leaderboard & methodology →](https://ritik-12.github.io/WaterfallBench/)**
 
-Each task is a securitization's **first distribution date**. The model gets the final prospectus, the closing
-agreements and that month's servicer report with every waterfall result removed. No prior report, no worked example.
-It must return the servicing fee, each note class's interest, principal and ending balance, the reserve balance and
-the residual release, all in exact cents. The answer key is what the trustee actually paid, as filed on SEC EDGAR.
+An asset-backed security turns thousands of car loans or leases into bonds sold in classes, senior (A) to junior
+(B, C). Every month the collections are paid out in a fixed order, the **waterfall**: servicing fee, interest, principal
+(senior first), reserve top-up, then the residual. The rules sit in hundreds of pages of legal documents, and an error
+moves cash between investors. The 20 deals here issued $23.5B of notes.
+
+Each task is a deal's **first distribution date**. The model gets the final prospectus, the closing agreements and that
+month's servicer report with every waterfall result removed: no prior report, no worked example. It must return the
+servicing fee, each class's interest, principal and ending balance, the reserve balance and the residual, in exact
+cents. The answer key is what the trustee actually paid, as filed on SEC EDGAR.
 
 ## Leaderboard
 
 One API call per task, identical prompt and documents, reasoning effort `high`, 20 tasks.
 
-| # | Model | Fully resolved | Non-trivial fields | Cost / task |
+| # | Model | Fully resolved | Field accuracy | Cost / task |
 |---|---|---|---|---|
 | 1 | GPT-6 Astra | **95.0%** ±4.9 | 99.2% | $8.33 |
 | 1 | Claude Fable 5.2 | **95.0%** ±4.9 | 99.1% | $5.18 |
@@ -22,8 +27,8 @@ One API call per task, identical prompt and documents, reasoning effort `high`, 
 | 5 | Kimi K3.1 Pro | **45.0%** ±11.1 | 92.3% | $0.89 |
 | 6 | Claude Haiku 5.5 | **40.0%** ±11.0 | 85.8% | $0.34 |
 
-*Fully resolved* = every graded field exact to the cent. ± is one standard error. A reply with no JSON answer scores 0
-(MiniMax returned one empty reply).
+Anthropic and OpenAI models via their own APIs; Kimi and MiniMax via Fireworks serverless. See [Scoring](#scoring) for
+the metrics; ± is one standard error. A reply with no JSON answer scores 0 (MiniMax returned one empty reply).
 
 ## A task
 
@@ -98,15 +103,15 @@ Add `--dry-run` to build the prompt without calling a model.
 
 ## Dataset
 
-| Family | Deals | Note classes | Graded fields |
-|---|---|---|---|
-| CarMax Auto Owner Trust | 6 | 7–8 | 156 |
-| World Omni Auto Receivables Trust | 7 | 7 | 149 |
-| John Deere Owner Trust | 3 | 5 | 48 |
-| Nissan Auto Lease Trust | 4 | 7 | 96 |
+| Issuer | Deals | First distributions | Note classes | Documents / task | Prompt tokens | Graded fields |
+|---|---|---|---|---|---|---|
+| CarMax Auto Owner Trust | 6 | Apr 2025 – Jul 2026 | 7–8 | 8–9 | 634K | 156 |
+| World Omni Auto Receivables Trust | 7 | Jan 2025 – Aug 2026 | 7 | 8 | 629K | 149 |
+| John Deere Owner Trust | 3 | Aug 2025 – Aug 2026 | 5 | 7–8 | 509K | 48 |
+| Nissan Auto Lease Trust | 4 | Jan 2025 – Jul 2026 | 7 | 11 | 727K | 96 |
 
-Each task is a trust's first 10-D; first distributions run January 2025 to August 2026. Every task was checked before
-release:
+Each task is a trust's first Form 10-D. Prompt tokens are the mean per task (Claude tokenizer); no task needs
+truncation. Every task was checked before release:
 
 - the report's classes match the prospectus cover table;
 - per class, opening balance − principal paid = ending balance, to the cent;
@@ -121,11 +126,16 @@ day count. The filed values are kept in the keys; those fields just aren't score
 
 ## Scoring
 
-- **Fully resolved** (primary): every graded field exact.
-- **Non-trivial field accuracy**: fields that are non-zero and not an untouched opening balance.
-- **Field accuracy** and **within $1**: all graded fields (rounding slips vs logic errors).
+The reply is parsed, its classes are matched to the deal's by name, and every graded field is compared with the filed
+value, exactly.
 
-Grading is deterministic. No LLM judge.
+| Metric | Definition |
+|---|---|
+| **Fully resolved** (primary) | 1 if every graded field is exact to the cent, else 0 |
+| **Field accuracy** | share of non-trivial fields exactly right (trivial = zero, or an opening balance left untouched) |
+| All fields / within $1 | share of all graded fields exact / within one dollar (rounding slips vs logic errors) |
+
+Scores are means over the 20 tasks. Grading is deterministic, with no LLM judge. Cost uses each provider's list price.
 
 ## Repository
 
