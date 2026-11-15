@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "available_funds",
+    "servicing_fee",
+    "class_a2_principal",
+    "reserve_account_balance",
+    "cumulative_net_loss_ratio",
+    "cnl_trigger_status",
+    "delinquent_60_plus_count"
+  ],
+  "properties": {
+    "available_funds": {
+      "type": "integer",
+      "description": "US cents"
+    },
+    "servicing_fee": {
+      "type": "integer",
+      "description": "US cents"
+    },
+    "class_a2_principal": {
+      "type": "integer",
+      "description": "US cents"
+    },
+    "reserve_account_balance": {
+      "type": "integer",
+      "description": "US cents"
+    },
+    "cumulative_net_loss_ratio": {
+      "type": "number"
+    },
+    "cnl_trigger_status": {
+      "type": "string",
+      "enum": [
+        "pass",
+        "fail"
+      ]
+    },
+    "delinquent_60_plus_count": {
+      "type": "integer"
+    }
+  }
+}

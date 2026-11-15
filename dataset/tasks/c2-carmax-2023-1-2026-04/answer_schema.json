@@ -1,0 +1,2653 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "period_1",
+  "period_2",
+  "period_3",
+  "period_4"
+ ],
+ "properties": {
+  "period_1": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "amount_to_be_deposited_from_the_collection_account_into_the_certificate_payment_account",
+    "amount_to_be_deposited_from_the_collection_account_into_the_note_payment_account",
+    "amount_to_be_deposited_from_the_collection_account_into_the_reserve_account",
+    "amount_to_be_deposited_from_the_reserve_account_if_reserve_account_balance_exceeds_require__the_depositor_if_no_unfunded_regular_principal_distributable_amount_exists",
+    "amount_to_be_deposited_from_the_reserve_account_if_reserve_account_balance_exceeds_require__the_note_payment_account_for_any_unfunded_regular_principal_distributable_amount",
+    "amount_to_be_deposited_from_the_reserve_account_into_the_collection_account",
+    "amount_to_be_paid_to_certificateholders_from_the_certificate_payment_account_with_respect",
+    "amount_to_be_paid_to_class_a_1_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_a_2a_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_a_2b_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_a_3_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_a_4_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_b_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_c_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_d_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_servicer_from_the_collection_account",
+    "application_of_available_funds__reserve_account_deficiency",
+    "available_funds",
+    "available_funds__available_collections",
+    "available_funds__reserve_account_draw_amount",
+    "class_a_noteholder_interest_amounts__additional_note_interest_related_to_class_a_4_monthly_interest__2",
+    "class_a_noteholder_interest_amounts__class_a_1_monthly_interest",
+    "class_a_noteholder_interest_amounts__class_a_2a_monthly_interest",
+    "class_a_noteholder_interest_amounts__class_a_2b_monthly_interest",
+    "class_a_noteholder_interest_amounts__class_a_3_monthly_interest",
+    "class_a_noteholder_interest_amounts__class_a_4_monthly_interest",
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_1_monthly_interest",
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_2a_monthly_interest",
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_2b_monthly_interest",
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_3_monthly_interest",
+    "class_a_noteholder_interest_amounts__total_class_a_1_note_interest",
+    "class_a_noteholder_interest_amounts__total_class_a_2a_note_interest",
+    "class_a_noteholder_interest_amounts__total_class_a_2b_note_interest",
+    "class_a_noteholder_interest_amounts__total_class_a_3_note_interest",
+    "class_a_noteholder_interest_amounts__total_class_a_4_note_interest",
+    "class_b_noteholder_interest_amount__class_b_monthly_interest",
+    "class_b_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_b_monthly_interest",
+    "class_b_noteholder_interest_amount__total_class_b_note_interest",
+    "class_c_noteholder_interest_amount__class_c_monthly_interest",
+    "class_c_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_c_monthly_interest",
+    "class_c_noteholder_interest_amount__total_class_c_note_interest",
+    "class_d_noteholder_interest_amount__class_d_monthly_interest",
+    "class_d_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_d_monthly_interest",
+    "class_d_noteholder_interest_amount__total_class_d_note_interest",
+    "current_overcollateralization_amount_pool_balance_note_balance__end_of_period",
+    "deposit_from_available_funds",
+    "deposits__class_a_1_interest_distribution",
+    "deposits__class_a_1_principal_distribution",
+    "deposits__class_a_2a_interest_distribution",
+    "deposits__class_a_2a_principal_distribution",
+    "deposits__class_a_2b_interest_distribution",
+    "deposits__class_a_2b_principal_distribution",
+    "deposits__class_a_3_interest_distribution",
+    "deposits__class_a_3_principal_distribution",
+    "deposits__class_a_4_interest_distribution",
+    "deposits__class_a_4_principal_distribution",
+    "deposits__class_b_interest_distribution",
+    "deposits__class_b_principal_distribution",
+    "deposits__class_c_interest_distribution",
+    "deposits__class_c_principal_distribution",
+    "deposits__class_d_interest_distribution",
+    "deposits__class_d_principal_distribution",
+    "deposits__interest_income",
+    "deposits__total_daily_deposits_of_finance_charge_collections",
+    "deposits__total_daily_deposits_of_principal_collections",
+    "deposits__total_deposits_to_collection_account",
+    "deposits__total_deposits_to_note_payment_account",
+    "deposits__withdrawal_from_reserve_account",
+    "deposits_to_certificate_payment_account_from_excess_collections",
+    "ending_balance",
+    "if_reserve_account_balance_exceeds_required_reserve_account_amount_payment_to__any_successor_servicer_for_the_payment_of_any_unfunded_transition_costs_and_additional_ser",
+    "if_reserve_account_balance_exceeds_required_reserve_account_amount_payment_to__the_note_payment_account_for_the_payment_of_principal_to_the_extent_of_any_unfunded_regula",
+    "note_balances__class_a_1_note_balance__end_of_period",
+    "note_balances__class_a_2a_note_balance__end_of_period",
+    "note_balances__class_a_2b_floating_rate_note_balance__end_of_period",
+    "note_balances__class_a_3_note_balance__end_of_period",
+    "note_balances__class_a_4_note_balance__end_of_period",
+    "note_balances__class_b_note_balance__end_of_period",
+    "note_balances__class_c_note_balance__end_of_period",
+    "note_balances__class_d_note_balance__end_of_period",
+    "note_balances__note_balance__end_of_period",
+    "overcollateralization_target_amount__end_of_period",
+    "payment_to_depositor_if_reserve_account_balance_exceeds_required_reserve_account_amount_an",
+    "pool_factors__class_a_1_note_pool_factor__end_of_period",
+    "pool_factors__class_a_2a_note_pool_factor__end_of_period",
+    "pool_factors__class_a_2b_floating_rate_note_pool_factor__end_of_period",
+    "pool_factors__class_a_3_note_pool_factor__end_of_period",
+    "pool_factors__class_a_4_note_pool_factor__end_of_period",
+    "pool_factors__class_b_note_pool_factor__end_of_period",
+    "pool_factors__class_c_note_pool_factor__end_of_period",
+    "pool_factors__class_d_note_pool_factor__end_of_period",
+    "pool_factors__note_pool_factor__end_of_period",
+    "priority_principal_distributable_amount",
+    "quaternary_principal_distributable_amount",
+    "regular_principal_distributable_amount",
+    "required_payment_amount",
+    "required_reserve_account_amount_pct_of_initial_pool_balance",
+    "reserve_account_amount",
+    "reserve_account_reconciliation__reserve_account_deficiency",
+    "reserve_account_reconciliation__reserve_account_draw_amount",
+    "secondary_principal_distributable_amount",
+    "servicing_fee__amount_paid",
+    "servicing_fee__monthly_servicing_fee",
+    "servicing_fee__shortfall_amount_a_b_c",
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__asset_representations_reviewer_amount_paid",
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__asset_representations_reviewer_shortfall_amount_d_e",
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__successor_servicer_amount_paid",
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__successor_servicer_shortfall_amount_a_b",
+    "tertiary_principal_distributable_amount",
+    "withdrawals__class_a_1_distribution",
+    "withdrawals__class_a_2a_distribution",
+    "withdrawals__class_a_2b_distribution",
+    "withdrawals__class_a_3_distribution",
+    "withdrawals__class_a_4_distribution",
+    "withdrawals__class_b_distribution",
+    "withdrawals__class_c_distribution",
+    "withdrawals__class_d_distribution",
+    "withdrawals__deposit_to_note_payment_account_for_monthly_note_interest_principal",
+    "withdrawals__deposit_to_reserve_account",
+    "withdrawals__excess_collections_deposit_to_certificate_payment_account_for_payment_to_certificateholder",
+    "withdrawals__servicing_fee_and_unreimbursed_servicer_advances",
+    "withdrawals__successor_servicer_transition_expenses_and_indemnity_amounts",
+    "withdrawals__total_withdrawals_from_collection_account",
+    "withdrawals__total_withdrawals_from_note_payment_account",
+    "withdrawals_from_certificate_payment_account_for_certificateholder_distribution"
+   ],
+   "properties": {
+    "amount_to_be_deposited_from_the_collection_account_into_the_certificate_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_deposited_from_the_collection_account_into_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_deposited_from_the_collection_account_into_the_reserve_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_deposited_from_the_reserve_account_if_reserve_account_balance_exceeds_require__the_depositor_if_no_unfunded_regular_principal_distributable_amount_exists": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_deposited_from_the_reserve_account_if_reserve_account_balance_exceeds_require__the_note_payment_account_for_any_unfunded_regular_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_deposited_from_the_reserve_account_into_the_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_certificateholders_from_the_certificate_payment_account_with_respect": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_a_1_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_a_2a_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_a_2b_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_a_3_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_a_4_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_b_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_c_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_d_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_servicer_from_the_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "application_of_available_funds__reserve_account_deficiency": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "available_funds": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "available_funds__available_collections": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "available_funds__reserve_account_draw_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__additional_note_interest_related_to_class_a_4_monthly_interest__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__class_a_1_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__class_a_2a_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__class_a_2b_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__class_a_3_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__class_a_4_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_1_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_2a_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_2b_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_3_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__total_class_a_1_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__total_class_a_2a_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__total_class_a_2b_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__total_class_a_3_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__total_class_a_4_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b_noteholder_interest_amount__class_b_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_b_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b_noteholder_interest_amount__total_class_b_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c_noteholder_interest_amount__class_c_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_c_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c_noteholder_interest_amount__total_class_c_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_d_noteholder_interest_amount__class_d_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_d_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_d_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_d_noteholder_interest_amount__total_class_d_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "current_overcollateralization_amount_pool_balance_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposit_from_available_funds": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_1_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_1_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_2a_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_2a_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_2b_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_2b_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_3_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_3_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_4_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_4_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_b_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_b_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_c_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_c_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_d_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_d_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__interest_income": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__total_daily_deposits_of_finance_charge_collections": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__total_daily_deposits_of_principal_collections": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__total_deposits_to_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__total_deposits_to_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__withdrawal_from_reserve_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits_to_certificate_payment_account_from_excess_collections": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "if_reserve_account_balance_exceeds_required_reserve_account_amount_payment_to__any_successor_servicer_for_the_payment_of_any_unfunded_transition_costs_and_additional_ser": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "if_reserve_account_balance_exceeds_required_reserve_account_amount_payment_to__the_note_payment_account_for_the_payment_of_principal_to_the_extent_of_any_unfunded_regula": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_a_1_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_a_2a_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_a_2b_floating_rate_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_a_3_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_a_4_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_b_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_c_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_d_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "overcollateralization_target_amount__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "payment_to_depositor_if_reserve_account_balance_exceeds_required_reserve_account_amount_an": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "pool_factors__class_a_1_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_a_2a_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_a_2b_floating_rate_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_a_3_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_a_4_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_b_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_c_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_d_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "priority_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "quaternary_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "regular_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "required_payment_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "required_reserve_account_amount_pct_of_initial_pool_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_account_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_account_reconciliation__reserve_account_deficiency": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_account_reconciliation__reserve_account_draw_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "secondary_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "servicing_fee__amount_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "servicing_fee__monthly_servicing_fee": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "servicing_fee__shortfall_amount_a_b_c": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__asset_representations_reviewer_amount_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__asset_representations_reviewer_shortfall_amount_d_e": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__successor_servicer_amount_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__successor_servicer_shortfall_amount_a_b": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "tertiary_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_a_1_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_a_2a_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_a_2b_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_a_3_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_a_4_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_b_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_c_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_d_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__deposit_to_note_payment_account_for_monthly_note_interest_principal": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__deposit_to_reserve_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__excess_collections_deposit_to_certificate_payment_account_for_payment_to_certificateholder": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__servicing_fee_and_unreimbursed_servicer_advances": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__successor_servicer_transition_expenses_and_indemnity_amounts": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__total_withdrawals_from_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__total_withdrawals_from_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals_from_certificate_payment_account_for_certificateholder_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    }
+   }
+  },
+  "period_2": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "amount_to_be_deposited_from_the_collection_account_into_the_certificate_payment_account",
+    "amount_to_be_deposited_from_the_collection_account_into_the_note_payment_account",
+    "amount_to_be_deposited_from_the_collection_account_into_the_reserve_account",
+    "amount_to_be_deposited_from_the_reserve_account_if_reserve_account_balance_exceeds_require__the_depositor_if_no_unfunded_regular_principal_distributable_amount_exists",
+    "amount_to_be_deposited_from_the_reserve_account_if_reserve_account_balance_exceeds_require__the_note_payment_account_for_any_unfunded_regular_principal_distributable_amount",
+    "amount_to_be_deposited_from_the_reserve_account_into_the_collection_account",
+    "amount_to_be_paid_to_certificateholders_from_the_certificate_payment_account_with_respect",
+    "amount_to_be_paid_to_class_a_1_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_a_2a_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_a_2b_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_a_3_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_a_4_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_b_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_c_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_d_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_servicer_from_the_collection_account",
+    "application_of_available_funds__reserve_account_deficiency",
+    "available_funds",
+    "available_funds__available_collections",
+    "available_funds__reserve_account_draw_amount",
+    "class_a_noteholder_interest_amounts__additional_note_interest_related_to_class_a_4_monthly_interest__2",
+    "class_a_noteholder_interest_amounts__class_a_1_monthly_interest",
+    "class_a_noteholder_interest_amounts__class_a_2a_monthly_interest",
+    "class_a_noteholder_interest_amounts__class_a_2b_monthly_interest",
+    "class_a_noteholder_interest_amounts__class_a_3_monthly_interest",
+    "class_a_noteholder_interest_amounts__class_a_4_monthly_interest",
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_1_monthly_interest",
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_2a_monthly_interest",
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_2b_monthly_interest",
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_3_monthly_interest",
+    "class_a_noteholder_interest_amounts__total_class_a_1_note_interest",
+    "class_a_noteholder_interest_amounts__total_class_a_2a_note_interest",
+    "class_a_noteholder_interest_amounts__total_class_a_2b_note_interest",
+    "class_a_noteholder_interest_amounts__total_class_a_3_note_interest",
+    "class_a_noteholder_interest_amounts__total_class_a_4_note_interest",
+    "class_b_noteholder_interest_amount__class_b_monthly_interest",
+    "class_b_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_b_monthly_interest",
+    "class_b_noteholder_interest_amount__total_class_b_note_interest",
+    "class_c_noteholder_interest_amount__class_c_monthly_interest",
+    "class_c_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_c_monthly_interest",
+    "class_c_noteholder_interest_amount__total_class_c_note_interest",
+    "class_d_noteholder_interest_amount__class_d_monthly_interest",
+    "class_d_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_d_monthly_interest",
+    "class_d_noteholder_interest_amount__total_class_d_note_interest",
+    "current_overcollateralization_amount_pool_balance_note_balance__end_of_period",
+    "deposit_from_available_funds",
+    "deposits__class_a_1_interest_distribution",
+    "deposits__class_a_1_principal_distribution",
+    "deposits__class_a_2a_interest_distribution",
+    "deposits__class_a_2a_principal_distribution",
+    "deposits__class_a_2b_interest_distribution",
+    "deposits__class_a_2b_principal_distribution",
+    "deposits__class_a_3_interest_distribution",
+    "deposits__class_a_3_principal_distribution",
+    "deposits__class_a_4_interest_distribution",
+    "deposits__class_a_4_principal_distribution",
+    "deposits__class_b_interest_distribution",
+    "deposits__class_b_principal_distribution",
+    "deposits__class_c_interest_distribution",
+    "deposits__class_c_principal_distribution",
+    "deposits__class_d_interest_distribution",
+    "deposits__class_d_principal_distribution",
+    "deposits__interest_income",
+    "deposits__total_daily_deposits_of_finance_charge_collections",
+    "deposits__total_daily_deposits_of_principal_collections",
+    "deposits__total_deposits_to_collection_account",
+    "deposits__total_deposits_to_note_payment_account",
+    "deposits__withdrawal_from_reserve_account",
+    "deposits_to_certificate_payment_account_from_excess_collections",
+    "ending_balance",
+    "if_reserve_account_balance_exceeds_required_reserve_account_amount_payment_to__any_successor_servicer_for_the_payment_of_any_unfunded_transition_costs_and_additional_ser",
+    "if_reserve_account_balance_exceeds_required_reserve_account_amount_payment_to__the_note_payment_account_for_the_payment_of_principal_to_the_extent_of_any_unfunded_regula",
+    "note_balances__class_a_1_note_balance__end_of_period",
+    "note_balances__class_a_2a_note_balance__end_of_period",
+    "note_balances__class_a_2b_floating_rate_note_balance__end_of_period",
+    "note_balances__class_a_3_note_balance__end_of_period",
+    "note_balances__class_a_4_note_balance__end_of_period",
+    "note_balances__class_b_note_balance__end_of_period",
+    "note_balances__class_c_note_balance__end_of_period",
+    "note_balances__class_d_note_balance__end_of_period",
+    "note_balances__note_balance__end_of_period",
+    "overcollateralization_target_amount__end_of_period",
+    "payment_to_depositor_if_reserve_account_balance_exceeds_required_reserve_account_amount_an",
+    "pool_factors__class_a_1_note_pool_factor__end_of_period",
+    "pool_factors__class_a_2a_note_pool_factor__end_of_period",
+    "pool_factors__class_a_2b_floating_rate_note_pool_factor__end_of_period",
+    "pool_factors__class_a_3_note_pool_factor__end_of_period",
+    "pool_factors__class_a_4_note_pool_factor__end_of_period",
+    "pool_factors__class_b_note_pool_factor__end_of_period",
+    "pool_factors__class_c_note_pool_factor__end_of_period",
+    "pool_factors__class_d_note_pool_factor__end_of_period",
+    "pool_factors__note_pool_factor__end_of_period",
+    "priority_principal_distributable_amount",
+    "quaternary_principal_distributable_amount",
+    "regular_principal_distributable_amount",
+    "required_payment_amount",
+    "required_reserve_account_amount_pct_of_initial_pool_balance",
+    "reserve_account_amount",
+    "reserve_account_reconciliation__reserve_account_deficiency",
+    "reserve_account_reconciliation__reserve_account_draw_amount",
+    "secondary_principal_distributable_amount",
+    "servicing_fee__amount_paid",
+    "servicing_fee__monthly_servicing_fee",
+    "servicing_fee__shortfall_amount_a_b_c",
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__asset_representations_reviewer_amount_paid",
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__asset_representations_reviewer_shortfall_amount_d_e",
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__successor_servicer_amount_paid",
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__successor_servicer_shortfall_amount_a_b",
+    "tertiary_principal_distributable_amount",
+    "withdrawals__class_a_1_distribution",
+    "withdrawals__class_a_2a_distribution",
+    "withdrawals__class_a_2b_distribution",
+    "withdrawals__class_a_3_distribution",
+    "withdrawals__class_a_4_distribution",
+    "withdrawals__class_b_distribution",
+    "withdrawals__class_c_distribution",
+    "withdrawals__class_d_distribution",
+    "withdrawals__deposit_to_note_payment_account_for_monthly_note_interest_principal",
+    "withdrawals__deposit_to_reserve_account",
+    "withdrawals__excess_collections_deposit_to_certificate_payment_account_for_payment_to_certificateholder",
+    "withdrawals__servicing_fee_and_unreimbursed_servicer_advances",
+    "withdrawals__successor_servicer_transition_expenses_and_indemnity_amounts",
+    "withdrawals__total_withdrawals_from_collection_account",
+    "withdrawals__total_withdrawals_from_note_payment_account",
+    "withdrawals_from_certificate_payment_account_for_certificateholder_distribution"
+   ],
+   "properties": {
+    "amount_to_be_deposited_from_the_collection_account_into_the_certificate_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_deposited_from_the_collection_account_into_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_deposited_from_the_collection_account_into_the_reserve_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_deposited_from_the_reserve_account_if_reserve_account_balance_exceeds_require__the_depositor_if_no_unfunded_regular_principal_distributable_amount_exists": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_deposited_from_the_reserve_account_if_reserve_account_balance_exceeds_require__the_note_payment_account_for_any_unfunded_regular_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_deposited_from_the_reserve_account_into_the_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_certificateholders_from_the_certificate_payment_account_with_respect": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_a_1_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_a_2a_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_a_2b_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_a_3_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_a_4_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_b_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_c_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_d_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_servicer_from_the_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "application_of_available_funds__reserve_account_deficiency": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "available_funds": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "available_funds__available_collections": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "available_funds__reserve_account_draw_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__additional_note_interest_related_to_class_a_4_monthly_interest__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__class_a_1_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__class_a_2a_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__class_a_2b_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__class_a_3_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__class_a_4_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_1_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_2a_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_2b_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_3_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__total_class_a_1_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__total_class_a_2a_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__total_class_a_2b_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__total_class_a_3_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__total_class_a_4_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b_noteholder_interest_amount__class_b_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_b_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b_noteholder_interest_amount__total_class_b_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c_noteholder_interest_amount__class_c_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_c_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c_noteholder_interest_amount__total_class_c_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_d_noteholder_interest_amount__class_d_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_d_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_d_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_d_noteholder_interest_amount__total_class_d_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "current_overcollateralization_amount_pool_balance_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposit_from_available_funds": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_1_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_1_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_2a_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_2a_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_2b_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_2b_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_3_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_3_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_4_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_4_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_b_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_b_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_c_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_c_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_d_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_d_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__interest_income": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__total_daily_deposits_of_finance_charge_collections": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__total_daily_deposits_of_principal_collections": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__total_deposits_to_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__total_deposits_to_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__withdrawal_from_reserve_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits_to_certificate_payment_account_from_excess_collections": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "if_reserve_account_balance_exceeds_required_reserve_account_amount_payment_to__any_successor_servicer_for_the_payment_of_any_unfunded_transition_costs_and_additional_ser": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "if_reserve_account_balance_exceeds_required_reserve_account_amount_payment_to__the_note_payment_account_for_the_payment_of_principal_to_the_extent_of_any_unfunded_regula": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_a_1_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_a_2a_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_a_2b_floating_rate_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_a_3_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_a_4_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_b_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_c_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_d_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "overcollateralization_target_amount__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "payment_to_depositor_if_reserve_account_balance_exceeds_required_reserve_account_amount_an": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "pool_factors__class_a_1_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_a_2a_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_a_2b_floating_rate_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_a_3_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_a_4_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_b_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_c_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_d_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "priority_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "quaternary_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "regular_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "required_payment_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "required_reserve_account_amount_pct_of_initial_pool_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_account_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_account_reconciliation__reserve_account_deficiency": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_account_reconciliation__reserve_account_draw_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "secondary_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "servicing_fee__amount_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "servicing_fee__monthly_servicing_fee": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "servicing_fee__shortfall_amount_a_b_c": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__asset_representations_reviewer_amount_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__asset_representations_reviewer_shortfall_amount_d_e": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__successor_servicer_amount_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__successor_servicer_shortfall_amount_a_b": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "tertiary_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_a_1_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_a_2a_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_a_2b_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_a_3_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_a_4_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_b_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_c_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_d_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__deposit_to_note_payment_account_for_monthly_note_interest_principal": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__deposit_to_reserve_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__excess_collections_deposit_to_certificate_payment_account_for_payment_to_certificateholder": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__servicing_fee_and_unreimbursed_servicer_advances": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__successor_servicer_transition_expenses_and_indemnity_amounts": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__total_withdrawals_from_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__total_withdrawals_from_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals_from_certificate_payment_account_for_certificateholder_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    }
+   }
+  },
+  "period_3": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "amount_to_be_deposited_from_the_collection_account_into_the_certificate_payment_account",
+    "amount_to_be_deposited_from_the_collection_account_into_the_note_payment_account",
+    "amount_to_be_deposited_from_the_collection_account_into_the_reserve_account",
+    "amount_to_be_deposited_from_the_reserve_account_if_reserve_account_balance_exceeds_require__the_depositor_if_no_unfunded_regular_principal_distributable_amount_exists",
+    "amount_to_be_deposited_from_the_reserve_account_if_reserve_account_balance_exceeds_require__the_note_payment_account_for_any_unfunded_regular_principal_distributable_amount",
+    "amount_to_be_deposited_from_the_reserve_account_into_the_collection_account",
+    "amount_to_be_paid_to_certificateholders_from_the_certificate_payment_account_with_respect",
+    "amount_to_be_paid_to_class_a_1_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_a_2a_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_a_2b_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_a_3_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_a_4_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_b_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_c_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_d_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_servicer_from_the_collection_account",
+    "application_of_available_funds__reserve_account_deficiency",
+    "available_funds",
+    "available_funds__available_collections",
+    "available_funds__reserve_account_draw_amount",
+    "class_a_noteholder_interest_amounts__additional_note_interest_related_to_class_a_4_monthly_interest__2",
+    "class_a_noteholder_interest_amounts__class_a_1_monthly_interest",
+    "class_a_noteholder_interest_amounts__class_a_2a_monthly_interest",
+    "class_a_noteholder_interest_amounts__class_a_2b_monthly_interest",
+    "class_a_noteholder_interest_amounts__class_a_3_monthly_interest",
+    "class_a_noteholder_interest_amounts__class_a_4_monthly_interest",
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_1_monthly_interest",
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_2a_monthly_interest",
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_2b_monthly_interest",
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_3_monthly_interest",
+    "class_a_noteholder_interest_amounts__total_class_a_1_note_interest",
+    "class_a_noteholder_interest_amounts__total_class_a_2a_note_interest",
+    "class_a_noteholder_interest_amounts__total_class_a_2b_note_interest",
+    "class_a_noteholder_interest_amounts__total_class_a_3_note_interest",
+    "class_a_noteholder_interest_amounts__total_class_a_4_note_interest",
+    "class_b_noteholder_interest_amount__class_b_monthly_interest",
+    "class_b_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_b_monthly_interest",
+    "class_b_noteholder_interest_amount__total_class_b_note_interest",
+    "class_c_noteholder_interest_amount__class_c_monthly_interest",
+    "class_c_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_c_monthly_interest",
+    "class_c_noteholder_interest_amount__total_class_c_note_interest",
+    "class_d_noteholder_interest_amount__class_d_monthly_interest",
+    "class_d_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_d_monthly_interest",
+    "class_d_noteholder_interest_amount__total_class_d_note_interest",
+    "current_overcollateralization_amount_pool_balance_note_balance__end_of_period",
+    "deposit_from_available_funds",
+    "deposits__class_a_1_interest_distribution",
+    "deposits__class_a_1_principal_distribution",
+    "deposits__class_a_2a_interest_distribution",
+    "deposits__class_a_2a_principal_distribution",
+    "deposits__class_a_2b_interest_distribution",
+    "deposits__class_a_2b_principal_distribution",
+    "deposits__class_a_3_interest_distribution",
+    "deposits__class_a_3_principal_distribution",
+    "deposits__class_a_4_interest_distribution",
+    "deposits__class_a_4_principal_distribution",
+    "deposits__class_b_interest_distribution",
+    "deposits__class_b_principal_distribution",
+    "deposits__class_c_interest_distribution",
+    "deposits__class_c_principal_distribution",
+    "deposits__class_d_interest_distribution",
+    "deposits__class_d_principal_distribution",
+    "deposits__interest_income",
+    "deposits__total_daily_deposits_of_finance_charge_collections",
+    "deposits__total_daily_deposits_of_principal_collections",
+    "deposits__total_deposits_to_collection_account",
+    "deposits__total_deposits_to_note_payment_account",
+    "deposits__withdrawal_from_reserve_account",
+    "deposits_to_certificate_payment_account_from_excess_collections",
+    "ending_balance",
+    "if_reserve_account_balance_exceeds_required_reserve_account_amount_payment_to__any_successor_servicer_for_the_payment_of_any_unfunded_transition_costs_and_additional_ser",
+    "if_reserve_account_balance_exceeds_required_reserve_account_amount_payment_to__the_note_payment_account_for_the_payment_of_principal_to_the_extent_of_any_unfunded_regula",
+    "note_balances__class_a_1_note_balance__end_of_period",
+    "note_balances__class_a_2a_note_balance__end_of_period",
+    "note_balances__class_a_2b_floating_rate_note_balance__end_of_period",
+    "note_balances__class_a_3_note_balance__end_of_period",
+    "note_balances__class_a_4_note_balance__end_of_period",
+    "note_balances__class_b_note_balance__end_of_period",
+    "note_balances__class_c_note_balance__end_of_period",
+    "note_balances__class_d_note_balance__end_of_period",
+    "note_balances__note_balance__end_of_period",
+    "overcollateralization_target_amount__end_of_period",
+    "payment_to_depositor_if_reserve_account_balance_exceeds_required_reserve_account_amount_an",
+    "pool_factors__class_a_1_note_pool_factor__end_of_period",
+    "pool_factors__class_a_2a_note_pool_factor__end_of_period",
+    "pool_factors__class_a_2b_floating_rate_note_pool_factor__end_of_period",
+    "pool_factors__class_a_3_note_pool_factor__end_of_period",
+    "pool_factors__class_a_4_note_pool_factor__end_of_period",
+    "pool_factors__class_b_note_pool_factor__end_of_period",
+    "pool_factors__class_c_note_pool_factor__end_of_period",
+    "pool_factors__class_d_note_pool_factor__end_of_period",
+    "pool_factors__note_pool_factor__end_of_period",
+    "priority_principal_distributable_amount",
+    "quaternary_principal_distributable_amount",
+    "regular_principal_distributable_amount",
+    "required_payment_amount",
+    "required_reserve_account_amount_pct_of_initial_pool_balance",
+    "reserve_account_amount",
+    "reserve_account_reconciliation__reserve_account_deficiency",
+    "reserve_account_reconciliation__reserve_account_draw_amount",
+    "secondary_principal_distributable_amount",
+    "servicing_fee__amount_paid",
+    "servicing_fee__monthly_servicing_fee",
+    "servicing_fee__shortfall_amount_a_b_c",
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__asset_representations_reviewer_amount_paid",
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__asset_representations_reviewer_shortfall_amount_d_e",
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__successor_servicer_amount_paid",
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__successor_servicer_shortfall_amount_a_b",
+    "tertiary_principal_distributable_amount",
+    "withdrawals__class_a_1_distribution",
+    "withdrawals__class_a_2a_distribution",
+    "withdrawals__class_a_2b_distribution",
+    "withdrawals__class_a_3_distribution",
+    "withdrawals__class_a_4_distribution",
+    "withdrawals__class_b_distribution",
+    "withdrawals__class_c_distribution",
+    "withdrawals__class_d_distribution",
+    "withdrawals__deposit_to_note_payment_account_for_monthly_note_interest_principal",
+    "withdrawals__deposit_to_reserve_account",
+    "withdrawals__excess_collections_deposit_to_certificate_payment_account_for_payment_to_certificateholder",
+    "withdrawals__servicing_fee_and_unreimbursed_servicer_advances",
+    "withdrawals__successor_servicer_transition_expenses_and_indemnity_amounts",
+    "withdrawals__total_withdrawals_from_collection_account",
+    "withdrawals__total_withdrawals_from_note_payment_account",
+    "withdrawals_from_certificate_payment_account_for_certificateholder_distribution"
+   ],
+   "properties": {
+    "amount_to_be_deposited_from_the_collection_account_into_the_certificate_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_deposited_from_the_collection_account_into_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_deposited_from_the_collection_account_into_the_reserve_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_deposited_from_the_reserve_account_if_reserve_account_balance_exceeds_require__the_depositor_if_no_unfunded_regular_principal_distributable_amount_exists": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_deposited_from_the_reserve_account_if_reserve_account_balance_exceeds_require__the_note_payment_account_for_any_unfunded_regular_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_deposited_from_the_reserve_account_into_the_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_certificateholders_from_the_certificate_payment_account_with_respect": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_a_1_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_a_2a_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_a_2b_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_a_3_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_a_4_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_b_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_c_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_d_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_servicer_from_the_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "application_of_available_funds__reserve_account_deficiency": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "available_funds": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "available_funds__available_collections": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "available_funds__reserve_account_draw_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__additional_note_interest_related_to_class_a_4_monthly_interest__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__class_a_1_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__class_a_2a_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__class_a_2b_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__class_a_3_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__class_a_4_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_1_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_2a_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_2b_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_3_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__total_class_a_1_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__total_class_a_2a_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__total_class_a_2b_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__total_class_a_3_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__total_class_a_4_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b_noteholder_interest_amount__class_b_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_b_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b_noteholder_interest_amount__total_class_b_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c_noteholder_interest_amount__class_c_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_c_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c_noteholder_interest_amount__total_class_c_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_d_noteholder_interest_amount__class_d_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_d_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_d_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_d_noteholder_interest_amount__total_class_d_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "current_overcollateralization_amount_pool_balance_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposit_from_available_funds": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_1_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_1_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_2a_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_2a_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_2b_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_2b_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_3_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_3_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_4_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_4_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_b_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_b_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_c_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_c_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_d_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_d_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__interest_income": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__total_daily_deposits_of_finance_charge_collections": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__total_daily_deposits_of_principal_collections": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__total_deposits_to_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__total_deposits_to_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__withdrawal_from_reserve_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits_to_certificate_payment_account_from_excess_collections": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "if_reserve_account_balance_exceeds_required_reserve_account_amount_payment_to__any_successor_servicer_for_the_payment_of_any_unfunded_transition_costs_and_additional_ser": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "if_reserve_account_balance_exceeds_required_reserve_account_amount_payment_to__the_note_payment_account_for_the_payment_of_principal_to_the_extent_of_any_unfunded_regula": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_a_1_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_a_2a_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_a_2b_floating_rate_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_a_3_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_a_4_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_b_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_c_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_d_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "overcollateralization_target_amount__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "payment_to_depositor_if_reserve_account_balance_exceeds_required_reserve_account_amount_an": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "pool_factors__class_a_1_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_a_2a_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_a_2b_floating_rate_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_a_3_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_a_4_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_b_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_c_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_d_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "priority_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "quaternary_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "regular_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "required_payment_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "required_reserve_account_amount_pct_of_initial_pool_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_account_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_account_reconciliation__reserve_account_deficiency": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_account_reconciliation__reserve_account_draw_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "secondary_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "servicing_fee__amount_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "servicing_fee__monthly_servicing_fee": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "servicing_fee__shortfall_amount_a_b_c": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__asset_representations_reviewer_amount_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__asset_representations_reviewer_shortfall_amount_d_e": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__successor_servicer_amount_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__successor_servicer_shortfall_amount_a_b": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "tertiary_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_a_1_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_a_2a_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_a_2b_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_a_3_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_a_4_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_b_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_c_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_d_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__deposit_to_note_payment_account_for_monthly_note_interest_principal": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__deposit_to_reserve_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__excess_collections_deposit_to_certificate_payment_account_for_payment_to_certificateholder": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__servicing_fee_and_unreimbursed_servicer_advances": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__successor_servicer_transition_expenses_and_indemnity_amounts": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__total_withdrawals_from_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__total_withdrawals_from_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals_from_certificate_payment_account_for_certificateholder_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    }
+   }
+  },
+  "period_4": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "amount_to_be_deposited_from_the_collection_account_into_the_certificate_payment_account",
+    "amount_to_be_deposited_from_the_collection_account_into_the_note_payment_account",
+    "amount_to_be_deposited_from_the_collection_account_into_the_reserve_account",
+    "amount_to_be_deposited_from_the_reserve_account_if_reserve_account_balance_exceeds_require__the_depositor_if_no_unfunded_regular_principal_distributable_amount_exists",
+    "amount_to_be_deposited_from_the_reserve_account_if_reserve_account_balance_exceeds_require__the_note_payment_account_for_any_unfunded_regular_principal_distributable_amount",
+    "amount_to_be_deposited_from_the_reserve_account_into_the_collection_account",
+    "amount_to_be_paid_to_certificateholders_from_the_certificate_payment_account_with_respect",
+    "amount_to_be_paid_to_class_a_1_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_a_2a_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_a_2b_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_a_3_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_a_4_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_b_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_c_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_class_d_noteholders_from_the_note_payment_account",
+    "amount_to_be_paid_to_servicer_from_the_collection_account",
+    "application_of_available_funds__reserve_account_deficiency",
+    "available_funds",
+    "available_funds__available_collections",
+    "available_funds__reserve_account_draw_amount",
+    "class_a_noteholder_interest_amounts__additional_note_interest_related_to_class_a_4_monthly_interest__2",
+    "class_a_noteholder_interest_amounts__class_a_1_monthly_interest",
+    "class_a_noteholder_interest_amounts__class_a_2a_monthly_interest",
+    "class_a_noteholder_interest_amounts__class_a_2b_monthly_interest",
+    "class_a_noteholder_interest_amounts__class_a_3_monthly_interest",
+    "class_a_noteholder_interest_amounts__class_a_4_monthly_interest",
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_1_monthly_interest",
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_2a_monthly_interest",
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_2b_monthly_interest",
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_3_monthly_interest",
+    "class_a_noteholder_interest_amounts__total_class_a_1_note_interest",
+    "class_a_noteholder_interest_amounts__total_class_a_2a_note_interest",
+    "class_a_noteholder_interest_amounts__total_class_a_2b_note_interest",
+    "class_a_noteholder_interest_amounts__total_class_a_3_note_interest",
+    "class_a_noteholder_interest_amounts__total_class_a_4_note_interest",
+    "class_b_noteholder_interest_amount__class_b_monthly_interest",
+    "class_b_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_b_monthly_interest",
+    "class_b_noteholder_interest_amount__total_class_b_note_interest",
+    "class_c_noteholder_interest_amount__class_c_monthly_interest",
+    "class_c_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_c_monthly_interest",
+    "class_c_noteholder_interest_amount__total_class_c_note_interest",
+    "class_d_noteholder_interest_amount__class_d_monthly_interest",
+    "class_d_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_d_monthly_interest",
+    "class_d_noteholder_interest_amount__total_class_d_note_interest",
+    "current_overcollateralization_amount_pool_balance_note_balance__end_of_period",
+    "deposit_from_available_funds",
+    "deposits__class_a_1_interest_distribution",
+    "deposits__class_a_1_principal_distribution",
+    "deposits__class_a_2a_interest_distribution",
+    "deposits__class_a_2a_principal_distribution",
+    "deposits__class_a_2b_interest_distribution",
+    "deposits__class_a_2b_principal_distribution",
+    "deposits__class_a_3_interest_distribution",
+    "deposits__class_a_3_principal_distribution",
+    "deposits__class_a_4_interest_distribution",
+    "deposits__class_a_4_principal_distribution",
+    "deposits__class_b_interest_distribution",
+    "deposits__class_b_principal_distribution",
+    "deposits__class_c_interest_distribution",
+    "deposits__class_c_principal_distribution",
+    "deposits__class_d_interest_distribution",
+    "deposits__class_d_principal_distribution",
+    "deposits__interest_income",
+    "deposits__total_daily_deposits_of_finance_charge_collections",
+    "deposits__total_daily_deposits_of_principal_collections",
+    "deposits__total_deposits_to_collection_account",
+    "deposits__total_deposits_to_note_payment_account",
+    "deposits__withdrawal_from_reserve_account",
+    "deposits_to_certificate_payment_account_from_excess_collections",
+    "ending_balance",
+    "if_reserve_account_balance_exceeds_required_reserve_account_amount_payment_to__any_successor_servicer_for_the_payment_of_any_unfunded_transition_costs_and_additional_ser",
+    "if_reserve_account_balance_exceeds_required_reserve_account_amount_payment_to__the_note_payment_account_for_the_payment_of_principal_to_the_extent_of_any_unfunded_regula",
+    "note_balances__class_a_1_note_balance__end_of_period",
+    "note_balances__class_a_2a_note_balance__end_of_period",
+    "note_balances__class_a_2b_floating_rate_note_balance__end_of_period",
+    "note_balances__class_a_3_note_balance__end_of_period",
+    "note_balances__class_a_4_note_balance__end_of_period",
+    "note_balances__class_b_note_balance__end_of_period",
+    "note_balances__class_c_note_balance__end_of_period",
+    "note_balances__class_d_note_balance__end_of_period",
+    "note_balances__note_balance__end_of_period",
+    "overcollateralization_target_amount__end_of_period",
+    "payment_to_depositor_if_reserve_account_balance_exceeds_required_reserve_account_amount_an",
+    "pool_factors__class_a_1_note_pool_factor__end_of_period",
+    "pool_factors__class_a_2a_note_pool_factor__end_of_period",
+    "pool_factors__class_a_2b_floating_rate_note_pool_factor__end_of_period",
+    "pool_factors__class_a_3_note_pool_factor__end_of_period",
+    "pool_factors__class_a_4_note_pool_factor__end_of_period",
+    "pool_factors__class_b_note_pool_factor__end_of_period",
+    "pool_factors__class_c_note_pool_factor__end_of_period",
+    "pool_factors__class_d_note_pool_factor__end_of_period",
+    "pool_factors__note_pool_factor__end_of_period",
+    "priority_principal_distributable_amount",
+    "quaternary_principal_distributable_amount",
+    "regular_principal_distributable_amount",
+    "required_payment_amount",
+    "required_reserve_account_amount_pct_of_initial_pool_balance",
+    "reserve_account_amount",
+    "reserve_account_reconciliation__reserve_account_deficiency",
+    "reserve_account_reconciliation__reserve_account_draw_amount",
+    "secondary_principal_distributable_amount",
+    "servicing_fee__amount_paid",
+    "servicing_fee__monthly_servicing_fee",
+    "servicing_fee__shortfall_amount_a_b_c",
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__asset_representations_reviewer_amount_paid",
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__asset_representations_reviewer_shortfall_amount_d_e",
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__successor_servicer_amount_paid",
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__successor_servicer_shortfall_amount_a_b",
+    "tertiary_principal_distributable_amount",
+    "withdrawals__class_a_1_distribution",
+    "withdrawals__class_a_2a_distribution",
+    "withdrawals__class_a_2b_distribution",
+    "withdrawals__class_a_3_distribution",
+    "withdrawals__class_a_4_distribution",
+    "withdrawals__class_b_distribution",
+    "withdrawals__class_c_distribution",
+    "withdrawals__class_d_distribution",
+    "withdrawals__deposit_to_note_payment_account_for_monthly_note_interest_principal",
+    "withdrawals__deposit_to_reserve_account",
+    "withdrawals__excess_collections_deposit_to_certificate_payment_account_for_payment_to_certificateholder",
+    "withdrawals__servicing_fee_and_unreimbursed_servicer_advances",
+    "withdrawals__successor_servicer_transition_expenses_and_indemnity_amounts",
+    "withdrawals__total_withdrawals_from_collection_account",
+    "withdrawals__total_withdrawals_from_note_payment_account",
+    "withdrawals_from_certificate_payment_account_for_certificateholder_distribution"
+   ],
+   "properties": {
+    "amount_to_be_deposited_from_the_collection_account_into_the_certificate_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_deposited_from_the_collection_account_into_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_deposited_from_the_collection_account_into_the_reserve_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_deposited_from_the_reserve_account_if_reserve_account_balance_exceeds_require__the_depositor_if_no_unfunded_regular_principal_distributable_amount_exists": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_deposited_from_the_reserve_account_if_reserve_account_balance_exceeds_require__the_note_payment_account_for_any_unfunded_regular_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_deposited_from_the_reserve_account_into_the_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_certificateholders_from_the_certificate_payment_account_with_respect": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_a_1_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_a_2a_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_a_2b_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_a_3_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_a_4_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_b_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_c_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_class_d_noteholders_from_the_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "amount_to_be_paid_to_servicer_from_the_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "application_of_available_funds__reserve_account_deficiency": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "available_funds": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "available_funds__available_collections": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "available_funds__reserve_account_draw_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__additional_note_interest_related_to_class_a_4_monthly_interest__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__class_a_1_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__class_a_2a_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__class_a_2b_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__class_a_3_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__class_a_4_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_1_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_2a_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_2b_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__interest_due_on_additional_note_interest_related_to_class_a_3_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__total_class_a_1_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__total_class_a_2a_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__total_class_a_2b_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__total_class_a_3_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_noteholder_interest_amounts__total_class_a_4_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b_noteholder_interest_amount__class_b_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_b_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b_noteholder_interest_amount__total_class_b_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c_noteholder_interest_amount__class_c_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_c_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c_noteholder_interest_amount__total_class_c_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_d_noteholder_interest_amount__class_d_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_d_noteholder_interest_amount__interest_due_on_additional_note_interest_related_to_class_d_monthly_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_d_noteholder_interest_amount__total_class_d_note_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "current_overcollateralization_amount_pool_balance_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposit_from_available_funds": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_1_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_1_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_2a_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_2a_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_2b_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_2b_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_3_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_3_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_4_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_a_4_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_b_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_b_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_c_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_c_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_d_interest_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__class_d_principal_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__interest_income": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__total_daily_deposits_of_finance_charge_collections": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__total_daily_deposits_of_principal_collections": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__total_deposits_to_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__total_deposits_to_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits__withdrawal_from_reserve_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposits_to_certificate_payment_account_from_excess_collections": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "if_reserve_account_balance_exceeds_required_reserve_account_amount_payment_to__any_successor_servicer_for_the_payment_of_any_unfunded_transition_costs_and_additional_ser": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "if_reserve_account_balance_exceeds_required_reserve_account_amount_payment_to__the_note_payment_account_for_the_payment_of_principal_to_the_extent_of_any_unfunded_regula": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_a_1_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_a_2a_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_a_2b_floating_rate_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_a_3_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_a_4_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_b_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_c_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__class_d_note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_balances__note_balance__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "overcollateralization_target_amount__end_of_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "payment_to_depositor_if_reserve_account_balance_exceeds_required_reserve_account_amount_an": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "pool_factors__class_a_1_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_a_2a_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_a_2b_floating_rate_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_a_3_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_a_4_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_b_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_c_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__class_d_note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "pool_factors__note_pool_factor__end_of_period": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "priority_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "quaternary_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "regular_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "required_payment_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "required_reserve_account_amount_pct_of_initial_pool_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_account_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_account_reconciliation__reserve_account_deficiency": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_account_reconciliation__reserve_account_draw_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "secondary_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "servicing_fee__amount_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "servicing_fee__monthly_servicing_fee": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "servicing_fee__shortfall_amount_a_b_c": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__asset_representations_reviewer_amount_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__asset_representations_reviewer_shortfall_amount_d_e": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__successor_servicer_amount_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "successor_servicer_and_asset_representations_reviewer_unpaid_expenses_and_indemnity_amount__successor_servicer_shortfall_amount_a_b": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "tertiary_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_a_1_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_a_2a_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_a_2b_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_a_3_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_a_4_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_b_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_c_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__class_d_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__deposit_to_note_payment_account_for_monthly_note_interest_principal": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__deposit_to_reserve_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__excess_collections_deposit_to_certificate_payment_account_for_payment_to_certificateholder": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__servicing_fee_and_unreimbursed_servicer_advances": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__successor_servicer_transition_expenses_and_indemnity_amounts": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__total_withdrawals_from_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals__total_withdrawals_from_note_payment_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "withdrawals_from_certificate_payment_account_for_certificateholder_distribution": {
+     "type": "integer",
+     "description": "US cents"
+    }
+   }
+  }
+ }
+}

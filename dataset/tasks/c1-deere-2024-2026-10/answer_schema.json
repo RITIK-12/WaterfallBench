@@ -1,0 +1,359 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "administration_fee",
+  "administration_fee_shortfall",
+  "amount_of_overcollateralization_note_value_less_aggregate_principal_amount_of_notes",
+  "amount_of_servicing_fee_earned",
+  "amount_of_servicing_fee_paid",
+  "amount_of_servicing_fee_shortfall",
+  "amount_paid_to_certificateholder",
+  "amount_paid_to_indenture_trustee",
+  "amount_paid_to_owner_trustee",
+  "amount_to_be_withdrawn_from_the_reserve_account_and_deposited_into_certificateholder_accou",
+  "amount_to_be_withdrawn_from_the_reserve_account_and_deposited_into_note_distribution_accou",
+  "amount_to_increase_the_amount_on_deposit_in_the_reserve_account_to_the_specified_reserve_a",
+  "class_a_1_note_pool_factor",
+  "class_a_1_noteholders_monthly_principal_distributable_amount",
+  "class_a_1_noteholders_principal_carryover_shortfall",
+  "class_a_1_noteholders_principal_distributable_amount",
+  "class_a_2a_note_pool_factor",
+  "class_a_2a_noteholders_monthly_principal_distributable_amount",
+  "class_a_2a_noteholders_principal_carryover_shortfall",
+  "class_a_2a_noteholders_principal_distributable_amount",
+  "class_a_2b_note_pool_factor",
+  "class_a_2b_noteholders_monthly_principal_distributable_amount",
+  "class_a_2b_noteholders_principal_carryover_shortfall",
+  "class_a_2b_noteholders_principal_distributable_amount",
+  "class_a_3_note_pool_factor",
+  "class_a_3_noteholders_monthly_principal_distributable_amount",
+  "class_a_3_noteholders_principal_carryover_shortfall",
+  "class_a_3_noteholders_principal_distributable_amount",
+  "class_a_4_note_pool_factor",
+  "class_a_4_noteholders_monthly_principal_distributable_amount",
+  "class_a_4_noteholders_principal_carryover_shortfall",
+  "class_a_4_noteholders_principal_distributable_amount",
+  "ending_balance_after_giving_effect_to_all_distributions",
+  "interest_amount_included_above",
+  "noteholders_distributable_amount",
+  "noteholders_interest_carryover_shortfall",
+  "noteholders_interest_carryover_shortfall_applicable_to_class_a_1_notes",
+  "noteholders_interest_carryover_shortfall_applicable_to_class_a_2a_notes",
+  "noteholders_interest_carryover_shortfall_applicable_to_class_a_2b_notes",
+  "noteholders_interest_carryover_shortfall_applicable_to_class_a_3_notes",
+  "noteholders_interest_carryover_shortfall_applicable_to_class_a_4_notes",
+  "noteholders_interest_distributable_amount_applicable_to_class_a_1_notes",
+  "noteholders_interest_distributable_amount_applicable_to_class_a_2a_notes",
+  "noteholders_interest_distributable_amount_applicable_to_class_a_2b_notes",
+  "noteholders_interest_distributable_amount_applicable_to_class_a_3_notes",
+  "noteholders_interest_distributable_amount_applicable_to_class_a_4_notes",
+  "noteholders_interest_distributable_amount_deposited_into_note_distribution_account",
+  "noteholders_principal_carryover_shortfall",
+  "noteholders_principal_distribution_amount_deposited_into_note_distribution_account",
+  "of_principal_distribution_amount_applicable_to_class_a_1_noteholders",
+  "of_principal_distribution_amount_applicable_to_class_a_2a_noteholders",
+  "of_principal_distribution_amount_applicable_to_class_a_2b_noteholders",
+  "of_principal_distribution_amount_applicable_to_class_a_3_noteholders",
+  "of_principal_distribution_amount_applicable_to_class_a_4_noteholders",
+  "outstanding_principal_balance_of_class_a_1_notes",
+  "outstanding_principal_balance_of_class_a_2a_notes",
+  "outstanding_principal_balance_of_class_a_2b_notes",
+  "outstanding_principal_balance_of_class_a_3_notes",
+  "outstanding_principal_balance_of_class_a_4_notes",
+  "principal_amount_included_above",
+  "section_5_04_iii_asset_representations_review_fees",
+  "section_5_04_ix_asset_representations_review_fees",
+  "servicing_fee",
+  "specified_reserve_account_balance"
+ ],
+ "properties": {
+  "administration_fee": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "administration_fee_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "amount_of_overcollateralization_note_value_less_aggregate_principal_amount_of_notes": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "amount_of_servicing_fee_earned": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "amount_of_servicing_fee_paid": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "amount_of_servicing_fee_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "amount_paid_to_certificateholder": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "amount_paid_to_indenture_trustee": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "amount_paid_to_owner_trustee": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "amount_to_be_withdrawn_from_the_reserve_account_and_deposited_into_certificateholder_accou": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "amount_to_be_withdrawn_from_the_reserve_account_and_deposited_into_note_distribution_accou": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "amount_to_increase_the_amount_on_deposit_in_the_reserve_account_to_the_specified_reserve_a": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_1_note_pool_factor": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_a_1_noteholders_monthly_principal_distributable_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_1_noteholders_principal_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_1_noteholders_principal_distributable_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_2a_note_pool_factor": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_a_2a_noteholders_monthly_principal_distributable_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_2a_noteholders_principal_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_2a_noteholders_principal_distributable_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_2b_note_pool_factor": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_a_2b_noteholders_monthly_principal_distributable_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_2b_noteholders_principal_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_2b_noteholders_principal_distributable_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_3_note_pool_factor": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_a_3_noteholders_monthly_principal_distributable_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_3_noteholders_principal_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_3_noteholders_principal_distributable_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_4_note_pool_factor": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_a_4_noteholders_monthly_principal_distributable_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_4_noteholders_principal_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_4_noteholders_principal_distributable_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "ending_balance_after_giving_effect_to_all_distributions": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "interest_amount_included_above": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "noteholders_distributable_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "noteholders_interest_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "noteholders_interest_carryover_shortfall_applicable_to_class_a_1_notes": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "noteholders_interest_carryover_shortfall_applicable_to_class_a_2a_notes": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "noteholders_interest_carryover_shortfall_applicable_to_class_a_2b_notes": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "noteholders_interest_carryover_shortfall_applicable_to_class_a_3_notes": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "noteholders_interest_carryover_shortfall_applicable_to_class_a_4_notes": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "noteholders_interest_distributable_amount_applicable_to_class_a_1_notes": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "noteholders_interest_distributable_amount_applicable_to_class_a_2a_notes": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "noteholders_interest_distributable_amount_applicable_to_class_a_2b_notes": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "noteholders_interest_distributable_amount_applicable_to_class_a_3_notes": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "noteholders_interest_distributable_amount_applicable_to_class_a_4_notes": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "noteholders_interest_distributable_amount_deposited_into_note_distribution_account": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "noteholders_principal_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "noteholders_principal_distribution_amount_deposited_into_note_distribution_account": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "of_principal_distribution_amount_applicable_to_class_a_1_noteholders": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "of_principal_distribution_amount_applicable_to_class_a_2a_noteholders": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "of_principal_distribution_amount_applicable_to_class_a_2b_noteholders": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "of_principal_distribution_amount_applicable_to_class_a_3_noteholders": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "of_principal_distribution_amount_applicable_to_class_a_4_noteholders": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "outstanding_principal_balance_of_class_a_1_notes": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "outstanding_principal_balance_of_class_a_2a_notes": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "outstanding_principal_balance_of_class_a_2b_notes": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "outstanding_principal_balance_of_class_a_3_notes": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "outstanding_principal_balance_of_class_a_4_notes": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "principal_amount_included_above": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "section_5_04_iii_asset_representations_review_fees": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "section_5_04_ix_asset_representations_review_fees": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "servicing_fee": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "specified_reserve_account_balance": {
+   "type": "integer",
+   "description": "US cents"
+  }
+ }
+}

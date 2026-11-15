@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "corrections"
+  ],
+  "properties": {
+    "corrections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "field",
+          "correct_value"
+        ],
+        "properties": {
+          "field": {
+            "type": "string",
+            "enum": [
+              "total_available_funds",
+              "class_a_interest",
+              "class_b_interest",
+              "reserve_draw",
+              "overcollateralization_pct",
+              "delinquency_trigger"
+            ]
+          },
+          "correct_value": {
+            "type": [
+              "integer",
+              "number",
+              "string"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

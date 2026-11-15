@@ -1,0 +1,3005 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "period_1",
+  "period_2",
+  "period_3",
+  "period_4"
+ ],
+ "properties": {
+  "period_1": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "a_1_interest_carryover_shortfall__total",
+    "a_1_interest_distribution_amount__total",
+    "a_1_principal_distribution_amount__total",
+    "a_2a_interest_carryover_shortfall__total",
+    "a_2a_interest_distribution_amount__total",
+    "a_2a_principal_distribution_amount__total",
+    "a_2b_interest_carryover_shortfall__total",
+    "a_2b_interest_distribution_amount__total",
+    "a_2b_principal_distribution_amount__total",
+    "a_3_interest_carryover_shortfall__total",
+    "a_3_interest_distribution_amount__total",
+    "a_3_principal_distribution_amount__total",
+    "a_4_interest_carryover_shortfall__total",
+    "a_4_interest_distribution_amount__total",
+    "a_4_principal_distribution_amount__total",
+    "actual_overcollateralization",
+    "asset_representation_reviewer_amounts_in_excess_of_1",
+    "asset_representation_reviewer_amounts_up_to_amt_per_year",
+    "available_funds__amount",
+    "b_interest_carryover_shortfall__total",
+    "b_interest_distribution_amount__total",
+    "b_principal_distribution_amount__total",
+    "balance_as_of_date__2",
+    "c_interest_carryover_shortfall__total",
+    "c_interest_distribution_amount__total",
+    "c_principal_distribution_amount__total",
+    "change",
+    "change_in_amount_of_the_unpaid_servicing_fee_from_the_prior_period",
+    "class_a_1__coupon",
+    "class_a_1__interest_paid",
+    "class_a_1__note_balance_date__2",
+    "class_a_1__note_factor_date",
+    "class_a_1__principal_paid",
+    "class_a_1__principal_paid__2",
+    "class_a_2a__coupon",
+    "class_a_2a__interest_paid",
+    "class_a_2a__note_balance_date__2",
+    "class_a_2a__note_factor_date",
+    "class_a_2a__principal_paid",
+    "class_a_2a__principal_paid__2",
+    "class_a_2b__coupon",
+    "class_a_2b__interest_paid",
+    "class_a_2b__note_balance_date__2",
+    "class_a_2b__note_factor_date",
+    "class_a_2b__principal_paid",
+    "class_a_2b__principal_paid__2",
+    "class_a_3__coupon",
+    "class_a_3__interest_paid",
+    "class_a_3__note_balance_date__2",
+    "class_a_3__note_factor_date",
+    "class_a_3__principal_paid",
+    "class_a_3__principal_paid__2",
+    "class_a_4__coupon",
+    "class_a_4__interest_paid",
+    "class_a_4__note_balance_date__2",
+    "class_a_4__note_factor_date",
+    "class_a_4__principal_paid",
+    "class_a_4__principal_paid__2",
+    "class_a_interest",
+    "class_b__coupon",
+    "class_b__interest_paid",
+    "class_b__note_balance_date__2",
+    "class_b__note_factor_date",
+    "class_b__principal_paid",
+    "class_b__principal_paid__2",
+    "class_b_interest",
+    "class_c__coupon",
+    "class_c__interest_paid",
+    "class_c__note_balance_date__2",
+    "class_c__note_factor_date",
+    "class_c__principal_paid",
+    "class_c__principal_paid__2",
+    "class_c_interest",
+    "deposit_withdrawal",
+    "distribution_to_certificateholders",
+    "investment_earnings_paid",
+    "noteholders_first_priority_principal_distributable_amount",
+    "noteholders_first_priority_principal_distributable_amount__total",
+    "noteholders_principal_distributable_amount",
+    "noteholders_principal_distributable_amount__total",
+    "noteholders_second_priority_principal_distributable_amount",
+    "noteholders_second_priority_principal_distributable_amount__total",
+    "noteholders_third_priority_principal_distributable_amount",
+    "noteholders_third_priority_principal_distributable_amount__total",
+    "overcollateralization_target_amount",
+    "pool_balance_at_date__amount",
+    "pool_balance_at_date__amount__2",
+    "required_reserve_account",
+    "required_reserve_amount",
+    "servicing_fee",
+    "servicing_fee__amount",
+    "total_a_1_distribution_amount__total",
+    "total_a_2a_distribution_amount__total",
+    "total_a_2b_distribution_amount__total",
+    "total_a_3_distribution_amount__total",
+    "total_a_4_distribution_amount__total",
+    "total_b_distribution_amount__total",
+    "total_c_distribution_amount__total",
+    "total_class_a_b_c__note_balance_date",
+    "total_class_a_b_c__note_balance_date__2",
+    "total_class_a_b_c__principal_paid",
+    "total_distribution_amount__total",
+    "total_distributions_of_available_funds",
+    "total_interest_carryover_shortfall__total",
+    "total_interest_distribution_amount__total",
+    "total_interest_paid__amount",
+    "total_paid__amount",
+    "total_paid_to_a_1_holders",
+    "total_paid_to_a_2a_holders",
+    "total_paid_to_a_2b_holders",
+    "total_paid_to_a_3_holders",
+    "total_paid_to_a_4_holders",
+    "total_paid_to_b_holders",
+    "total_paid_to_c_holders",
+    "total_principal_distribution_amount__total",
+    "total_principal_paid__amount",
+    "transfer_to_collection_account__amount",
+    "unpaid_servicing_fee"
+   ],
+   "properties": {
+    "a_1_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_1_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_1_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2a_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2a_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2a_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2b_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2b_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2b_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_3_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_3_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_3_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_4_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_4_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_4_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "actual_overcollateralization": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "asset_representation_reviewer_amounts_in_excess_of_1": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "asset_representation_reviewer_amounts_up_to_amt_per_year": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "available_funds__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "b_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "b_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "b_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "balance_as_of_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "c_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "c_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "c_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "change": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "change_in_amount_of_the_unpaid_servicing_fee_from_the_prior_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_1__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_1__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_1__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_1__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_1__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_1__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2a__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_2a__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2a__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2a__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_2a__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2a__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2b__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_2b__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2b__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2b__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_2b__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2b__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_3__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_3__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_3__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_3__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_3__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_3__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_4__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_4__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_4__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_4__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_4__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_4__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_b__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_b__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_c__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_c__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposit_withdrawal": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "distribution_to_certificateholders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "investment_earnings_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "noteholders_first_priority_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "noteholders_first_priority_principal_distributable_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "noteholders_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "noteholders_principal_distributable_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "noteholders_second_priority_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "noteholders_second_priority_principal_distributable_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "noteholders_third_priority_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "noteholders_third_priority_principal_distributable_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "overcollateralization_target_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "pool_balance_at_date__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "pool_balance_at_date__amount__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "required_reserve_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "required_reserve_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "servicing_fee": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "servicing_fee__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_a_1_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_a_2a_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_a_2b_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_a_3_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_a_4_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_b_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_c_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_class_a_b_c__note_balance_date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_class_a_b_c__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_class_a_b_c__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_distributions_of_available_funds": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_interest_paid__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_a_1_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_a_2a_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_a_2b_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_a_3_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_a_4_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_b_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_c_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_principal_paid__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "transfer_to_collection_account__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "unpaid_servicing_fee": {
+     "type": "integer",
+     "description": "US cents"
+    }
+   }
+  },
+  "period_2": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "a_1_interest_carryover_shortfall__total",
+    "a_1_interest_distribution_amount__total",
+    "a_1_principal_distribution_amount__total",
+    "a_2a_interest_carryover_shortfall__total",
+    "a_2a_interest_distribution_amount__total",
+    "a_2a_principal_distribution_amount__total",
+    "a_2b_interest_carryover_shortfall__total",
+    "a_2b_interest_distribution_amount__total",
+    "a_2b_principal_distribution_amount__total",
+    "a_3_interest_carryover_shortfall__total",
+    "a_3_interest_distribution_amount__total",
+    "a_3_principal_distribution_amount__total",
+    "a_4_interest_carryover_shortfall__total",
+    "a_4_interest_distribution_amount__total",
+    "a_4_principal_distribution_amount__total",
+    "actual_overcollateralization",
+    "asset_representation_reviewer_amounts_in_excess_of_1",
+    "asset_representation_reviewer_amounts_up_to_amt_per_year",
+    "available_funds__amount",
+    "b_interest_carryover_shortfall__total",
+    "b_interest_distribution_amount__total",
+    "b_principal_distribution_amount__total",
+    "balance_as_of_date__2",
+    "c_interest_carryover_shortfall__total",
+    "c_interest_distribution_amount__total",
+    "c_principal_distribution_amount__total",
+    "change",
+    "change_in_amount_of_the_unpaid_servicing_fee_from_the_prior_period",
+    "class_a_1__coupon",
+    "class_a_1__interest_paid",
+    "class_a_1__note_balance_date__2",
+    "class_a_1__note_factor_date",
+    "class_a_1__principal_paid",
+    "class_a_1__principal_paid__2",
+    "class_a_2a__coupon",
+    "class_a_2a__interest_paid",
+    "class_a_2a__note_balance_date__2",
+    "class_a_2a__note_factor_date",
+    "class_a_2a__principal_paid",
+    "class_a_2a__principal_paid__2",
+    "class_a_2b__coupon",
+    "class_a_2b__interest_paid",
+    "class_a_2b__note_balance_date__2",
+    "class_a_2b__note_factor_date",
+    "class_a_2b__principal_paid",
+    "class_a_2b__principal_paid__2",
+    "class_a_3__coupon",
+    "class_a_3__interest_paid",
+    "class_a_3__note_balance_date__2",
+    "class_a_3__note_factor_date",
+    "class_a_3__principal_paid",
+    "class_a_3__principal_paid__2",
+    "class_a_4__coupon",
+    "class_a_4__interest_paid",
+    "class_a_4__note_balance_date__2",
+    "class_a_4__note_factor_date",
+    "class_a_4__principal_paid",
+    "class_a_4__principal_paid__2",
+    "class_a_interest",
+    "class_b__coupon",
+    "class_b__interest_paid",
+    "class_b__note_balance_date__2",
+    "class_b__note_factor_date",
+    "class_b__principal_paid",
+    "class_b__principal_paid__2",
+    "class_b_interest",
+    "class_c__coupon",
+    "class_c__interest_paid",
+    "class_c__note_balance_date__2",
+    "class_c__note_factor_date",
+    "class_c__principal_paid",
+    "class_c__principal_paid__2",
+    "class_c_interest",
+    "deposit_withdrawal",
+    "distribution_to_certificateholders",
+    "investment_earnings_paid",
+    "noteholders_first_priority_principal_distributable_amount",
+    "noteholders_first_priority_principal_distributable_amount__total",
+    "noteholders_principal_distributable_amount",
+    "noteholders_principal_distributable_amount__total",
+    "noteholders_second_priority_principal_distributable_amount",
+    "noteholders_second_priority_principal_distributable_amount__total",
+    "noteholders_third_priority_principal_distributable_amount",
+    "noteholders_third_priority_principal_distributable_amount__total",
+    "overcollateralization_target_amount",
+    "pool_balance_at_date__amount",
+    "pool_balance_at_date__amount__2",
+    "required_reserve_account",
+    "required_reserve_amount",
+    "servicing_fee",
+    "servicing_fee__amount",
+    "total_a_1_distribution_amount__total",
+    "total_a_2a_distribution_amount__total",
+    "total_a_2b_distribution_amount__total",
+    "total_a_3_distribution_amount__total",
+    "total_a_4_distribution_amount__total",
+    "total_b_distribution_amount__total",
+    "total_c_distribution_amount__total",
+    "total_class_a_b_c__note_balance_date",
+    "total_class_a_b_c__note_balance_date__2",
+    "total_class_a_b_c__principal_paid",
+    "total_distribution_amount__total",
+    "total_distributions_of_available_funds",
+    "total_interest_carryover_shortfall__total",
+    "total_interest_distribution_amount__total",
+    "total_interest_paid__amount",
+    "total_paid__amount",
+    "total_paid_to_a_1_holders",
+    "total_paid_to_a_2a_holders",
+    "total_paid_to_a_2b_holders",
+    "total_paid_to_a_3_holders",
+    "total_paid_to_a_4_holders",
+    "total_paid_to_b_holders",
+    "total_paid_to_c_holders",
+    "total_principal_distribution_amount__total",
+    "total_principal_paid__amount",
+    "transfer_to_collection_account__amount",
+    "unpaid_servicing_fee"
+   ],
+   "properties": {
+    "a_1_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_1_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_1_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2a_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2a_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2a_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2b_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2b_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2b_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_3_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_3_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_3_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_4_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_4_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_4_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "actual_overcollateralization": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "asset_representation_reviewer_amounts_in_excess_of_1": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "asset_representation_reviewer_amounts_up_to_amt_per_year": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "available_funds__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "b_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "b_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "b_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "balance_as_of_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "c_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "c_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "c_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "change": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "change_in_amount_of_the_unpaid_servicing_fee_from_the_prior_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_1__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_1__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_1__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_1__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_1__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_1__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2a__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_2a__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2a__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2a__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_2a__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2a__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2b__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_2b__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2b__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2b__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_2b__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2b__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_3__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_3__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_3__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_3__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_3__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_3__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_4__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_4__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_4__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_4__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_4__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_4__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_b__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_b__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_c__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_c__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposit_withdrawal": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "distribution_to_certificateholders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "investment_earnings_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "noteholders_first_priority_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "noteholders_first_priority_principal_distributable_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "noteholders_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "noteholders_principal_distributable_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "noteholders_second_priority_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "noteholders_second_priority_principal_distributable_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "noteholders_third_priority_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "noteholders_third_priority_principal_distributable_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "overcollateralization_target_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "pool_balance_at_date__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "pool_balance_at_date__amount__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "required_reserve_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "required_reserve_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "servicing_fee": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "servicing_fee__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_a_1_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_a_2a_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_a_2b_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_a_3_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_a_4_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_b_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_c_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_class_a_b_c__note_balance_date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_class_a_b_c__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_class_a_b_c__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_distributions_of_available_funds": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_interest_paid__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_a_1_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_a_2a_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_a_2b_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_a_3_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_a_4_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_b_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_c_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_principal_paid__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "transfer_to_collection_account__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "unpaid_servicing_fee": {
+     "type": "integer",
+     "description": "US cents"
+    }
+   }
+  },
+  "period_3": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "a_1_interest_carryover_shortfall__total",
+    "a_1_interest_distribution_amount__total",
+    "a_1_principal_distribution_amount__total",
+    "a_2a_interest_carryover_shortfall__total",
+    "a_2a_interest_distribution_amount__total",
+    "a_2a_principal_distribution_amount__total",
+    "a_2b_interest_carryover_shortfall__total",
+    "a_2b_interest_distribution_amount__total",
+    "a_2b_principal_distribution_amount__total",
+    "a_3_interest_carryover_shortfall__total",
+    "a_3_interest_distribution_amount__total",
+    "a_3_principal_distribution_amount__total",
+    "a_4_interest_carryover_shortfall__total",
+    "a_4_interest_distribution_amount__total",
+    "a_4_principal_distribution_amount__total",
+    "actual_overcollateralization",
+    "asset_representation_reviewer_amounts_in_excess_of_1",
+    "asset_representation_reviewer_amounts_up_to_amt_per_year",
+    "available_funds__amount",
+    "b_interest_carryover_shortfall__total",
+    "b_interest_distribution_amount__total",
+    "b_principal_distribution_amount__total",
+    "balance_as_of_date__2",
+    "c_interest_carryover_shortfall__total",
+    "c_interest_distribution_amount__total",
+    "c_principal_distribution_amount__total",
+    "change",
+    "change_in_amount_of_the_unpaid_servicing_fee_from_the_prior_period",
+    "class_a_1__coupon",
+    "class_a_1__interest_paid",
+    "class_a_1__note_balance_date__2",
+    "class_a_1__note_factor_date",
+    "class_a_1__principal_paid",
+    "class_a_1__principal_paid__2",
+    "class_a_2a__coupon",
+    "class_a_2a__interest_paid",
+    "class_a_2a__note_balance_date__2",
+    "class_a_2a__note_factor_date",
+    "class_a_2a__principal_paid",
+    "class_a_2a__principal_paid__2",
+    "class_a_2b__coupon",
+    "class_a_2b__interest_paid",
+    "class_a_2b__note_balance_date__2",
+    "class_a_2b__note_factor_date",
+    "class_a_2b__principal_paid",
+    "class_a_2b__principal_paid__2",
+    "class_a_3__coupon",
+    "class_a_3__interest_paid",
+    "class_a_3__note_balance_date__2",
+    "class_a_3__note_factor_date",
+    "class_a_3__principal_paid",
+    "class_a_3__principal_paid__2",
+    "class_a_4__coupon",
+    "class_a_4__interest_paid",
+    "class_a_4__note_balance_date__2",
+    "class_a_4__note_factor_date",
+    "class_a_4__principal_paid",
+    "class_a_4__principal_paid__2",
+    "class_a_interest",
+    "class_b__coupon",
+    "class_b__interest_paid",
+    "class_b__note_balance_date__2",
+    "class_b__note_factor_date",
+    "class_b__principal_paid",
+    "class_b__principal_paid__2",
+    "class_b_interest",
+    "class_c__coupon",
+    "class_c__interest_paid",
+    "class_c__note_balance_date__2",
+    "class_c__note_factor_date",
+    "class_c__principal_paid",
+    "class_c__principal_paid__2",
+    "class_c_interest",
+    "deposit_withdrawal",
+    "distribution_to_certificateholders",
+    "investment_earnings_paid",
+    "noteholders_first_priority_principal_distributable_amount",
+    "noteholders_first_priority_principal_distributable_amount__total",
+    "noteholders_principal_distributable_amount",
+    "noteholders_principal_distributable_amount__total",
+    "noteholders_second_priority_principal_distributable_amount",
+    "noteholders_second_priority_principal_distributable_amount__total",
+    "noteholders_third_priority_principal_distributable_amount",
+    "noteholders_third_priority_principal_distributable_amount__total",
+    "overcollateralization_target_amount",
+    "pool_balance_at_date__amount",
+    "pool_balance_at_date__amount__2",
+    "required_reserve_account",
+    "required_reserve_amount",
+    "servicing_fee",
+    "servicing_fee__amount",
+    "total_a_1_distribution_amount__total",
+    "total_a_2a_distribution_amount__total",
+    "total_a_2b_distribution_amount__total",
+    "total_a_3_distribution_amount__total",
+    "total_a_4_distribution_amount__total",
+    "total_b_distribution_amount__total",
+    "total_c_distribution_amount__total",
+    "total_class_a_b_c__note_balance_date",
+    "total_class_a_b_c__note_balance_date__2",
+    "total_class_a_b_c__principal_paid",
+    "total_distribution_amount__total",
+    "total_distributions_of_available_funds",
+    "total_interest_carryover_shortfall__total",
+    "total_interest_distribution_amount__total",
+    "total_interest_paid__amount",
+    "total_paid__amount",
+    "total_paid_to_a_1_holders",
+    "total_paid_to_a_2a_holders",
+    "total_paid_to_a_2b_holders",
+    "total_paid_to_a_3_holders",
+    "total_paid_to_a_4_holders",
+    "total_paid_to_b_holders",
+    "total_paid_to_c_holders",
+    "total_principal_distribution_amount__total",
+    "total_principal_paid__amount",
+    "transfer_to_collection_account__amount",
+    "unpaid_servicing_fee"
+   ],
+   "properties": {
+    "a_1_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_1_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_1_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2a_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2a_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2a_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2b_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2b_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2b_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_3_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_3_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_3_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_4_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_4_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_4_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "actual_overcollateralization": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "asset_representation_reviewer_amounts_in_excess_of_1": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "asset_representation_reviewer_amounts_up_to_amt_per_year": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "available_funds__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "b_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "b_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "b_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "balance_as_of_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "c_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "c_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "c_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "change": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "change_in_amount_of_the_unpaid_servicing_fee_from_the_prior_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_1__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_1__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_1__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_1__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_1__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_1__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2a__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_2a__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2a__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2a__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_2a__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2a__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2b__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_2b__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2b__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2b__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_2b__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2b__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_3__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_3__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_3__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_3__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_3__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_3__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_4__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_4__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_4__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_4__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_4__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_4__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_b__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_b__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_c__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_c__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposit_withdrawal": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "distribution_to_certificateholders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "investment_earnings_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "noteholders_first_priority_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "noteholders_first_priority_principal_distributable_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "noteholders_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "noteholders_principal_distributable_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "noteholders_second_priority_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "noteholders_second_priority_principal_distributable_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "noteholders_third_priority_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "noteholders_third_priority_principal_distributable_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "overcollateralization_target_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "pool_balance_at_date__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "pool_balance_at_date__amount__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "required_reserve_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "required_reserve_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "servicing_fee": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "servicing_fee__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_a_1_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_a_2a_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_a_2b_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_a_3_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_a_4_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_b_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_c_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_class_a_b_c__note_balance_date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_class_a_b_c__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_class_a_b_c__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_distributions_of_available_funds": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_interest_paid__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_a_1_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_a_2a_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_a_2b_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_a_3_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_a_4_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_b_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_c_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_principal_paid__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "transfer_to_collection_account__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "unpaid_servicing_fee": {
+     "type": "integer",
+     "description": "US cents"
+    }
+   }
+  },
+  "period_4": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "a_1_interest_carryover_shortfall__total",
+    "a_1_interest_distribution_amount__total",
+    "a_1_principal_distribution_amount__total",
+    "a_2a_interest_carryover_shortfall__total",
+    "a_2a_interest_distribution_amount__total",
+    "a_2a_principal_distribution_amount__total",
+    "a_2b_interest_carryover_shortfall__total",
+    "a_2b_interest_distribution_amount__total",
+    "a_2b_principal_distribution_amount__total",
+    "a_3_interest_carryover_shortfall__total",
+    "a_3_interest_distribution_amount__total",
+    "a_3_principal_distribution_amount__total",
+    "a_4_interest_carryover_shortfall__total",
+    "a_4_interest_distribution_amount__total",
+    "a_4_principal_distribution_amount__total",
+    "actual_overcollateralization",
+    "asset_representation_reviewer_amounts_in_excess_of_1",
+    "asset_representation_reviewer_amounts_up_to_amt_per_year",
+    "available_funds__amount",
+    "b_interest_carryover_shortfall__total",
+    "b_interest_distribution_amount__total",
+    "b_principal_distribution_amount__total",
+    "balance_as_of_date__2",
+    "c_interest_carryover_shortfall__total",
+    "c_interest_distribution_amount__total",
+    "c_principal_distribution_amount__total",
+    "change",
+    "change_in_amount_of_the_unpaid_servicing_fee_from_the_prior_period",
+    "class_a_1__coupon",
+    "class_a_1__interest_paid",
+    "class_a_1__note_balance_date__2",
+    "class_a_1__note_factor_date",
+    "class_a_1__principal_paid",
+    "class_a_1__principal_paid__2",
+    "class_a_2a__coupon",
+    "class_a_2a__interest_paid",
+    "class_a_2a__note_balance_date__2",
+    "class_a_2a__note_factor_date",
+    "class_a_2a__principal_paid",
+    "class_a_2a__principal_paid__2",
+    "class_a_2b__coupon",
+    "class_a_2b__interest_paid",
+    "class_a_2b__note_balance_date__2",
+    "class_a_2b__note_factor_date",
+    "class_a_2b__principal_paid",
+    "class_a_2b__principal_paid__2",
+    "class_a_3__coupon",
+    "class_a_3__interest_paid",
+    "class_a_3__note_balance_date__2",
+    "class_a_3__note_factor_date",
+    "class_a_3__principal_paid",
+    "class_a_3__principal_paid__2",
+    "class_a_4__coupon",
+    "class_a_4__interest_paid",
+    "class_a_4__note_balance_date__2",
+    "class_a_4__note_factor_date",
+    "class_a_4__principal_paid",
+    "class_a_4__principal_paid__2",
+    "class_a_interest",
+    "class_b__coupon",
+    "class_b__interest_paid",
+    "class_b__note_balance_date__2",
+    "class_b__note_factor_date",
+    "class_b__principal_paid",
+    "class_b__principal_paid__2",
+    "class_b_interest",
+    "class_c__coupon",
+    "class_c__interest_paid",
+    "class_c__note_balance_date__2",
+    "class_c__note_factor_date",
+    "class_c__principal_paid",
+    "class_c__principal_paid__2",
+    "class_c_interest",
+    "deposit_withdrawal",
+    "distribution_to_certificateholders",
+    "investment_earnings_paid",
+    "noteholders_first_priority_principal_distributable_amount",
+    "noteholders_first_priority_principal_distributable_amount__total",
+    "noteholders_principal_distributable_amount",
+    "noteholders_principal_distributable_amount__total",
+    "noteholders_second_priority_principal_distributable_amount",
+    "noteholders_second_priority_principal_distributable_amount__total",
+    "noteholders_third_priority_principal_distributable_amount",
+    "noteholders_third_priority_principal_distributable_amount__total",
+    "overcollateralization_target_amount",
+    "pool_balance_at_date__amount",
+    "pool_balance_at_date__amount__2",
+    "required_reserve_account",
+    "required_reserve_amount",
+    "servicing_fee",
+    "servicing_fee__amount",
+    "total_a_1_distribution_amount__total",
+    "total_a_2a_distribution_amount__total",
+    "total_a_2b_distribution_amount__total",
+    "total_a_3_distribution_amount__total",
+    "total_a_4_distribution_amount__total",
+    "total_b_distribution_amount__total",
+    "total_c_distribution_amount__total",
+    "total_class_a_b_c__note_balance_date",
+    "total_class_a_b_c__note_balance_date__2",
+    "total_class_a_b_c__principal_paid",
+    "total_distribution_amount__total",
+    "total_distributions_of_available_funds",
+    "total_interest_carryover_shortfall__total",
+    "total_interest_distribution_amount__total",
+    "total_interest_paid__amount",
+    "total_paid__amount",
+    "total_paid_to_a_1_holders",
+    "total_paid_to_a_2a_holders",
+    "total_paid_to_a_2b_holders",
+    "total_paid_to_a_3_holders",
+    "total_paid_to_a_4_holders",
+    "total_paid_to_b_holders",
+    "total_paid_to_c_holders",
+    "total_principal_distribution_amount__total",
+    "total_principal_paid__amount",
+    "transfer_to_collection_account__amount",
+    "unpaid_servicing_fee"
+   ],
+   "properties": {
+    "a_1_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_1_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_1_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2a_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2a_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2a_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2b_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2b_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_2b_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_3_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_3_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_3_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_4_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_4_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "a_4_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "actual_overcollateralization": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "asset_representation_reviewer_amounts_in_excess_of_1": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "asset_representation_reviewer_amounts_up_to_amt_per_year": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "available_funds__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "b_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "b_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "b_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "balance_as_of_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "c_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "c_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "c_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "change": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "change_in_amount_of_the_unpaid_servicing_fee_from_the_prior_period": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_1__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_1__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_1__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_1__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_1__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_1__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2a__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_2a__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2a__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2a__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_2a__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2a__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2b__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_2b__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2b__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2b__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_2b__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_2b__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_3__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_3__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_3__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_3__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_3__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_3__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_4__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_4__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_4__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_4__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_a_4__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_4__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_a_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_b__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_b__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_b_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c__coupon": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_c__interest_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c__note_factor_date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "class_c__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c__principal_paid__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "class_c_interest": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "deposit_withdrawal": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "distribution_to_certificateholders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "investment_earnings_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "noteholders_first_priority_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "noteholders_first_priority_principal_distributable_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "noteholders_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "noteholders_principal_distributable_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "noteholders_second_priority_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "noteholders_second_priority_principal_distributable_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "noteholders_third_priority_principal_distributable_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "noteholders_third_priority_principal_distributable_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "overcollateralization_target_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "pool_balance_at_date__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "pool_balance_at_date__amount__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "required_reserve_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "required_reserve_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "servicing_fee": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "servicing_fee__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_a_1_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_a_2a_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_a_2b_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_a_3_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_a_4_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_b_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_c_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_class_a_b_c__note_balance_date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_class_a_b_c__note_balance_date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_class_a_b_c__principal_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_distributions_of_available_funds": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_interest_carryover_shortfall__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_interest_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_interest_paid__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_a_1_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_a_2a_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_a_2b_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_a_3_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_a_4_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_b_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_paid_to_c_holders": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_principal_distribution_amount__total": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "total_principal_paid__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "transfer_to_collection_account__amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "unpaid_servicing_fee": {
+     "type": "integer",
+     "description": "US cents"
+    }
+   }
+  }
+ }
+}

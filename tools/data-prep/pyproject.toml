@@ -1,0 +1,17 @@
+[project]
+name = "waterfallbench"
+version = "0.1.0"
+description = "WaterfallBench-Pilot data pipeline: ABS 10-D waterfall execution tasks built from SEC EDGAR via Firecrawl"
+requires-python = ">=3.12"
+dependencies = [
+  "pandas>=2.2",
+  "pyarrow>=17",
+  "lxml>=5.2",
+  "beautifulsoup4>=4.12",
+  "datasketch>=1.6",
+  "python-dateutil>=2.9",
+  "tabulate>=0.10.0",
+]
+
+[tool.uv]
+package = false

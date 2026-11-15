@@ -1,0 +1,25 @@
+# No-op smoke-test agent for WaterfallBench-Pilot. It calls no model and needs no network.
+# It records what the sandbox holds, then writes an answer of the chosen kind so a run
+# exercises setup, grading and scoring end to end.
+name: waterfallbench-noop
+install_cmd: ""
+run_cmd: >-
+  python3 /bundle/waterfallbench-noop/noop_agent.py
+  --problem "{problem_statement_path}" --task-id "{task_id}" --mode "{mode}"
+final_output: /tmp/waterfallbench-noop
+output_artifacts:
+  - path: noop/workspace_listing.txt
+    source: /tmp/waterfallbench-noop/workspace_listing.txt
+    required: false
+kwargs:
+  mode:
+    type: str
+    required: false
+    default: zeros
+    choices: ["zeros", "empty", "missing", "malformed"]
+    description: >-
+      zeros: an answer built from /workspace/answer_schema.json with zero / first-enum values;
+      empty: {}; missing: write no answer.json; malformed: write invalid JSON.
+provided: >-
+  Upload with `valkyrie agent push ./noop-agent` (keep the name waterfallbench-noop, since
+  run_cmd calls /bundle/waterfallbench-noop/). Pick a grading path with -k mode missing.

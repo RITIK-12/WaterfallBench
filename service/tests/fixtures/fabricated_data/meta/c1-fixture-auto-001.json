@@ -1,0 +1,68 @@
+{
+  "_fixture_note": "FABRICATED unit-test fixture: invented values that describe no real deal or report.",
+  "task_id": "c1-fixture-auto-001",
+  "category": "C1",
+  "excerpt_derivable": true,
+  "asset_class": "auto_loan",
+  "family": "fixture_auto_owner_trust",
+  "deal": "Fixture Auto Owner Trust 2099-1",
+  "window_tag": "recent",
+  "continuity_pending": false,
+  "fields": {
+    "available_funds": {
+      "type": "money_cents",
+      "trivial": false
+    },
+    "servicing_fee": {
+      "type": "money_cents",
+      "trivial": true
+    },
+    "class_a2_principal": {
+      "type": "money_cents",
+      "trivial": false
+    },
+    "reserve_account_balance": {
+      "type": "money_cents",
+      "trivial": true
+    },
+    "cumulative_net_loss_ratio": {
+      "type": "decimal",
+      "trivial": false
+    },
+    "cnl_trigger_status": {
+      "type": "status",
+      "enum": [
+        "pass",
+        "fail"
+      ],
+      "trivial": true
+    },
+    "delinquent_60_plus_count": {
+      "type": "int",
+      "trivial": false
+    }
+  },
+  "answer": {
+    "available_funds": 1234567,
+    "servicing_fee": 10000,
+    "class_a2_principal": 987654,
+    "reserve_account_balance": 500000,
+    "cumulative_net_loss_ratio": "0.0012340",
+    "cnl_trigger_status": "pass",
+    "delinquent_60_plus_count": 42
+  },
+  "baselines": {
+    "copy_prior": {
+      "fully_resolved": false,
+      "line_item_accuracy": 0.2857142857142857,
+      "nontrivial_accuracy": 0.0,
+      "tolerance_accuracy": 0.42857142857142855
+    },
+    "all_zeros": {
+      "fully_resolved": false,
+      "line_item_accuracy": 0.0,
+      "nontrivial_accuracy": 0.0,
+      "tolerance_accuracy": 0.0
+    }
+  }
+}

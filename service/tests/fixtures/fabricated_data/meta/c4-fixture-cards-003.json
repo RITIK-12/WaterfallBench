@@ -1,0 +1,75 @@
+{
+  "_fixture_note": "FABRICATED unit-test fixture: invented values that describe no real deal or report.",
+  "task_id": "c4-fixture-cards-003",
+  "category": "C4",
+  "excerpt_derivable": true,
+  "asset_class": "credit_card",
+  "family": "fixture_card_master_trust",
+  "deal": "Fixture Card Master Trust 2099-A",
+  "window_tag": "recent",
+  "continuity_pending": false,
+  "fields": {
+    "total_available_funds": {
+      "type": "money_cents",
+      "trivial": false
+    },
+    "class_a_interest": {
+      "type": "money_cents",
+      "trivial": true
+    },
+    "class_b_interest": {
+      "type": "money_cents",
+      "trivial": false
+    },
+    "reserve_draw": {
+      "type": "money_cents",
+      "trivial": false
+    },
+    "overcollateralization_pct": {
+      "type": "decimal",
+      "trivial": false
+    },
+    "delinquency_trigger": {
+      "type": "status",
+      "enum": [
+        "pass",
+        "fail"
+      ],
+      "trivial": true
+    }
+  },
+  "answer": {
+    "corrections": [
+      {
+        "field": "class_b_interest",
+        "correct_value": 45678
+      },
+      {
+        "field": "overcollateralization_pct",
+        "correct_value": "0.1792480"
+      }
+    ]
+  },
+  "baselines": {
+    "copy_prior": {
+      "fully_resolved": false,
+      "line_item_accuracy": 0.6666666666666666,
+      "nontrivial_accuracy": 0.5,
+      "tolerance_accuracy": 0.6666666666666666,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "value_accuracy": null
+    },
+    "all_zeros": {
+      "fully_resolved": false,
+      "line_item_accuracy": 0.0,
+      "nontrivial_accuracy": 0.0,
+      "tolerance_accuracy": 0.0,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "value_accuracy": 0.0
+    }
+  }
+}

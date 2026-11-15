@@ -1,0 +1,20 @@
+# Dataset manifest for waterfallbench/waterfallbench
+# Add tasks using: harbor dataset add <org>/<name>
+# Publish using: harbor publish
+
+[dataset]
+name = "waterfallbench/waterfallbench"
+version = "1.0.0"
+description = ""
+authors = []
+keywords = []
+
+[[tasks]]
+name = "waterfallbench/hello"
+digest = "sha256:222226a8ff8382793bb8ac82a21a65b8355adb6f10adc1d8f7cc5b97e56f311c"
+
+
+[[files]]
+path = "metric.py"
+digest = "sha256:52904120417c9a58c21750ce5e2eb721c4b0ef1c1536d0b31d208e55e377ead9"
+

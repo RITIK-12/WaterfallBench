@@ -1,0 +1,588 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "certificate_interest_on_interest_carryover_shortfall",
+  "certificate_monthly_available_interest_distribution_amount",
+  "certificate_monthly_interest_paid",
+  "certificates__ending_balance",
+  "certificates__interest_payment",
+  "certificates__interest_per_amt_face_amount",
+  "certificates__pool_factor",
+  "certificates__principal_payment_due",
+  "certificates__principal_per_amt_face_amount",
+  "chg_in_certificate_int_carryover_shortfall",
+  "chg_in_class_a_1_notes_int_carryover_shortfall",
+  "chg_in_class_a_2a_notes_int_carryover_shortfall",
+  "chg_in_class_a_2b_notes_int_carryover_shortfall",
+  "chg_in_class_a_3_notes_int_carryover_shortfall",
+  "chg_in_class_a_4_notes_int_carryover_shortfall",
+  "chg_in_class_b_notes_int_carryover_shortfall",
+  "chg_in_total_certificateholders_principal_carryover_shortfall",
+  "chg_in_total_note_and_certificate_int_carryover_shortfall",
+  "chg_in_total_noteholders_principal_carryover_shortfall",
+  "class_a_1_notes__ending_balance",
+  "class_a_1_notes__interest_payment",
+  "class_a_1_notes__interest_per_amt_face_amount",
+  "class_a_1_notes__pool_factor",
+  "class_a_1_notes__principal_payment_due",
+  "class_a_1_notes__principal_per_amt_face_amount",
+  "class_a_1_notes_interest_on_interest_carryover_shortfall",
+  "class_a_1_notes_monthly_available_interest_distribution_amount",
+  "class_a_1_notes_monthly_interest_paid",
+  "class_a_2a_notes__ending_balance",
+  "class_a_2a_notes__interest_payment",
+  "class_a_2a_notes__interest_per_amt_face_amount",
+  "class_a_2a_notes__pool_factor",
+  "class_a_2a_notes__principal_payment_due",
+  "class_a_2a_notes__principal_per_amt_face_amount",
+  "class_a_2a_notes_interest_on_interest_carryover_shortfall",
+  "class_a_2a_notes_monthly_available_interest_distribution_amount",
+  "class_a_2a_notes_monthly_interest_paid",
+  "class_a_2b_notes__ending_balance",
+  "class_a_2b_notes__interest_payment",
+  "class_a_2b_notes__interest_per_amt_face_amount",
+  "class_a_2b_notes__pool_factor",
+  "class_a_2b_notes__principal_payment_due",
+  "class_a_2b_notes__principal_per_amt_face_amount",
+  "class_a_2b_notes_interest_on_interest_carryover_shortfall",
+  "class_a_2b_notes_monthly_available_interest_distribution_amount",
+  "class_a_2b_notes_monthly_interest_paid",
+  "class_a_3_notes__ending_balance",
+  "class_a_3_notes__interest_payment",
+  "class_a_3_notes__interest_per_amt_face_amount",
+  "class_a_3_notes__pool_factor",
+  "class_a_3_notes__principal_payment_due",
+  "class_a_3_notes__principal_per_amt_face_amount",
+  "class_a_3_notes_interest_on_interest_carryover_shortfall",
+  "class_a_3_notes_monthly_available_interest_distribution_amount",
+  "class_a_3_notes_monthly_interest_paid",
+  "class_a_4_notes__ending_balance",
+  "class_a_4_notes__interest_payment",
+  "class_a_4_notes__interest_per_amt_face_amount",
+  "class_a_4_notes__pool_factor",
+  "class_a_4_notes__principal_payment_due",
+  "class_a_4_notes__principal_per_amt_face_amount",
+  "class_a_4_notes_interest_on_interest_carryover_shortfall",
+  "class_a_4_notes_monthly_available_interest_distribution_amount",
+  "class_a_4_notes_monthly_interest_paid",
+  "class_b_notes__ending_balance",
+  "class_b_notes__interest_payment",
+  "class_b_notes__interest_per_amt_face_amount",
+  "class_b_notes__pool_factor",
+  "class_b_notes__principal_payment_due",
+  "class_b_notes__principal_per_amt_face_amount",
+  "class_b_notes_interest_on_interest_carryover_shortfall",
+  "class_b_notes_monthly_available_interest_distribution_amount",
+  "class_b_notes_monthly_interest_paid",
+  "deposit_of_remaining_available_collections",
+  "ending_balance_of_payment_advance",
+  "ending_balance_of_residual_advance",
+  "gross_reserve_account_balance",
+  "remaining_available_collections",
+  "remaining_available_collections_released_to_seller",
+  "required_reserve_account_amount",
+  "reserve_amounts_available_for_distribution",
+  "reserve_fund_available_for_distribution",
+  "reserve_fund_draw_amount",
+  "servicing_fee_due",
+  "servicing_fee_paid",
+  "servicing_fee_shortfall",
+  "total_available_for_distribution",
+  "total_available_for_principal_distribution",
+  "total_certificateholders_principal_distributable_amount",
+  "total_ending_reserve_account_balance",
+  "total_monthly_principal_paid_on_the_certificates",
+  "total_monthly_principal_paid_on_the_notes",
+  "total_note_and_certificate_monthly_interest_due",
+  "total_note_and_certificate_monthly_interest_paid",
+  "total_noteholders_principal_distributable_amount",
+  "total_portfolio__pool_factor",
+  "total_securities__beginning_balance",
+  "total_securities__ending_balance",
+  "total_securities__interest_payment",
+  "total_securities__pool_factor",
+  "total_securities__principal_payment_due",
+  "total_trustee_advances_and_servicing_fee_paid"
+ ],
+ "properties": {
+  "certificate_interest_on_interest_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "certificate_monthly_available_interest_distribution_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "certificate_monthly_interest_paid": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "certificates__ending_balance": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "certificates__interest_payment": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "certificates__interest_per_amt_face_amount": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "certificates__pool_factor": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "certificates__principal_payment_due": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "certificates__principal_per_amt_face_amount": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "chg_in_certificate_int_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "chg_in_class_a_1_notes_int_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "chg_in_class_a_2a_notes_int_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "chg_in_class_a_2b_notes_int_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "chg_in_class_a_3_notes_int_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "chg_in_class_a_4_notes_int_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "chg_in_class_b_notes_int_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "chg_in_total_certificateholders_principal_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "chg_in_total_note_and_certificate_int_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "chg_in_total_noteholders_principal_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_1_notes__ending_balance": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_1_notes__interest_payment": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_1_notes__interest_per_amt_face_amount": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_a_1_notes__pool_factor": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_a_1_notes__principal_payment_due": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_1_notes__principal_per_amt_face_amount": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_a_1_notes_interest_on_interest_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_1_notes_monthly_available_interest_distribution_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_1_notes_monthly_interest_paid": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_2a_notes__ending_balance": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_2a_notes__interest_payment": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_2a_notes__interest_per_amt_face_amount": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_a_2a_notes__pool_factor": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_a_2a_notes__principal_payment_due": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_2a_notes__principal_per_amt_face_amount": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_a_2a_notes_interest_on_interest_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_2a_notes_monthly_available_interest_distribution_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_2a_notes_monthly_interest_paid": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_2b_notes__ending_balance": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_2b_notes__interest_payment": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_2b_notes__interest_per_amt_face_amount": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_a_2b_notes__pool_factor": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_a_2b_notes__principal_payment_due": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_2b_notes__principal_per_amt_face_amount": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_a_2b_notes_interest_on_interest_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_2b_notes_monthly_available_interest_distribution_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_2b_notes_monthly_interest_paid": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_3_notes__ending_balance": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_3_notes__interest_payment": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_3_notes__interest_per_amt_face_amount": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_a_3_notes__pool_factor": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_a_3_notes__principal_payment_due": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_3_notes__principal_per_amt_face_amount": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_a_3_notes_interest_on_interest_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_3_notes_monthly_available_interest_distribution_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_3_notes_monthly_interest_paid": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_4_notes__ending_balance": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_4_notes__interest_payment": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_4_notes__interest_per_amt_face_amount": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_a_4_notes__pool_factor": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_a_4_notes__principal_payment_due": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_4_notes__principal_per_amt_face_amount": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_a_4_notes_interest_on_interest_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_4_notes_monthly_available_interest_distribution_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_a_4_notes_monthly_interest_paid": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_b_notes__ending_balance": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_b_notes__interest_payment": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_b_notes__interest_per_amt_face_amount": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_b_notes__pool_factor": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_b_notes__principal_payment_due": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_b_notes__principal_per_amt_face_amount": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "class_b_notes_interest_on_interest_carryover_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_b_notes_monthly_available_interest_distribution_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "class_b_notes_monthly_interest_paid": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "deposit_of_remaining_available_collections": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "ending_balance_of_payment_advance": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "ending_balance_of_residual_advance": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "gross_reserve_account_balance": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "remaining_available_collections": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "remaining_available_collections_released_to_seller": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "required_reserve_account_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "reserve_amounts_available_for_distribution": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "reserve_fund_available_for_distribution": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "reserve_fund_draw_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "servicing_fee_due": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "servicing_fee_paid": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "servicing_fee_shortfall": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "total_available_for_distribution": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "total_available_for_principal_distribution": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "total_certificateholders_principal_distributable_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "total_ending_reserve_account_balance": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "total_monthly_principal_paid_on_the_certificates": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "total_monthly_principal_paid_on_the_notes": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "total_note_and_certificate_monthly_interest_due": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "total_note_and_certificate_monthly_interest_paid": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "total_noteholders_principal_distributable_amount": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "total_portfolio__pool_factor": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "total_securities__beginning_balance": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "total_securities__ending_balance": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "total_securities__interest_payment": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "total_securities__pool_factor": {
+   "type": [
+    "number",
+    "string"
+   ],
+   "description": "decimal as printed, no % sign"
+  },
+  "total_securities__principal_payment_due": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "total_trustee_advances_and_servicing_fee_paid": {
+   "type": "integer",
+   "description": "US cents"
+  }
+ }
+}

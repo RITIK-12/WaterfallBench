@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Virtual environments
+.venv/
+
+# Environment variables
+.env
+
+# Tests
+tests/
+
+# Git
+.git/
+.gitignore
+
+# CI/CD
+.github/
+
+# Development
+Makefile
+
+# Not part of the service image
+noop-agent/
+sandbox-image/

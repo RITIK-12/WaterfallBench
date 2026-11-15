@@ -1,0 +1,123 @@
+{
+  "_fixture_note": "FABRICATED unit-test fixture: invented values that describe no real deal or report.",
+  "task_id": "c2-fixture-auto-002",
+  "category": "C2",
+  "excerpt_derivable": false,
+  "asset_class": "auto_loan",
+  "family": "fixture_auto_owner_trust",
+  "deal": "Fixture Auto Owner Trust 2099-2",
+  "window_tag": "historical",
+  "continuity_pending": true,
+  "fields": {
+    "period_1": {
+      "available_funds": {
+        "type": "money_cents",
+        "trivial": false
+      },
+      "note_balance_end": {
+        "type": "money_cents",
+        "trivial": false
+      },
+      "trigger_status": {
+        "type": "status",
+        "enum": [
+          "pass",
+          "fail"
+        ],
+        "trivial": true
+      }
+    },
+    "period_2": {
+      "available_funds": {
+        "type": "money_cents",
+        "trivial": false
+      },
+      "note_balance_end": {
+        "type": "money_cents",
+        "trivial": false
+      },
+      "trigger_status": {
+        "type": "status",
+        "enum": [
+          "pass",
+          "fail"
+        ],
+        "trivial": true
+      }
+    },
+    "period_3": {
+      "available_funds": {
+        "type": "money_cents",
+        "trivial": false
+      },
+      "note_balance_end": {
+        "type": "money_cents",
+        "trivial": false
+      },
+      "trigger_status": {
+        "type": "status",
+        "enum": [
+          "pass",
+          "fail"
+        ],
+        "trivial": true
+      }
+    },
+    "period_4": {
+      "available_funds": {
+        "type": "money_cents",
+        "trivial": false
+      },
+      "note_balance_end": {
+        "type": "money_cents",
+        "trivial": false
+      },
+      "trigger_status": {
+        "type": "status",
+        "enum": [
+          "pass",
+          "fail"
+        ],
+        "trivial": true
+      }
+    }
+  },
+  "answer": {
+    "period_1": {
+      "available_funds": 2000000,
+      "note_balance_end": 50000000,
+      "trigger_status": "pass"
+    },
+    "period_2": {
+      "available_funds": 2100000,
+      "note_balance_end": 48000000,
+      "trigger_status": "pass"
+    },
+    "period_3": {
+      "available_funds": 1900000,
+      "note_balance_end": 46100000,
+      "trigger_status": "pass"
+    },
+    "period_4": {
+      "available_funds": 1950000,
+      "note_balance_end": 44150000,
+      "trigger_status": "fail"
+    }
+  },
+  "baselines": {
+    "copy_prior": {
+      "fully_resolved": false,
+      "line_item_accuracy": 0.25,
+      "nontrivial_accuracy": 0.0,
+      "tolerance_accuracy": 0.25,
+      "consecutive_periods_correct": 0
+    },
+    "all_zeros": {
+      "fully_resolved": false,
+      "line_item_accuracy": 0.0,
+      "nontrivial_accuracy": 0.0,
+      "tolerance_accuracy": 0.0,
+      "consecutive_periods_correct": 0
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "period_1",
+    "period_2",
+    "period_3",
+    "period_4"
+  ],
+  "properties": {
+    "period_1": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "available_funds",
+        "note_balance_end",
+        "trigger_status"
+      ],
+      "properties": {
+        "available_funds": {
+          "type": "integer",
+          "description": "US cents"
+        },
+        "note_balance_end": {
+          "type": "integer",
+          "description": "US cents"
+        },
+        "trigger_status": {
+          "type": "string",
+          "enum": [
+            "pass",
+            "fail"
+          ]
+        }
+      }
+    },
+    "period_2": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "available_funds",
+        "note_balance_end",
+        "trigger_status"
+      ],
+      "properties": {
+        "available_funds": {
+          "type": "integer",
+          "description": "US cents"
+        },
+        "note_balance_end": {
+          "type": "integer",
+          "description": "US cents"
+        },
+        "trigger_status": {
+          "type": "string",
+          "enum": [
+            "pass",
+            "fail"
+          ]
+        }
+      }
+    },
+    "period_3": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "available_funds",
+        "note_balance_end",
+        "trigger_status"
+      ],
+      "properties": {
+        "available_funds": {
+          "type": "integer",
+          "description": "US cents"
+        },
+        "note_balance_end": {
+          "type": "integer",
+          "description": "US cents"
+        },
+        "trigger_status": {
+          "type": "string",
+          "enum": [
+            "pass",
+            "fail"
+          ]
+        }
+      }
+    },
+    "period_4": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "available_funds",
+        "note_balance_end",
+        "trigger_status"
+      ],
+      "properties": {
+        "available_funds": {
+          "type": "integer",
+          "description": "US cents"
+        },
+        "note_balance_end": {
+          "type": "integer",
+          "description": "US cents"
+        },
+        "trigger_status": {
+          "type": "string",
+          "enum": [
+            "pass",
+            "fail"
+          ]
+        }
+      }
+    }
+  }
+}

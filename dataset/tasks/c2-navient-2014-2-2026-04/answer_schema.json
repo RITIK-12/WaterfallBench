@@ -1,0 +1,1541 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "period_1",
+  "period_2",
+  "period_3",
+  "period_4"
+ ],
+ "properties": {
+  "period_1": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "a_63938gaa7__date__2",
+    "a_trustee_fees__remaining_funds_balance",
+    "accrued_interest_factor__date",
+    "accrued_interest_factor__date__2",
+    "adjusted_pool_1__date__3",
+    "adjusted_pool_balance",
+    "adjusted_pool_balance_supplemental_loan_purchase__date__2",
+    "b_63938gab5__date__2",
+    "b_primary_servicing_fee__remaining_funds_balance",
+    "balance_available",
+    "c_administration_fee__paid",
+    "c_administration_fee__remaining_funds_balance",
+    "c_reserves_in_excess_of_requirement",
+    "capitalized_interest_account_balance__date__2",
+    "current_interest_due__date",
+    "current_interest_due__date__2",
+    "d_class_a_noteholders_interest_distribution_amount__paid",
+    "d_class_a_noteholders_interest_distribution_amount__remaining_funds_balance",
+    "d_reserve_account_balance_after_any_reinstatement",
+    "difference__date__2",
+    "e_class_b_noteholders_interest_distribution_amount__paid",
+    "e_class_b_noteholders_interest_distribution_amount__remaining_funds_balance",
+    "e_less_specified_reserve_account_balance",
+    "ending_balance",
+    "ending_balance__2",
+    "ending_principal_balance__date",
+    "ending_principal_balance__date__2",
+    "ending_reserve_account_balance",
+    "f_reserve_account_reinstatement__paid",
+    "f_reserve_account_reinstatement__remaining_funds_balance",
+    "f_total",
+    "floor_income_rebate_account__date__2",
+    "g_class_a_noteholders_principal_distribution_amount__paid",
+    "g_class_a_noteholders_principal_distribution_amount__remaining_funds_balance",
+    "g_class_a_notes_outstanding_after_application_of_available_funds",
+    "h_class_b_noteholders_principal_distribution_amount__paid",
+    "h_class_b_noteholders_principal_distribution_amount__remaining_funds_balance",
+    "i_unpaid_expenses_of_the_trustees__remaining_funds_balance",
+    "interest_paid__date",
+    "interest_paid__date__2",
+    "interest_shortfall__date",
+    "interest_shortfall__date__2",
+    "j_carryover_servicing_fee__remaining_funds_balance",
+    "k_remaining_amounts_to_the_noteholders_after_the_first_auction_date__paid",
+    "k_remaining_amounts_to_the_noteholders_after_the_first_auction_date__remaining_funds_balance",
+    "l_excess_distribution_certificateholder__paid",
+    "l_excess_distribution_certificateholder__remaining_funds_balance",
+    "m_available_funds",
+    "note_interest_shortfall__date",
+    "note_principal_shortfall__date",
+    "notes_outstanding_principal_balance",
+    "overcollateralization_amount",
+    "parity_ratio__date__2",
+    "principal_distribution_amount",
+    "principal_distribution_amount_paid",
+    "principal_paid__date",
+    "principal_paid__date__2",
+    "release_to_collection_account",
+    "release_to_collection_account__2",
+    "required_reserve_acct_balance",
+    "reserve_account_balance__date__2",
+    "reserve_funds_reinstated",
+    "reserve_funds_utilized",
+    "supplemental_loan_purchase_account__date__2",
+    "supplemental_loan_purchases",
+    "total_available_funds__remaining_funds_balance",
+    "total_interest_due__date",
+    "total_interest_due__date__2",
+    "total_interest_receipts",
+    "total_notes__date__2",
+    "total_principal_receipts",
+    "transfers_to_collection_account",
+    "unpaid_administration_fees__date"
+   ],
+   "properties": {
+    "a_63938gaa7__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "a_trustee_fees__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "accrued_interest_factor__date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "accrued_interest_factor__date__2": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "adjusted_pool_1__date__3": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "adjusted_pool_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "adjusted_pool_balance_supplemental_loan_purchase__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "b_63938gab5__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "b_primary_servicing_fee__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "balance_available": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "c_administration_fee__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "c_administration_fee__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "c_reserves_in_excess_of_requirement": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "capitalized_interest_account_balance__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "current_interest_due__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "current_interest_due__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "d_class_a_noteholders_interest_distribution_amount__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "d_class_a_noteholders_interest_distribution_amount__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "d_reserve_account_balance_after_any_reinstatement": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "difference__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "e_class_b_noteholders_interest_distribution_amount__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "e_class_b_noteholders_interest_distribution_amount__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "e_less_specified_reserve_account_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_balance__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_principal_balance__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_principal_balance__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_reserve_account_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "f_reserve_account_reinstatement__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "f_reserve_account_reinstatement__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "f_total": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "floor_income_rebate_account__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "g_class_a_noteholders_principal_distribution_amount__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "g_class_a_noteholders_principal_distribution_amount__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "g_class_a_notes_outstanding_after_application_of_available_funds": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "h_class_b_noteholders_principal_distribution_amount__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "h_class_b_noteholders_principal_distribution_amount__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "i_unpaid_expenses_of_the_trustees__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "interest_paid__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "interest_paid__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "interest_shortfall__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "interest_shortfall__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "j_carryover_servicing_fee__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "k_remaining_amounts_to_the_noteholders_after_the_first_auction_date__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "k_remaining_amounts_to_the_noteholders_after_the_first_auction_date__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "l_excess_distribution_certificateholder__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "l_excess_distribution_certificateholder__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "m_available_funds": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_interest_shortfall__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_principal_shortfall__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "notes_outstanding_principal_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "overcollateralization_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "parity_ratio__date__2": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "principal_distribution_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "principal_distribution_amount_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "principal_paid__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "principal_paid__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "release_to_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "release_to_collection_account__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "required_reserve_acct_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_account_balance__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_funds_reinstated": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_funds_utilized": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "supplemental_loan_purchase_account__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "supplemental_loan_purchases": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_available_funds__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_interest_due__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_interest_due__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_interest_receipts": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_notes__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_principal_receipts": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "transfers_to_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "unpaid_administration_fees__date": {
+     "type": "integer",
+     "description": "US cents"
+    }
+   }
+  },
+  "period_2": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "a_63938gaa7__date__2",
+    "a_trustee_fees__remaining_funds_balance",
+    "accrued_interest_factor__date",
+    "accrued_interest_factor__date__2",
+    "adjusted_pool_1__date__3",
+    "adjusted_pool_balance",
+    "adjusted_pool_balance_supplemental_loan_purchase__date__2",
+    "b_63938gab5__date__2",
+    "b_primary_servicing_fee__remaining_funds_balance",
+    "balance_available",
+    "c_administration_fee__paid",
+    "c_administration_fee__remaining_funds_balance",
+    "c_reserves_in_excess_of_requirement",
+    "capitalized_interest_account_balance__date__2",
+    "current_interest_due__date",
+    "current_interest_due__date__2",
+    "d_class_a_noteholders_interest_distribution_amount__paid",
+    "d_class_a_noteholders_interest_distribution_amount__remaining_funds_balance",
+    "d_reserve_account_balance_after_any_reinstatement",
+    "difference__date__2",
+    "e_class_b_noteholders_interest_distribution_amount__paid",
+    "e_class_b_noteholders_interest_distribution_amount__remaining_funds_balance",
+    "e_less_specified_reserve_account_balance",
+    "ending_balance",
+    "ending_balance__2",
+    "ending_principal_balance__date",
+    "ending_principal_balance__date__2",
+    "ending_reserve_account_balance",
+    "f_reserve_account_reinstatement__paid",
+    "f_reserve_account_reinstatement__remaining_funds_balance",
+    "f_total",
+    "floor_income_rebate_account__date__2",
+    "g_class_a_noteholders_principal_distribution_amount__paid",
+    "g_class_a_noteholders_principal_distribution_amount__remaining_funds_balance",
+    "g_class_a_notes_outstanding_after_application_of_available_funds",
+    "h_class_b_noteholders_principal_distribution_amount__paid",
+    "h_class_b_noteholders_principal_distribution_amount__remaining_funds_balance",
+    "i_unpaid_expenses_of_the_trustees__remaining_funds_balance",
+    "interest_paid__date",
+    "interest_paid__date__2",
+    "interest_shortfall__date",
+    "interest_shortfall__date__2",
+    "j_carryover_servicing_fee__remaining_funds_balance",
+    "k_remaining_amounts_to_the_noteholders_after_the_first_auction_date__paid",
+    "k_remaining_amounts_to_the_noteholders_after_the_first_auction_date__remaining_funds_balance",
+    "l_excess_distribution_certificateholder__paid",
+    "l_excess_distribution_certificateholder__remaining_funds_balance",
+    "m_available_funds",
+    "note_interest_shortfall__date",
+    "note_principal_shortfall__date",
+    "notes_outstanding_principal_balance",
+    "overcollateralization_amount",
+    "parity_ratio__date__2",
+    "principal_distribution_amount",
+    "principal_distribution_amount_paid",
+    "principal_paid__date",
+    "principal_paid__date__2",
+    "release_to_collection_account",
+    "release_to_collection_account__2",
+    "required_reserve_acct_balance",
+    "reserve_account_balance__date__2",
+    "reserve_funds_reinstated",
+    "reserve_funds_utilized",
+    "supplemental_loan_purchase_account__date__2",
+    "supplemental_loan_purchases",
+    "total_available_funds__remaining_funds_balance",
+    "total_interest_due__date",
+    "total_interest_due__date__2",
+    "total_interest_receipts",
+    "total_notes__date__2",
+    "total_principal_receipts",
+    "transfers_to_collection_account",
+    "unpaid_administration_fees__date"
+   ],
+   "properties": {
+    "a_63938gaa7__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "a_trustee_fees__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "accrued_interest_factor__date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "accrued_interest_factor__date__2": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "adjusted_pool_1__date__3": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "adjusted_pool_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "adjusted_pool_balance_supplemental_loan_purchase__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "b_63938gab5__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "b_primary_servicing_fee__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "balance_available": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "c_administration_fee__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "c_administration_fee__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "c_reserves_in_excess_of_requirement": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "capitalized_interest_account_balance__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "current_interest_due__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "current_interest_due__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "d_class_a_noteholders_interest_distribution_amount__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "d_class_a_noteholders_interest_distribution_amount__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "d_reserve_account_balance_after_any_reinstatement": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "difference__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "e_class_b_noteholders_interest_distribution_amount__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "e_class_b_noteholders_interest_distribution_amount__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "e_less_specified_reserve_account_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_balance__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_principal_balance__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_principal_balance__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_reserve_account_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "f_reserve_account_reinstatement__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "f_reserve_account_reinstatement__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "f_total": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "floor_income_rebate_account__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "g_class_a_noteholders_principal_distribution_amount__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "g_class_a_noteholders_principal_distribution_amount__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "g_class_a_notes_outstanding_after_application_of_available_funds": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "h_class_b_noteholders_principal_distribution_amount__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "h_class_b_noteholders_principal_distribution_amount__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "i_unpaid_expenses_of_the_trustees__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "interest_paid__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "interest_paid__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "interest_shortfall__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "interest_shortfall__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "j_carryover_servicing_fee__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "k_remaining_amounts_to_the_noteholders_after_the_first_auction_date__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "k_remaining_amounts_to_the_noteholders_after_the_first_auction_date__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "l_excess_distribution_certificateholder__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "l_excess_distribution_certificateholder__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "m_available_funds": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_interest_shortfall__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_principal_shortfall__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "notes_outstanding_principal_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "overcollateralization_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "parity_ratio__date__2": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "principal_distribution_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "principal_distribution_amount_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "principal_paid__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "principal_paid__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "release_to_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "release_to_collection_account__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "required_reserve_acct_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_account_balance__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_funds_reinstated": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_funds_utilized": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "supplemental_loan_purchase_account__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "supplemental_loan_purchases": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_available_funds__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_interest_due__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_interest_due__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_interest_receipts": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_notes__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_principal_receipts": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "transfers_to_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "unpaid_administration_fees__date": {
+     "type": "integer",
+     "description": "US cents"
+    }
+   }
+  },
+  "period_3": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "a_63938gaa7__date__2",
+    "a_trustee_fees__remaining_funds_balance",
+    "accrued_interest_factor__date",
+    "accrued_interest_factor__date__2",
+    "adjusted_pool_1__date__3",
+    "adjusted_pool_balance",
+    "adjusted_pool_balance_supplemental_loan_purchase__date__2",
+    "b_63938gab5__date__2",
+    "b_primary_servicing_fee__remaining_funds_balance",
+    "balance_available",
+    "c_administration_fee__paid",
+    "c_administration_fee__remaining_funds_balance",
+    "c_reserves_in_excess_of_requirement",
+    "capitalized_interest_account_balance__date__2",
+    "current_interest_due__date",
+    "current_interest_due__date__2",
+    "d_class_a_noteholders_interest_distribution_amount__paid",
+    "d_class_a_noteholders_interest_distribution_amount__remaining_funds_balance",
+    "d_reserve_account_balance_after_any_reinstatement",
+    "difference__date__2",
+    "e_class_b_noteholders_interest_distribution_amount__paid",
+    "e_class_b_noteholders_interest_distribution_amount__remaining_funds_balance",
+    "e_less_specified_reserve_account_balance",
+    "ending_balance",
+    "ending_balance__2",
+    "ending_principal_balance__date",
+    "ending_principal_balance__date__2",
+    "ending_reserve_account_balance",
+    "f_reserve_account_reinstatement__paid",
+    "f_reserve_account_reinstatement__remaining_funds_balance",
+    "f_total",
+    "floor_income_rebate_account__date__2",
+    "g_class_a_noteholders_principal_distribution_amount__paid",
+    "g_class_a_noteholders_principal_distribution_amount__remaining_funds_balance",
+    "g_class_a_notes_outstanding_after_application_of_available_funds",
+    "h_class_b_noteholders_principal_distribution_amount__paid",
+    "h_class_b_noteholders_principal_distribution_amount__remaining_funds_balance",
+    "i_unpaid_expenses_of_the_trustees__remaining_funds_balance",
+    "interest_paid__date",
+    "interest_paid__date__2",
+    "interest_shortfall__date",
+    "interest_shortfall__date__2",
+    "j_carryover_servicing_fee__remaining_funds_balance",
+    "k_remaining_amounts_to_the_noteholders_after_the_first_auction_date__paid",
+    "k_remaining_amounts_to_the_noteholders_after_the_first_auction_date__remaining_funds_balance",
+    "l_excess_distribution_certificateholder__paid",
+    "l_excess_distribution_certificateholder__remaining_funds_balance",
+    "m_available_funds",
+    "note_interest_shortfall__date",
+    "note_principal_shortfall__date",
+    "notes_outstanding_principal_balance",
+    "overcollateralization_amount",
+    "parity_ratio__date__2",
+    "principal_distribution_amount",
+    "principal_distribution_amount_paid",
+    "principal_paid__date",
+    "principal_paid__date__2",
+    "release_to_collection_account",
+    "release_to_collection_account__2",
+    "required_reserve_acct_balance",
+    "reserve_account_balance__date__2",
+    "reserve_funds_reinstated",
+    "reserve_funds_utilized",
+    "supplemental_loan_purchase_account__date__2",
+    "supplemental_loan_purchases",
+    "total_available_funds__remaining_funds_balance",
+    "total_interest_due__date",
+    "total_interest_due__date__2",
+    "total_interest_receipts",
+    "total_notes__date__2",
+    "total_principal_receipts",
+    "transfers_to_collection_account",
+    "unpaid_administration_fees__date"
+   ],
+   "properties": {
+    "a_63938gaa7__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "a_trustee_fees__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "accrued_interest_factor__date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "accrued_interest_factor__date__2": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "adjusted_pool_1__date__3": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "adjusted_pool_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "adjusted_pool_balance_supplemental_loan_purchase__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "b_63938gab5__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "b_primary_servicing_fee__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "balance_available": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "c_administration_fee__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "c_administration_fee__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "c_reserves_in_excess_of_requirement": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "capitalized_interest_account_balance__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "current_interest_due__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "current_interest_due__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "d_class_a_noteholders_interest_distribution_amount__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "d_class_a_noteholders_interest_distribution_amount__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "d_reserve_account_balance_after_any_reinstatement": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "difference__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "e_class_b_noteholders_interest_distribution_amount__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "e_class_b_noteholders_interest_distribution_amount__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "e_less_specified_reserve_account_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_balance__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_principal_balance__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_principal_balance__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_reserve_account_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "f_reserve_account_reinstatement__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "f_reserve_account_reinstatement__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "f_total": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "floor_income_rebate_account__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "g_class_a_noteholders_principal_distribution_amount__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "g_class_a_noteholders_principal_distribution_amount__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "g_class_a_notes_outstanding_after_application_of_available_funds": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "h_class_b_noteholders_principal_distribution_amount__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "h_class_b_noteholders_principal_distribution_amount__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "i_unpaid_expenses_of_the_trustees__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "interest_paid__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "interest_paid__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "interest_shortfall__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "interest_shortfall__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "j_carryover_servicing_fee__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "k_remaining_amounts_to_the_noteholders_after_the_first_auction_date__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "k_remaining_amounts_to_the_noteholders_after_the_first_auction_date__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "l_excess_distribution_certificateholder__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "l_excess_distribution_certificateholder__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "m_available_funds": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_interest_shortfall__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_principal_shortfall__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "notes_outstanding_principal_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "overcollateralization_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "parity_ratio__date__2": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "principal_distribution_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "principal_distribution_amount_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "principal_paid__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "principal_paid__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "release_to_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "release_to_collection_account__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "required_reserve_acct_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_account_balance__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_funds_reinstated": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_funds_utilized": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "supplemental_loan_purchase_account__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "supplemental_loan_purchases": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_available_funds__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_interest_due__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_interest_due__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_interest_receipts": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_notes__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_principal_receipts": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "transfers_to_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "unpaid_administration_fees__date": {
+     "type": "integer",
+     "description": "US cents"
+    }
+   }
+  },
+  "period_4": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "a_63938gaa7__date__2",
+    "a_trustee_fees__remaining_funds_balance",
+    "accrued_interest_factor__date",
+    "accrued_interest_factor__date__2",
+    "adjusted_pool_1__date__3",
+    "adjusted_pool_balance",
+    "adjusted_pool_balance_supplemental_loan_purchase__date__2",
+    "b_63938gab5__date__2",
+    "b_primary_servicing_fee__remaining_funds_balance",
+    "balance_available",
+    "c_administration_fee__paid",
+    "c_administration_fee__remaining_funds_balance",
+    "c_reserves_in_excess_of_requirement",
+    "capitalized_interest_account_balance__date__2",
+    "current_interest_due__date",
+    "current_interest_due__date__2",
+    "d_class_a_noteholders_interest_distribution_amount__paid",
+    "d_class_a_noteholders_interest_distribution_amount__remaining_funds_balance",
+    "d_reserve_account_balance_after_any_reinstatement",
+    "difference__date__2",
+    "e_class_b_noteholders_interest_distribution_amount__paid",
+    "e_class_b_noteholders_interest_distribution_amount__remaining_funds_balance",
+    "e_less_specified_reserve_account_balance",
+    "ending_balance",
+    "ending_balance__2",
+    "ending_principal_balance__date",
+    "ending_principal_balance__date__2",
+    "ending_reserve_account_balance",
+    "f_reserve_account_reinstatement__paid",
+    "f_reserve_account_reinstatement__remaining_funds_balance",
+    "f_total",
+    "floor_income_rebate_account__date__2",
+    "g_class_a_noteholders_principal_distribution_amount__paid",
+    "g_class_a_noteholders_principal_distribution_amount__remaining_funds_balance",
+    "g_class_a_notes_outstanding_after_application_of_available_funds",
+    "h_class_b_noteholders_principal_distribution_amount__paid",
+    "h_class_b_noteholders_principal_distribution_amount__remaining_funds_balance",
+    "i_unpaid_expenses_of_the_trustees__remaining_funds_balance",
+    "interest_paid__date",
+    "interest_paid__date__2",
+    "interest_shortfall__date",
+    "interest_shortfall__date__2",
+    "j_carryover_servicing_fee__remaining_funds_balance",
+    "k_remaining_amounts_to_the_noteholders_after_the_first_auction_date__paid",
+    "k_remaining_amounts_to_the_noteholders_after_the_first_auction_date__remaining_funds_balance",
+    "l_excess_distribution_certificateholder__paid",
+    "l_excess_distribution_certificateholder__remaining_funds_balance",
+    "m_available_funds",
+    "note_interest_shortfall__date",
+    "note_principal_shortfall__date",
+    "notes_outstanding_principal_balance",
+    "overcollateralization_amount",
+    "parity_ratio__date__2",
+    "principal_distribution_amount",
+    "principal_distribution_amount_paid",
+    "principal_paid__date",
+    "principal_paid__date__2",
+    "release_to_collection_account",
+    "release_to_collection_account__2",
+    "required_reserve_acct_balance",
+    "reserve_account_balance__date__2",
+    "reserve_funds_reinstated",
+    "reserve_funds_utilized",
+    "supplemental_loan_purchase_account__date__2",
+    "supplemental_loan_purchases",
+    "total_available_funds__remaining_funds_balance",
+    "total_interest_due__date",
+    "total_interest_due__date__2",
+    "total_interest_receipts",
+    "total_notes__date__2",
+    "total_principal_receipts",
+    "transfers_to_collection_account",
+    "unpaid_administration_fees__date"
+   ],
+   "properties": {
+    "a_63938gaa7__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "a_trustee_fees__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "accrued_interest_factor__date": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "accrued_interest_factor__date__2": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "adjusted_pool_1__date__3": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "adjusted_pool_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "adjusted_pool_balance_supplemental_loan_purchase__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "b_63938gab5__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "b_primary_servicing_fee__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "balance_available": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "c_administration_fee__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "c_administration_fee__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "c_reserves_in_excess_of_requirement": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "capitalized_interest_account_balance__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "current_interest_due__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "current_interest_due__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "d_class_a_noteholders_interest_distribution_amount__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "d_class_a_noteholders_interest_distribution_amount__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "d_reserve_account_balance_after_any_reinstatement": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "difference__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "e_class_b_noteholders_interest_distribution_amount__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "e_class_b_noteholders_interest_distribution_amount__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "e_less_specified_reserve_account_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_balance__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_principal_balance__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_principal_balance__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "ending_reserve_account_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "f_reserve_account_reinstatement__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "f_reserve_account_reinstatement__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "f_total": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "floor_income_rebate_account__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "g_class_a_noteholders_principal_distribution_amount__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "g_class_a_noteholders_principal_distribution_amount__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "g_class_a_notes_outstanding_after_application_of_available_funds": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "h_class_b_noteholders_principal_distribution_amount__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "h_class_b_noteholders_principal_distribution_amount__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "i_unpaid_expenses_of_the_trustees__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "interest_paid__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "interest_paid__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "interest_shortfall__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "interest_shortfall__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "j_carryover_servicing_fee__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "k_remaining_amounts_to_the_noteholders_after_the_first_auction_date__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "k_remaining_amounts_to_the_noteholders_after_the_first_auction_date__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "l_excess_distribution_certificateholder__paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "l_excess_distribution_certificateholder__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "m_available_funds": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_interest_shortfall__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "note_principal_shortfall__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "notes_outstanding_principal_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "overcollateralization_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "parity_ratio__date__2": {
+     "type": [
+      "number",
+      "string"
+     ],
+     "description": "decimal as printed, no % sign"
+    },
+    "principal_distribution_amount": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "principal_distribution_amount_paid": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "principal_paid__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "principal_paid__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "release_to_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "release_to_collection_account__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "required_reserve_acct_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_account_balance__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_funds_reinstated": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "reserve_funds_utilized": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "supplemental_loan_purchase_account__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "supplemental_loan_purchases": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_available_funds__remaining_funds_balance": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_interest_due__date": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_interest_due__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_interest_receipts": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_notes__date__2": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "total_principal_receipts": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "transfers_to_collection_account": {
+     "type": "integer",
+     "description": "US cents"
+    },
+    "unpaid_administration_fees__date": {
+     "type": "integer",
+     "description": "US cents"
+    }
+   }
+  }
+ }
+}
