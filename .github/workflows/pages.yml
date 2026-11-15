@@ -1,0 +1,33 @@
+# Publish the static leaderboard page in site/ to GitHub Pages.
+# The page reads site/data.json, which tools/eval/site_data.py builds from the leaderboard results.
+name: Deploy leaderboard page
+
+on:
+  push:
+    branches: [main]
+    paths: ["site/**", ".github/workflows/pages.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4

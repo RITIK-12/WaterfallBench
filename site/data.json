@@ -1,0 +1,726 @@
+{
+ "name": "WaterfallBench",
+ "version": "1.0",
+ "updated": "2026-11-15",
+ "harness": "single call, no tools",
+ "models": [
+  {
+   "key": "openai/gpt-6-astra",
+   "name": "GPT-6 Astra",
+   "lab": "OpenAI",
+   "tasks": 20,
+   "fully_resolved": 95.0,
+   "se": 4.87,
+   "nontrivial": 99.17,
+   "line_item": 99.58,
+   "tolerance": 100.0,
+   "cost": 8.3326,
+   "cost_total": 166.65,
+   "tokens": 409597,
+   "input_tokens": 407039,
+   "output_tokens": 2558,
+   "seconds": 64.2,
+   "results": {
+    "fw-deere-2026-b-2026-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2026-c-2026-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2026-b-2026-05": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2026-a-2026-02": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-c-2025-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-b-2025-05": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-a-2025-01": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2026-b-2026-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2026-a-2026-02": {
+     "ok": false,
+     "nt": 83.3,
+     "li": 91.7
+    },
+    "fw-nissanlease-2025-b-2025-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-deere-2025-b-2025-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-deere-2026-2026-04": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2025-a-2025-01": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2026-3-2026-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2025-2-2025-04": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2025-3-2025-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2025-4-2025-10": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2026-1-2026-01": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-d-2025-10": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2026-2-2026-04": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    }
+   }
+  },
+  {
+   "key": "anthropic/claude-fable-5-2",
+   "name": "Claude Fable 5.2",
+   "lab": "Anthropic",
+   "tasks": 20,
+   "fully_resolved": 95.0,
+   "se": 4.87,
+   "nontrivial": 99.09,
+   "line_item": 99.58,
+   "tolerance": 100.0,
+   "cost": 5.1818,
+   "cost_total": 103.64,
+   "tokens": 635508,
+   "input_tokens": 632454,
+   "output_tokens": 3053,
+   "seconds": 35.4,
+   "results": {
+    "fw-nissanlease-2025-a-2025-01": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-deere-2026-b-2026-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-deere-2026-2026-04": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-deere-2025-b-2025-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2026-3-2026-07": {
+     "ok": false,
+     "nt": 81.8,
+     "li": 91.7
+    },
+    "fw-carmax-2026-1-2026-01": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2026-2-2026-04": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2025-4-2025-10": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2025-3-2025-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2025-2-2025-04": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2026-c-2026-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2026-a-2026-02": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-c-2025-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2026-b-2026-05": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-d-2025-10": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2026-a-2026-02": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2025-b-2025-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-a-2025-01": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2026-b-2026-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-b-2025-05": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    }
+   }
+  },
+  {
+   "key": "openai/gpt-6-luna",
+   "name": "GPT-6 Luna",
+   "lab": "OpenAI",
+   "tasks": 20,
+   "fully_resolved": 90.0,
+   "se": 6.71,
+   "nontrivial": 99.17,
+   "line_item": 98.68,
+   "tolerance": 98.68,
+   "cost": 0.0873,
+   "cost_total": 1.75,
+   "tokens": 414850,
+   "input_tokens": 407039,
+   "output_tokens": 7811,
+   "seconds": 86.6,
+   "results": {
+    "fw-worldomni-2026-b-2026-05": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2026-c-2026-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2026-a-2026-02": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-c-2025-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-d-2025-10": {
+     "ok": false,
+     "nt": 100.0,
+     "li": 81.0
+    },
+    "fw-worldomni-2025-a-2025-01": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-b-2025-05": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2026-b-2026-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2026-a-2026-02": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2025-b-2025-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-deere-2025-b-2025-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-deere-2026-b-2026-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-deere-2026-2026-04": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2025-a-2025-01": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2026-3-2026-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2026-2-2026-04": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2025-3-2025-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2026-1-2026-01": {
+     "ok": false,
+     "nt": 83.3,
+     "li": 92.6
+    },
+    "fw-carmax-2025-2-2025-04": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2025-4-2025-10": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    }
+   }
+  },
+  {
+   "key": "anthropic/claude-haiku-5-5",
+   "name": "Claude Haiku 5.5",
+   "lab": "Anthropic",
+   "tasks": 20,
+   "fully_resolved": 40.0,
+   "se": 10.95,
+   "nontrivial": 85.78,
+   "line_item": 93.83,
+   "tolerance": 95.73,
+   "cost": 0.343,
+   "cost_total": 6.86,
+   "tokens": 643169,
+   "input_tokens": 632454,
+   "output_tokens": 10714,
+   "seconds": 58.7,
+   "results": {
+    "fw-worldomni-2026-c-2026-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-d-2025-10": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2026-b-2026-05": {
+     "ok": false,
+     "nt": 55.6,
+     "li": 81.8
+    },
+    "fw-worldomni-2026-a-2026-02": {
+     "ok": false,
+     "nt": 88.9,
+     "li": 95.5
+    },
+    "fw-worldomni-2025-c-2025-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2026-b-2026-07": {
+     "ok": false,
+     "nt": 75.0,
+     "li": 87.5
+    },
+    "fw-worldomni-2025-b-2025-05": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-a-2025-01": {
+     "ok": false,
+     "nt": 57.1,
+     "li": 85.7
+    },
+    "fw-nissanlease-2026-a-2026-02": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2025-b-2025-07": {
+     "ok": false,
+     "nt": 75.0,
+     "li": 87.5
+    },
+    "fw-deere-2026-b-2026-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-deere-2026-2026-04": {
+     "ok": false,
+     "nt": 85.7,
+     "li": 93.8
+    },
+    "fw-nissanlease-2025-a-2025-01": {
+     "ok": false,
+     "nt": 75.0,
+     "li": 87.5
+    },
+    "fw-deere-2025-b-2025-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2026-3-2026-07": {
+     "ok": false,
+     "nt": 72.7,
+     "li": 87.5
+    },
+    "fw-carmax-2026-1-2026-01": {
+     "ok": false,
+     "nt": 75.0,
+     "li": 88.9
+    },
+    "fw-carmax-2025-4-2025-10": {
+     "ok": false,
+     "nt": 83.3,
+     "li": 92.6
+    },
+    "fw-carmax-2025-3-2025-07": {
+     "ok": false,
+     "nt": 83.3,
+     "li": 92.6
+    },
+    "fw-carmax-2025-2-2025-04": {
+     "ok": false,
+     "nt": 88.9,
+     "li": 95.8
+    },
+    "fw-carmax-2026-2-2026-04": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    }
+   }
+  }
+ ],
+ "tasks": [
+  {
+   "id": "fw-carmax-2025-2-2025-04",
+   "family": "carmax",
+   "family_name": "CarMax Auto Owner Trust",
+   "deal": "CarMax Auto Owner Trust 2025-2",
+   "period": "202504",
+   "classes": 8,
+   "graded": 24,
+   "nontrivial": 9,
+   "ungraded": 3,
+   "ungraded_why": "Servicer report departs from the agreement's overcollateralization target"
+  },
+  {
+   "id": "fw-carmax-2025-3-2025-07",
+   "family": "carmax",
+   "family_name": "CarMax Auto Owner Trust",
+   "deal": "CarMax Auto Owner Trust 2025-3",
+   "period": "202507",
+   "classes": 8,
+   "graded": 27,
+   "nontrivial": 12,
+   "ungraded": 0,
+   "ungraded_why": null
+  },
+  {
+   "id": "fw-carmax-2025-4-2025-10",
+   "family": "carmax",
+   "family_name": "CarMax Auto Owner Trust",
+   "deal": "CarMax Auto Owner Trust 2025-4",
+   "period": "202510",
+   "classes": 8,
+   "graded": 27,
+   "nontrivial": 12,
+   "ungraded": 0,
+   "ungraded_why": null
+  },
+  {
+   "id": "fw-carmax-2026-1-2026-01",
+   "family": "carmax",
+   "family_name": "CarMax Auto Owner Trust",
+   "deal": "CarMax Auto Owner Trust 2026-1",
+   "period": "202601",
+   "classes": 8,
+   "graded": 27,
+   "nontrivial": 12,
+   "ungraded": 0,
+   "ungraded_why": null
+  },
+  {
+   "id": "fw-carmax-2026-2-2026-04",
+   "family": "carmax",
+   "family_name": "CarMax Auto Owner Trust",
+   "deal": "CarMax Auto Owner Trust 2026-2",
+   "period": "202604",
+   "classes": 8,
+   "graded": 27,
+   "nontrivial": 12,
+   "ungraded": 0,
+   "ungraded_why": null
+  },
+  {
+   "id": "fw-carmax-2026-3-2026-07",
+   "family": "carmax",
+   "family_name": "CarMax Auto Owner Trust",
+   "deal": "CarMax Auto Owner Trust 2026-3",
+   "period": "202607",
+   "classes": 7,
+   "graded": 24,
+   "nontrivial": 11,
+   "ungraded": 0,
+   "ungraded_why": null
+  },
+  {
+   "id": "fw-deere-2025-b-2025-08",
+   "family": "deere",
+   "family_name": "John Deere Owner Trust",
+   "deal": "John Deere Owner Trust 2025-B",
+   "period": "202508",
+   "classes": 5,
+   "graded": 16,
+   "nontrivial": 7,
+   "ungraded": 2,
+   "ungraded_why": "First servicing fee needs a mid-period pool balance no document provides"
+  },
+  {
+   "id": "fw-deere-2026-2026-04",
+   "family": "deere",
+   "family_name": "John Deere Owner Trust",
+   "deal": "John Deere Owner Trust 2026",
+   "period": "202604",
+   "classes": 5,
+   "graded": 16,
+   "nontrivial": 7,
+   "ungraded": 2,
+   "ungraded_why": "First servicing fee needs a mid-period pool balance no document provides"
+  },
+  {
+   "id": "fw-deere-2026-b-2026-08",
+   "family": "deere",
+   "family_name": "John Deere Owner Trust",
+   "deal": "John Deere Owner Trust 2026-B",
+   "period": "202608",
+   "classes": 5,
+   "graded": 16,
+   "nontrivial": 7,
+   "ungraded": 2,
+   "ungraded_why": "First servicing fee needs a mid-period pool balance no document provides"
+  },
+  {
+   "id": "fw-nissanlease-2025-a-2025-01",
+   "family": "nissanlease",
+   "family_name": "Nissan Auto Lease Trust",
+   "deal": "Nissan Auto Lease Trust 2025-A",
+   "period": "202501",
+   "classes": 7,
+   "graded": 24,
+   "nontrivial": 12,
+   "ungraded": 0,
+   "ungraded_why": null
+  },
+  {
+   "id": "fw-nissanlease-2025-b-2025-07",
+   "family": "nissanlease",
+   "family_name": "Nissan Auto Lease Trust",
+   "deal": "Nissan Auto Lease Trust 2025-B",
+   "period": "202507",
+   "classes": 7,
+   "graded": 24,
+   "nontrivial": 12,
+   "ungraded": 0,
+   "ungraded_why": null
+  },
+  {
+   "id": "fw-nissanlease-2026-a-2026-02",
+   "family": "nissanlease",
+   "family_name": "Nissan Auto Lease Trust",
+   "deal": "Nissan Auto Lease Trust 2026-A",
+   "period": "202602",
+   "classes": 7,
+   "graded": 24,
+   "nontrivial": 12,
+   "ungraded": 0,
+   "ungraded_why": null
+  },
+  {
+   "id": "fw-nissanlease-2026-b-2026-07",
+   "family": "nissanlease",
+   "family_name": "Nissan Auto Lease Trust",
+   "deal": "Nissan Auto Lease Trust 2026-B",
+   "period": "202607",
+   "classes": 7,
+   "graded": 24,
+   "nontrivial": 12,
+   "ungraded": 0,
+   "ungraded_why": null
+  },
+  {
+   "id": "fw-worldomni-2025-a-2025-01",
+   "family": "worldomni",
+   "family_name": "World Omni Auto Receivables Trust",
+   "deal": "World Omni Auto Receivables Trust 2025-A",
+   "period": "202501",
+   "classes": 7,
+   "graded": 21,
+   "nontrivial": 7,
+   "ungraded": 3,
+   "ungraded_why": "Agreement prorates the first servicing fee without a day count"
+  },
+  {
+   "id": "fw-worldomni-2025-b-2025-05",
+   "family": "worldomni",
+   "family_name": "World Omni Auto Receivables Trust",
+   "deal": "World Omni Auto Receivables Trust 2025-B",
+   "period": "202505",
+   "classes": 7,
+   "graded": 21,
+   "nontrivial": 5,
+   "ungraded": 3,
+   "ungraded_why": "Agreement prorates the first servicing fee without a day count"
+  },
+  {
+   "id": "fw-worldomni-2025-c-2025-08",
+   "family": "worldomni",
+   "family_name": "World Omni Auto Receivables Trust",
+   "deal": "World Omni Auto Receivables Trust 2025-C",
+   "period": "202508",
+   "classes": 7,
+   "graded": 20,
+   "nontrivial": 7,
+   "ungraded": 4,
+   "ungraded_why": "Agreement prorates the first servicing fee without a day count"
+  },
+  {
+   "id": "fw-worldomni-2025-d-2025-10",
+   "family": "worldomni",
+   "family_name": "World Omni Auto Receivables Trust",
+   "deal": "World Omni Auto Receivables Trust 2025-D",
+   "period": "202510",
+   "classes": 7,
+   "graded": 21,
+   "nontrivial": 7,
+   "ungraded": 3,
+   "ungraded_why": "Agreement prorates the first servicing fee without a day count"
+  },
+  {
+   "id": "fw-worldomni-2026-a-2026-02",
+   "family": "worldomni",
+   "family_name": "World Omni Auto Receivables Trust",
+   "deal": "World Omni Auto Receivables Trust 2026-A",
+   "period": "202602",
+   "classes": 7,
+   "graded": 22,
+   "nontrivial": 9,
+   "ungraded": 2,
+   "ungraded_why": "Agreement prorates the first servicing fee without a day count"
+  },
+  {
+   "id": "fw-worldomni-2026-b-2026-05",
+   "family": "worldomni",
+   "family_name": "World Omni Auto Receivables Trust",
+   "deal": "World Omni Auto Receivables Trust 2026-B",
+   "period": "202605",
+   "classes": 7,
+   "graded": 22,
+   "nontrivial": 9,
+   "ungraded": 2,
+   "ungraded_why": "Agreement prorates the first servicing fee without a day count"
+  },
+  {
+   "id": "fw-worldomni-2026-c-2026-08",
+   "family": "worldomni",
+   "family_name": "World Omni Auto Receivables Trust",
+   "deal": "World Omni Auto Receivables Trust 2026-C",
+   "period": "202608",
+   "classes": 7,
+   "graded": 22,
+   "nontrivial": 9,
+   "ungraded": 2,
+   "ungraded_why": "Agreement prorates the first servicing fee without a day count"
+  }
+ ]
+}
