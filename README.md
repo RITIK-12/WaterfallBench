@@ -1,5 +1,7 @@
 # WaterfallBench
 
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-FFD21E)](https://huggingface.co/datasets/ritik12/WaterfallBench) [![Leaderboard](https://img.shields.io/badge/Leaderboard-live-2f7d3c)](https://ritik-12.github.io/WaterfallBench/) [![License](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey)](https://creativecommons.org/licenses/by/4.0/)
+
 **Can a model execute an asset-backed securities waterfall to the cent, from the deal documents alone?**
 
 📊 **[Leaderboard & methodology →](https://ritik-12.github.io/WaterfallBench/)** · 🤗 **[Dataset on Hugging Face →](https://huggingface.co/datasets/ritik12/WaterfallBench)**
@@ -105,10 +107,10 @@ Add `--dry-run` to build the prompt without calling a model.
 
 | Issuer | Deals | First distributions | Note classes | Documents / task | Prompt tokens | Graded fields |
 |---|---|---|---|---|---|---|
-| CarMax Auto Owner Trust | 6 | Apr 2025 – Jul 2026 | 7–8 | 8–9 | 634K | 156 |
-| World Omni Auto Receivables Trust | 7 | Jan 2025 – Aug 2026 | 7 | 8 | 629K | 149 |
+| CarMax Auto Owner Trust | 6 | May 2025 – Aug 2026 | 7–8 | 8–9 | 634K | 156 |
+| World Omni Auto Receivables Trust | 7 | Feb 2025 – Sep 2026 | 7 | 8 | 629K | 149 |
 | John Deere Owner Trust | 3 | Aug 2025 – Aug 2026 | 5 | 7–8 | 509K | 48 |
-| Nissan Auto Lease Trust | 4 | Jan 2025 – Jul 2026 | 7 | 11 | 727K | 96 |
+| Nissan Auto Lease Trust | 4 | Feb 2025 – Aug 2026 | 7 | 11 | 727K | 96 |
 
 Each task is a trust's first Form 10-D. Prompt tokens are the mean per task (Claude tokenizer); no task needs
 truncation. Every task was checked before release:

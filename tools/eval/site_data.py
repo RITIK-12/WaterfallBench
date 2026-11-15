@@ -10,7 +10,10 @@ from __future__ import annotations
 
 import json
 import math
+import re
 import statistics
+import sys
+from datetime import datetime
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
@@ -36,6 +39,22 @@ UNGRADED_WHY = {  # short public labels; the full reasons (with figures) stay in
 }
 
 
+def distribution_date(task_dir: Path) -> str:
+    """The distribution (payment) date printed in the task's servicer report, as YYYY-MM-DD."""
+    sys.path.insert(0, str(REPO / "agents" / "waterfallbench-direct"))
+    import direct
+    text = direct.html_to_text(next((task_dir / "reports").glob("*.html")).read_text())
+    m = (re.search(r"Actual Payment Date[^|]*\|\s*([0-9]{1,2}-[A-Za-z]{3}-[0-9]{2})", text)
+         or re.search(r"Distribution Date\s*\|\s*([0-9]{1,2}[-/][A-Za-z0-9]{1,3}[-/][0-9]{2,4})", text))
+    raw = m.group(1)
+    for fmt in ("%m/%d/%Y", "%m/%d/%y", "%d-%b-%y"):
+        try:
+            return datetime.strptime(raw, fmt).date().isoformat()
+        except ValueError:
+            pass
+    raise ValueError(f"{task_dir.name}: unparsed distribution date {raw!r}")
+
+
 def main() -> None:
     board = json.loads(BOARD.read_text())
     claude_tokens = {r["task_id"]: r.get("input_tokens") for r in board["tasks"].get("anthropic/claude-fable-5-2", [])}
@@ -53,6 +72,7 @@ def main() -> None:
             "docs": len(list((TASKS / m["task_id"] / "docs" / "full").glob("*.html"))),
             "html_mb": round(sum(f.stat().st_size for f in (TASKS / m["task_id"]).rglob("*.html")) / 1e6, 2),
             "prompt_tokens": claude_tokens.get(m["task_id"]),   # Claude tokenizer, as sent by the harness
+            "distribution_date": distribution_date(TASKS / m["task_id"]),
         }
     models = []
     for key, rows in board["tasks"].items():
