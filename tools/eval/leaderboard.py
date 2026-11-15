@@ -48,6 +48,8 @@ def fetch(run_id: str, cache: Path) -> tuple[dict, dict[str, dict]]:
 EXTRA_PRICES = {
     "gpt-6-astra": (272_000, (10.00, 50.00), (20.00, 75.00)),
     "gpt-6-luna": (272_000, (0.10, 0.50), (0.20, 0.75)),
+    "deepseek-v4p1-flash-1017": (10**9, (0.30, 1.20), (0.30, 1.20)),   # Fireworks serverless, standard tier
+    "glm-5p3": (10**9, (1.40, 4.40), (1.40, 4.40)),
 }
 
 

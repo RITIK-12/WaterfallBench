@@ -29,6 +29,8 @@ MODELS = {
     "anthropic/claude-haiku-5-5": {"name": "Claude Haiku 5.5", "lab": "Anthropic"},
     "fireworks/kimi-k3p1-pro": {"name": "Kimi K3.1 Pro", "lab": "Moonshot AI"},
     "fireworks/minimax-m3p1-flash": {"name": "MiniMax M3.1 Flash", "lab": "MiniMax"},
+    "fireworks/deepseek-v4p1-flash-1017": {"name": "DeepSeek V4.1 Flash", "lab": "DeepSeek"},
+    "fireworks/glm-5p3": {"name": "GLM 5.3", "lab": "Z.ai"},
 }
 FAMILIES = {"carmax": "CarMax Auto Owner Trust", "worldomni": "World Omni Auto Receivables Trust",
             "deere": "John Deere Owner Trust", "nissanlease": "Nissan Auto Lease Trust"}

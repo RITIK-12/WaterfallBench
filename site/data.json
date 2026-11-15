@@ -362,6 +362,125 @@
    }
   },
   {
+   "key": "fireworks/glm-5p3",
+   "name": "GLM 5.3",
+   "lab": "Z.ai",
+   "tasks": 20,
+   "fully_resolved": 75.0,
+   "se": 9.68,
+   "nontrivial": 95.65,
+   "line_item": 98.04,
+   "tolerance": 98.45,
+   "cost": 0.6811,
+   "cost_total": 13.62,
+   "tokens": 441386,
+   "input_tokens": 420329,
+   "output_tokens": 21057,
+   "seconds": 160.9,
+   "results": {
+    "fw-deere-2026-b-2026-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2025-2-2025-04": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2025-3-2025-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2025-4-2025-10": {
+     "ok": false,
+     "nt": 83.3,
+     "li": 92.6
+    },
+    "fw-carmax-2026-1-2026-01": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2026-2-2026-04": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2026-3-2026-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-deere-2025-b-2025-08": {
+     "ok": false,
+     "nt": 85.7,
+     "li": 93.8
+    },
+    "fw-deere-2026-2026-04": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2025-a-2025-01": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2025-b-2025-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2026-a-2026-02": {
+     "ok": false,
+     "nt": 83.3,
+     "li": 91.7
+    },
+    "fw-nissanlease-2026-b-2026-07": {
+     "ok": false,
+     "nt": 75.0,
+     "li": 87.5
+    },
+    "fw-worldomni-2025-a-2025-01": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-b-2025-05": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-c-2025-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2025-d-2025-10": {
+     "ok": false,
+     "nt": 85.7,
+     "li": 95.2
+    },
+    "fw-worldomni-2026-a-2026-02": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2026-b-2026-05": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2026-c-2026-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    }
+   }
+  },
+  {
    "key": "fireworks/minimax-m3p1-flash",
    "name": "MiniMax M3.1 Flash",
    "lab": "MiniMax",

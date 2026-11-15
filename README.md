@@ -25,11 +25,12 @@ One API call per task, identical prompt and documents, reasoning effort `high`, 
 | 1 | GPT-6 Astra | **95.0%** ±4.9 | 99.2% | $8.33 |
 | 1 | Claude Fable 5.2 | **95.0%** ±4.9 | 99.1% | $5.18 |
 | 3 | GPT-6 Luna | **90.0%** ±6.7 | 99.2% | $0.09 |
-| 4 | MiniMax M3.1 Flash | **50.0%** ±11.2 | 89.0% | $0.07 |
-| 5 | Kimi K3.1 Pro | **45.0%** ±11.1 | 92.3% | $0.89 |
-| 6 | Claude Haiku 5.5 | **40.0%** ±11.0 | 85.8% | $0.34 |
+| 4 | GLM 5.3 | **75.0%** ±9.7 | 95.7% | $0.68 |
+| 5 | MiniMax M3.1 Flash | **50.0%** ±11.2 | 89.0% | $0.07 |
+| 6 | Kimi K3.1 Pro | **45.0%** ±11.1 | 92.3% | $0.89 |
+| 7 | Claude Haiku 5.5 | **40.0%** ±11.0 | 85.8% | $0.34 |
 
-Anthropic and OpenAI models via their own APIs; Kimi and MiniMax via Fireworks serverless. See [Scoring](#scoring) for
+Anthropic and OpenAI models via their own APIs; GLM, MiniMax and Kimi via Fireworks serverless. See [Scoring](#scoring) for
 the metrics; ± is one standard error. A reply with no JSON answer scores 0 (MiniMax returned one empty reply).
 
 ## A task
