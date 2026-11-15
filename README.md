@@ -49,6 +49,7 @@ Money is integer US cents. Classes are matched by name (`A-2A`, `Class A-2a Note
 # 1. API keys (stored as Valkyrie secrets; prompts for the value)
 valkyrie secret set anthropic-api-key
 valkyrie secret set openai-api-key
+valkyrie secret set fireworks-api-key
 
 # 2. The single-call harness
 valkyrie agent push agents/waterfallbench-direct
@@ -58,7 +59,8 @@ valkyrie run start --benchmark waterfallbench --dataset full-html \
   --agent waterfallbench-direct --model anthropic/claude-haiku-5-5 -k effort high \
   -s ANTHROPIC_API_KEY anthropic-api-key --provider modal --concurrency 5
 
-#    OpenAI models: --model openai/gpt-6-luna -s OPENAI_API_KEY openai-api-key
+#    OpenAI models:    --model openai/gpt-6-luna -s OPENAI_API_KEY openai-api-key
+#    Fireworks models: --model fireworks/kimi-k3p1-pro -s FIREWORKS_API_KEY fireworks-api-key
 
 # 4. Leaderboard from one or more runs
 python tools/eval/leaderboard.py <RUN_ID> [<RUN_ID> ...]
@@ -78,8 +80,8 @@ valkyrie benchmark service set waterfallbench https://<your-public-url>
 
 ## Run it without Valkyrie
 
-The harness runs on any task folder. It needs `pip install anthropic openai` and an `ANTHROPIC_API_KEY` or
-`OPENAI_API_KEY` in your environment:
+The harness runs on any task folder. It needs `pip install anthropic openai` and an `ANTHROPIC_API_KEY`,
+`OPENAI_API_KEY` or `FIREWORKS_API_KEY` in your environment:
 
 ```bash
 T=dataset-fw/tasks/fw-deere-2026-b-2026-08; W=$(mktemp -d)
@@ -126,7 +128,7 @@ Grading is deterministic. No LLM judge.
 
 ```
 dataset-fw/tasks/          the 20 first-distribution tasks (this benchmark)
-agents/waterfallbench-direct/   single-call harness (Anthropic + OpenAI) and Valkyrie contract
+agents/waterfallbench-direct/   single-call harness (Anthropic, OpenAI, Fireworks) and Valkyrie contract
 service/                   grading service (Valkyrie benchmark service)
 tools/eval/                leaderboard + site data
 tools/data-prep/wfb/       pipeline that built the tasks from SEC EDGAR

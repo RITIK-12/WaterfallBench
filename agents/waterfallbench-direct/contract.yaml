@@ -3,6 +3,7 @@
 # Run: valkyrie run start --benchmark waterfallbench --dataset full-html --agent waterfallbench-direct \
 #        --model anthropic/claude-opus-5-5 -s ANTHROPIC_API_KEY anthropic-api-key
 #      (OpenAI models: --model openai/<model> -s OPENAI_API_KEY openai-api-key)
+#      (Fireworks models: --model fireworks/<model> -s FIREWORKS_API_KEY fireworks-api-key)
 name: waterfallbench-direct
 install_cmd: ""
 defaults:
@@ -18,6 +19,7 @@ final_output: /tmp/waterfallbench-direct
 egress_allowlist:
   - api.anthropic.com
   - api.openai.com
+  - api.fireworks.ai
 output_artifacts:
   - path: direct/usage.json
     source: /tmp/waterfallbench-direct/usage.json
@@ -35,4 +37,4 @@ kwargs:
     type: str
     required: false
     default: high
-    description: Reasoning effort passed to the provider (Anthropic low..max; OpenAI minimal..high).
+    description: Reasoning effort passed to the provider (Anthropic low..max; OpenAI minimal..high; Fireworks low..high).

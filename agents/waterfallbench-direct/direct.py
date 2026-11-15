@@ -39,6 +39,7 @@ SYSTEM = (
 PRICES = {
     "claude-opus-5-5": (4.00, 20.00), "claude-sonnet-5-5": (2.00, 10.00), "claude-fable-5-2": (8.00, 40.00),
     "claude-haiku-5-5": (0.50, 2.50),  # prompts over 100K tokens
+    "kimi-k3p1-pro": (2.00, 10.00), "minimax-m3p1-flash": (0.15, 0.60),  # Fireworks serverless, standard tier
 }
 
 
@@ -191,13 +192,44 @@ def call_openai(model: str, docs_text: str, task_text: str, effort: str, max_out
                   "output_tokens": getattr(u, "output_tokens", None), "message_id": getattr(resp, "id", None)}
 
 
+def call_fireworks(model: str, docs_text: str, task_text: str, effort: str, max_out: int) -> tuple[str, dict]:
+    """Fireworks serverless (OpenAI-compatible chat API), streamed so long reasoning cannot hit an idle timeout."""
+    from openai import OpenAI
+    client = OpenAI(base_url="https://api.fireworks.ai/inference/v1", api_key=os.environ["FIREWORKS_API_KEY"],
+                    timeout=3000.0, max_retries=2)
+    model_id = model if model.startswith("accounts/") else f"accounts/fireworks/models/{model}"
+    kwargs = {"reasoning_effort": effort} if effort else {}
+    stream = client.chat.completions.create(
+        model=model_id, max_tokens=max_out, stream=True, stream_options={"include_usage": True},
+        messages=[{"role": "system", "content": SYSTEM}, {"role": "user", "content": docs_text + "\n\n" + task_text}],
+        **kwargs)
+    content, reasoning_chars, finish, usage, rid = [], 0, None, None, None
+    for chunk in stream:
+        rid = rid or getattr(chunk, "id", None)
+        if getattr(chunk, "usage", None):
+            usage = chunk.usage
+        for ch in chunk.choices or []:
+            d = ch.delta
+            if d is not None and d.content:
+                content.append(d.content)
+            r = getattr(d, "reasoning_content", None) if d is not None else None
+            if r:
+                reasoning_chars += len(r)
+            finish = ch.finish_reason or finish
+    text = "".join(content)
+    _save_reply(text)
+    return text, {"stop_reason": finish, "input_tokens": getattr(usage, "prompt_tokens", None),
+                  "output_tokens": getattr(usage, "completion_tokens", None), "reasoning_chars": reasoning_chars,
+                  "message_id": rid}
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--problem", required=True)
     ap.add_argument("--task-id", required=True)
     ap.add_argument("--model", required=True, help="provider/model, e.g. anthropic/claude-opus-5-5 or openai/<model>")
     ap.add_argument("--max-input-tokens", type=int, default=1_000_000)
-    ap.add_argument("--max-output-tokens", type=int, default=128_000)
+    ap.add_argument("--max-output-tokens", type=int, default=128_000)  # Fireworks caps at 131,072
     ap.add_argument("--effort", default="high", help="reasoning effort passed to the provider ('' = provider default)")
     ap.add_argument("--dry-run", action="store_true", help="build the prompt and write it to OUT/prompt.txt; no model call")
     a = ap.parse_args()
@@ -219,6 +251,8 @@ def main() -> int:
             text, meta = call_anthropic(model, docs_text, task_text, a.effort, a.max_output_tokens)
         elif provider == "openai":
             text, meta = call_openai(model, docs_text, task_text, a.effort, a.max_output_tokens)
+        elif provider == "fireworks":
+            text, meta = call_fireworks(model, docs_text, task_text, a.effort, a.max_output_tokens)
         else:
             raise SystemExit(f"unknown provider {provider!r}")
         usage.update(meta)

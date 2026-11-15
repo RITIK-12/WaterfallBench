@@ -492,7 +492,10 @@
    "graded": 24,
    "nontrivial": 9,
    "ungraded": 3,
-   "ungraded_why": "Servicer report departs from the agreement's overcollateralization target"
+   "ungraded_why": "Servicer report departs from the agreement's overcollateralization target",
+   "docs": 7,
+   "html_mb": 4.91,
+   "prompt_tokens": 629698
   },
   {
    "id": "fw-carmax-2025-3-2025-07",
@@ -504,7 +507,10 @@
    "graded": 27,
    "nontrivial": 12,
    "ungraded": 0,
-   "ungraded_why": null
+   "ungraded_why": null,
+   "docs": 7,
+   "html_mb": 5.01,
+   "prompt_tokens": 632551
   },
   {
    "id": "fw-carmax-2025-4-2025-10",
@@ -516,7 +522,10 @@
    "graded": 27,
    "nontrivial": 12,
    "ungraded": 0,
-   "ungraded_why": null
+   "ungraded_why": null,
+   "docs": 7,
+   "html_mb": 4.99,
+   "prompt_tokens": 633700
   },
   {
    "id": "fw-carmax-2026-1-2026-01",
@@ -528,7 +537,10 @@
    "graded": 27,
    "nontrivial": 12,
    "ungraded": 0,
-   "ungraded_why": null
+   "ungraded_why": null,
+   "docs": 8,
+   "html_mb": 5.08,
+   "prompt_tokens": 647530
   },
   {
    "id": "fw-carmax-2026-2-2026-04",
@@ -540,7 +552,10 @@
    "graded": 27,
    "nontrivial": 12,
    "ungraded": 0,
-   "ungraded_why": null
+   "ungraded_why": null,
+   "docs": 8,
+   "html_mb": 5.12,
+   "prompt_tokens": 647909
   },
   {
    "id": "fw-carmax-2026-3-2026-07",
@@ -552,7 +567,10 @@
    "graded": 24,
    "nontrivial": 11,
    "ungraded": 0,
-   "ungraded_why": null
+   "ungraded_why": null,
+   "docs": 8,
+   "html_mb": 4.94,
+   "prompt_tokens": 614998
   },
   {
    "id": "fw-deere-2025-b-2025-08",
@@ -564,7 +582,10 @@
    "graded": 16,
    "nontrivial": 7,
    "ungraded": 2,
-   "ungraded_why": "First servicing fee needs a mid-period pool balance no document provides"
+   "ungraded_why": "First servicing fee needs a mid-period pool balance no document provides",
+   "docs": 6,
+   "html_mb": 7.76,
+   "prompt_tokens": 503783
   },
   {
    "id": "fw-deere-2026-2026-04",
@@ -576,7 +597,10 @@
    "graded": 16,
    "nontrivial": 7,
    "ungraded": 2,
-   "ungraded_why": "First servicing fee needs a mid-period pool balance no document provides"
+   "ungraded_why": "First servicing fee needs a mid-period pool balance no document provides",
+   "docs": 6,
+   "html_mb": 7.52,
+   "prompt_tokens": 501473
   },
   {
    "id": "fw-deere-2026-b-2026-08",
@@ -588,7 +612,10 @@
    "graded": 16,
    "nontrivial": 7,
    "ungraded": 2,
-   "ungraded_why": "First servicing fee needs a mid-period pool balance no document provides"
+   "ungraded_why": "First servicing fee needs a mid-period pool balance no document provides",
+   "docs": 7,
+   "html_mb": 7.67,
+   "prompt_tokens": 522651
   },
   {
    "id": "fw-nissanlease-2025-a-2025-01",
@@ -600,7 +627,10 @@
    "graded": 24,
    "nontrivial": 12,
    "ungraded": 0,
-   "ungraded_why": null
+   "ungraded_why": null,
+   "docs": 10,
+   "html_mb": 8.23,
+   "prompt_tokens": 725064
   },
   {
    "id": "fw-nissanlease-2025-b-2025-07",
@@ -612,7 +642,10 @@
    "graded": 24,
    "nontrivial": 12,
    "ungraded": 0,
-   "ungraded_why": null
+   "ungraded_why": null,
+   "docs": 10,
+   "html_mb": 7.76,
+   "prompt_tokens": 712865
   },
   {
    "id": "fw-nissanlease-2026-a-2026-02",
@@ -624,7 +657,10 @@
    "graded": 24,
    "nontrivial": 12,
    "ungraded": 0,
-   "ungraded_why": null
+   "ungraded_why": null,
+   "docs": 10,
+   "html_mb": 8.48,
+   "prompt_tokens": 739161
   },
   {
    "id": "fw-nissanlease-2026-b-2026-07",
@@ -636,7 +672,10 @@
    "graded": 24,
    "nontrivial": 12,
    "ungraded": 0,
-   "ungraded_why": null
+   "ungraded_why": null,
+   "docs": 10,
+   "html_mb": 8.2,
+   "prompt_tokens": 732825
   },
   {
    "id": "fw-worldomni-2025-a-2025-01",
@@ -648,7 +687,10 @@
    "graded": 21,
    "nontrivial": 7,
    "ungraded": 3,
-   "ungraded_why": "Agreement prorates the first servicing fee without a day count"
+   "ungraded_why": "Agreement prorates the first servicing fee without a day count",
+   "docs": 7,
+   "html_mb": 6.37,
+   "prompt_tokens": 614546
   },
   {
    "id": "fw-worldomni-2025-b-2025-05",
@@ -660,7 +702,10 @@
    "graded": 21,
    "nontrivial": 5,
    "ungraded": 3,
-   "ungraded_why": "Agreement prorates the first servicing fee without a day count"
+   "ungraded_why": "Agreement prorates the first servicing fee without a day count",
+   "docs": 7,
+   "html_mb": 6.35,
+   "prompt_tokens": 624079
   },
   {
    "id": "fw-worldomni-2025-c-2025-08",
@@ -672,7 +717,10 @@
    "graded": 20,
    "nontrivial": 7,
    "ungraded": 4,
-   "ungraded_why": "Agreement prorates the first servicing fee without a day count"
+   "ungraded_why": "Agreement prorates the first servicing fee without a day count",
+   "docs": 7,
+   "html_mb": 6.58,
+   "prompt_tokens": 629893
   },
   {
    "id": "fw-worldomni-2025-d-2025-10",
@@ -684,7 +732,10 @@
    "graded": 21,
    "nontrivial": 7,
    "ungraded": 3,
-   "ungraded_why": "Agreement prorates the first servicing fee without a day count"
+   "ungraded_why": "Agreement prorates the first servicing fee without a day count",
+   "docs": 7,
+   "html_mb": 8.05,
+   "prompt_tokens": 638804
   },
   {
    "id": "fw-worldomni-2026-a-2026-02",
@@ -696,7 +747,10 @@
    "graded": 22,
    "nontrivial": 9,
    "ungraded": 2,
-   "ungraded_why": "Agreement prorates the first servicing fee without a day count"
+   "ungraded_why": "Agreement prorates the first servicing fee without a day count",
+   "docs": 7,
+   "html_mb": 6.98,
+   "prompt_tokens": 627265
   },
   {
    "id": "fw-worldomni-2026-b-2026-05",
@@ -708,7 +762,10 @@
    "graded": 22,
    "nontrivial": 9,
    "ungraded": 2,
-   "ungraded_why": "Agreement prorates the first servicing fee without a day count"
+   "ungraded_why": "Agreement prorates the first servicing fee without a day count",
+   "docs": 7,
+   "html_mb": 6.35,
+   "prompt_tokens": 633802
   },
   {
    "id": "fw-worldomni-2026-c-2026-08",
@@ -720,7 +777,10 @@
    "graded": 22,
    "nontrivial": 9,
    "ungraded": 2,
-   "ungraded_why": "Agreement prorates the first servicing fee without a day count"
+   "ungraded_why": "Agreement prorates the first servicing fee without a day count",
+   "docs": 7,
+   "html_mb": 7.76,
+   "prompt_tokens": 636492
   }
  ]
 }

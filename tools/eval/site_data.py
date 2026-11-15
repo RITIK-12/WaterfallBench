@@ -16,6 +16,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[2]
 BOARD = REPO / "tools" / "eval" / "results" / "leaderboard.json"
 META = REPO / "dataset-fw" / "meta"
+TASKS = REPO / "dataset-fw" / "tasks"
 OUT = REPO / "site" / "data.json"
 
 MODELS = {
@@ -23,6 +24,8 @@ MODELS = {
     "anthropic/claude-fable-5-2": {"name": "Claude Fable 5.2", "lab": "Anthropic"},
     "openai/gpt-6-luna": {"name": "GPT-6 Luna", "lab": "OpenAI"},
     "anthropic/claude-haiku-5-5": {"name": "Claude Haiku 5.5", "lab": "Anthropic"},
+    "fireworks/kimi-k3p1-pro": {"name": "Kimi K3.1 Pro", "lab": "Moonshot AI"},
+    "fireworks/minimax-m3p1-flash": {"name": "MiniMax M3.1 Flash", "lab": "MiniMax"},
 }
 FAMILIES = {"carmax": "CarMax Auto Owner Trust", "worldomni": "World Omni Auto Receivables Trust",
             "deere": "John Deere Owner Trust", "nissanlease": "Nissan Auto Lease Trust"}
@@ -35,6 +38,7 @@ UNGRADED_WHY = {  # short public labels; the full reasons (with figures) stay in
 
 def main() -> None:
     board = json.loads(BOARD.read_text())
+    claude_tokens = {r["task_id"]: r.get("input_tokens") for r in board["tasks"].get("anthropic/claude-fable-5-2", [])}
     tasks = {}
     for p in sorted(META.glob("fw-*.json")):
         m = json.loads(p.read_text())
@@ -46,6 +50,9 @@ def main() -> None:
             "nontrivial": sum(1 for f in m["fields"].values() if not f["trivial"]),
             "ungraded": len(m.get("ungraded", {})),
             "ungraded_why": UNGRADED_WHY[fam] if m.get("ungraded") else None,
+            "docs": len(list((TASKS / m["task_id"] / "docs" / "full").glob("*.html"))),
+            "html_mb": round(sum(f.stat().st_size for f in (TASKS / m["task_id"]).rglob("*.html")) / 1e6, 2),
+            "prompt_tokens": claude_tokens.get(m["task_id"]),   # Claude tokenizer, as sent by the harness
         }
     models = []
     for key, rows in board["tasks"].items():
