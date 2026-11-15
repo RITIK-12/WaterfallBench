@@ -32,3 +32,12 @@ __pycache__/
 
 # Planning notes (local only)
 plan.md
+
+# Local editor/run config
+.claude/
+
+# Downloaded run results (leaderboard cache)
+tools/eval/results/runs/
+
+# first-waterfall bench: private answer keys
+dataset-fw/meta/

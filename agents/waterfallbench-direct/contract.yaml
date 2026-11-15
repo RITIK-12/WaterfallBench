@@ -1,0 +1,38 @@
+# WaterfallBench single-call harness: one model call per task, identical prompt and documents for every model.
+# No tools, no code execution, no second turn - the comparison is the model alone.
+# Run: valkyrie run start --benchmark waterfallbench --dataset full-html --agent waterfallbench-direct \
+#        --model anthropic/claude-opus-5-5 -s ANTHROPIC_API_KEY anthropic-api-key
+#      (OpenAI models: --model openai/<model> -s OPENAI_API_KEY openai-api-key)
+name: waterfallbench-direct
+install_cmd: ""
+defaults:
+  model:
+    type: str
+    required: false
+    default: anthropic/claude-opus-5-5
+run_cmd: >-
+  python3 /bundle/waterfallbench-direct/direct.py
+  --problem "{problem_statement_path}" --task-id "{task_id}" --model "{model}"
+  --max-input-tokens "{max_input_tokens}" --effort "{effort}"
+final_output: /tmp/waterfallbench-direct
+egress_allowlist:
+  - api.anthropic.com
+  - api.openai.com
+output_artifacts:
+  - path: direct/usage.json
+    source: /tmp/waterfallbench-direct/usage.json
+    required: false
+  - path: direct/response.txt
+    source: /tmp/waterfallbench-direct/response.txt
+    required: false
+kwargs:
+  max_input_tokens:
+    type: int
+    required: false
+    default: 1000000
+    description: Input cap in tokens (estimated); documents beyond it are cut, lowest priority first, and recorded.
+  effort:
+    type: str
+    required: false
+    default: high
+    description: Reasoning effort passed to the provider (Anthropic low..max; OpenAI minimal..high).

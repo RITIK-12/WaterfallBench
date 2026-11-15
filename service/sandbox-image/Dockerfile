@@ -27,7 +27,9 @@ RUN pip install \
       "pandas==2.2.3" \
       "numpy==2.1.3" \
       "lxml==5.3.0" \
-      "beautifulsoup4==4.12.3"
+      "beautifulsoup4==4.12.3" \
+      "anthropic==0.125.0" \
+      "openai==2.48.0"
 
 RUN mkdir -p /workspace/docs /workspace/reports
 WORKDIR /workspace

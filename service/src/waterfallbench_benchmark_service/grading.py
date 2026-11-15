@@ -392,6 +392,40 @@ def _grade_c4(key: AnswerKey, submission: Mapping[str, Any]) -> tuple[dict[str, 
     return per_field, extra
 
 
+CLASS_FIELDS: tuple[str, ...] = ("interest_paid", "principal_paid", "ending_balance")
+
+
+def class_token(name: Any) -> str | None:
+    """'Class A-2a Notes', 'A-2A' and 'a2a' all become 'a2a' (how a listed class is matched to the answer key)."""
+    if not isinstance(name, str):
+        return None
+    t = name.lower()
+    for word in ("classes", "class", "notes", "note"):
+        t = t.replace(word, "")
+    t = re.sub(r"[^a-z0-9]", "", t)
+    return t or None
+
+
+def flatten_classes(specs: Mapping[str, FieldSpec], submission: Mapping[str, Any]) -> dict[str, Any]:
+    """A fixed-schema answer {..., "classes": [{"class": "A-1", "interest_paid": ..}, ..]} as the answer key's flat
+    ``<CLASS>.<field>`` keys. Classes match by name ignoring case, spaces, hyphens and the words class/notes; a class
+    listed more than once is ambiguous and counts as unanswered; classes the deal does not have are ignored."""
+    flat = {k: v for k, v in submission.items() if k != "classes"}
+    want = {class_token(n.split(".", 1)[0]): n.split(".", 1)[0] for n in specs if "." in n}
+    listed: dict[str, list[Mapping[str, Any]]] = {}
+    for item in as_list(submission.get("classes")) or []:
+        row = as_object(item)
+        token = class_token(row.get("class")) if row is not None else None
+        if row is not None and token in want:
+            listed.setdefault(token, []).append(row)
+    for token, rows in listed.items():
+        if len(rows) == 1:
+            for field in CLASS_FIELDS:
+                if field in rows[0]:
+                    flat[f"{want[token]}.{field}"] = rows[0][field]
+    return flat
+
+
 def task_labels(meta: Mapping[str, Any]) -> dict[str, Any]:
     """Non-secret descriptive metadata copied into every result."""
     category = meta.get("category")
@@ -449,6 +483,8 @@ def grade_submission(meta: Mapping[str, Any], submission: Any) -> dict[str, Any]
     answer = as_object(submission)
     if answer is None:
         return {**labels, **_zero_result(key, "malformed", "answer must be a JSON object")}
+    if meta.get("answer_format") == "classes_array":
+        answer = flatten_classes(key.groups[""], answer)
     try:
         if key.category == "C4":
             per_field, extra = _grade_c4(key, answer)

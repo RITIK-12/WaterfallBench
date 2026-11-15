@@ -1,0 +1,59 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "WaterfallBench first-distribution answer",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "servicing_fee_paid",
+  "reserve_ending_balance",
+  "released_to_residual",
+  "classes"
+ ],
+ "properties": {
+  "servicing_fee_paid": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "reserve_ending_balance": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "released_to_residual": {
+   "type": "integer",
+   "description": "US cents"
+  },
+  "classes": {
+   "type": "array",
+   "minItems": 1,
+   "description": "one entry per class of notes the trust issued",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "class",
+     "interest_paid",
+     "principal_paid",
+     "ending_balance"
+    ],
+    "properties": {
+     "class": {
+      "type": "string",
+      "description": "the class name as the prospectus gives it, e.g. A-1"
+     },
+     "interest_paid": {
+      "type": "integer",
+      "description": "US cents"
+     },
+     "principal_paid": {
+      "type": "integer",
+      "description": "US cents"
+     },
+     "ending_balance": {
+      "type": "integer",
+      "description": "US cents"
+     }
+    }
+   }
+  }
+ }
+}
