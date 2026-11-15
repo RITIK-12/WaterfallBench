@@ -5,6 +5,7 @@
 | openai/gpt-6-astra | 20 | 95.0 | 99.2 | 99.6 | 100.0 | 100.0 | 407,039 | 2,558 | 64 | 8.33 | 166.65 |
 | anthropic/claude-fable-5-2 | 20 | 95.0 | 99.1 | 99.6 | 100.0 | 100.0 | 632,454 | 3,053 | 35 | 5.18 | 103.64 |
 | openai/gpt-6-luna | 20 | 90.0 | 99.2 | 98.7 | 98.7 | 100.0 | 407,039 | 7,811 | 87 | 0.09 | 1.75 |
+| fireworks/kimi-k3p1-pro | 20 | 45.0 | 92.3 | 96.1 | 96.1 | 100.0 | 412,055 | 6,632 | 107 | 0.89 | 17.81 |
 | anthropic/claude-haiku-5-5 | 20 | 40.0 | 85.8 | 93.8 | 95.7 | 100.0 | 632,454 | 10,714 | 59 | 0.34 | 6.86 |
 
 ## Per task
@@ -91,3 +92,23 @@
 | openai/gpt-6-luna | fw-worldomni-2026-a-2026-02 | C1 | yes | 100% | 100% | 100% | 22 | 400,744 | 10,308 | 0.09 | 110 |  |
 | openai/gpt-6-luna | fw-worldomni-2026-b-2026-05 | C1 | yes | 100% | 100% | 100% | 22 | 404,933 | 12,681 | 0.09 | 135 |  |
 | openai/gpt-6-luna | fw-worldomni-2026-c-2026-08 | C1 | yes | 100% | 100% | 100% | 22 | 407,818 | 8,161 | 0.09 | 89 |  |
+| fireworks/kimi-k3p1-pro | fw-carmax-2025-2-2025-04 | C1 | yes | 100% | 100% | 100% | 24 | 403,541 | 3,867 | 0.85 | 77 |  |
+| fireworks/kimi-k3p1-pro | fw-carmax-2025-3-2025-07 | C1 | yes | 100% | 100% | 100% | 27 | 406,118 | 5,035 | 0.86 | 96 |  |
+| fireworks/kimi-k3p1-pro | fw-carmax-2025-4-2025-10 | C1 | no | 75% | 89% | 89% | 27 | 406,905 | 3,173 | 0.85 | 57 |  |
+| fireworks/kimi-k3p1-pro | fw-carmax-2026-1-2026-01 | C1 | yes | 100% | 100% | 100% | 27 | 415,556 | 4,855 | 0.88 | 85 |  |
+| fireworks/kimi-k3p1-pro | fw-carmax-2026-2-2026-04 | C1 | no | 83% | 93% | 93% | 27 | 415,825 | 4,697 | 0.88 | 65 |  |
+| fireworks/kimi-k3p1-pro | fw-carmax-2026-3-2026-07 | C1 | yes | 100% | 100% | 100% | 24 | 396,144 | 3,722 | 0.83 | 60 |  |
+| fireworks/kimi-k3p1-pro | fw-deere-2025-b-2025-08 | C1 | no | 86% | 94% | 94% | 16 | 328,000 | 19,460 | 0.85 | 241 |  |
+| fireworks/kimi-k3p1-pro | fw-deere-2026-2026-04 | C1 | yes | 100% | 100% | 100% | 16 | 327,167 | 18,133 | 0.84 | 251 |  |
+| fireworks/kimi-k3p1-pro | fw-deere-2026-b-2026-08 | C1 | yes | 100% | 100% | 100% | 16 | 342,112 | 12,953 | 0.81 | 258 |  |
+| fireworks/kimi-k3p1-pro | fw-nissanlease-2025-a-2025-01 | C1 | no | 83% | 92% | 92% | 24 | 487,898 | 3,466 | 1.01 | 50 |  |
+| fireworks/kimi-k3p1-pro | fw-nissanlease-2025-b-2025-07 | C1 | no | 92% | 96% | 96% | 24 | 474,692 | 2,620 | 0.98 | 55 |  |
+| fireworks/kimi-k3p1-pro | fw-nissanlease-2026-a-2026-02 | C1 | yes | 100% | 100% | 100% | 24 | 496,760 | 3,875 | 1.03 | 63 |  |
+| fireworks/kimi-k3p1-pro | fw-nissanlease-2026-b-2026-07 | C1 | no | 75% | 88% | 88% | 24 | 490,801 | 3,407 | 1.02 | 80 |  |
+| fireworks/kimi-k3p1-pro | fw-worldomni-2025-a-2025-01 | C1 | yes | 100% | 100% | 100% | 21 | 396,811 | 4,900 | 0.84 | 87 |  |
+| fireworks/kimi-k3p1-pro | fw-worldomni-2025-b-2025-05 | C1 | no | 100% | 95% | 95% | 21 | 402,342 | 3,915 | 0.84 | 64 |  |
+| fireworks/kimi-k3p1-pro | fw-worldomni-2025-c-2025-08 | C1 | no | 86% | 95% | 95% | 20 | 407,447 | 7,881 | 0.89 | 142 |  |
+| fireworks/kimi-k3p1-pro | fw-worldomni-2025-d-2025-10 | C1 | no | 100% | 95% | 95% | 21 | 413,675 | 5,099 | 0.88 | 64 |  |
+| fireworks/kimi-k3p1-pro | fw-worldomni-2026-a-2026-02 | C1 | no | 89% | 95% | 95% | 22 | 405,930 | 6,296 | 0.87 | 107 |  |
+| fireworks/kimi-k3p1-pro | fw-worldomni-2026-b-2026-05 | C1 | yes | 100% | 100% | 100% | 22 | 410,311 | 10,130 | 0.92 | 158 |  |
+| fireworks/kimi-k3p1-pro | fw-worldomni-2026-c-2026-08 | C1 | no | 78% | 91% | 91% | 22 | 413,064 | 5,162 | 0.88 | 75 |  |

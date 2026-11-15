@@ -121,7 +121,10 @@ section > .prose > h2 { font-family: var(--serif); font-weight: 500; font-size: 
 .inputs td:first-child { font-weight: 500; white-space: nowrap; }
 .inputs td.form { font-family: var(--mono); font-size: 12.5px; color: var(--muted); white-space: nowrap; }
 .io { display: grid; grid-template-columns: 1.35fr 1fr; gap: 16px; margin-top: 18px; }
-@media (max-width: 860px) { .io { grid-template-columns: 1fr; } }
+.io-eq { grid-template-columns: 1fr 1fr; }
+.io-eq pre.json { font-size: 11.5px; }
+@media (max-width: 960px) { .io, .io-eq { grid-template-columns: 1fr; } }
+.inputs td.num { white-space: nowrap; }
 .io .panel-head .t b { font-size: 15px; }
 .rep { font-family: var(--mono); font-size: 12px; }
 .rep th, .rep td { padding: 6px 10px; font-size: 12px; }
@@ -133,6 +136,14 @@ pre.json { margin: 0; padding: 12px 14px; font-size: 12px; line-height: 1.55; co
 pre.json .k { color: var(--accent-ink); }
 pre.json .q { background: var(--rm); color: var(--warn); padding: 0 4px; }
 
+.flow { list-style: none; padding: 0; margin: 4px 0 16px; counter-reset: s; }
+.flow li { counter-increment: s; margin: 0 0 6px calc(var(--i) * 26px); padding: 8px 12px; background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--accent); font-family: var(--sans); font-size: 14.5px; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.flow li::before { content: counter(s); font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.flow li span { color: var(--muted); font-size: 13.5px; }
+@media (max-width: 640px) { .flow li { margin-left: calc(var(--i) * 10px); } }
+.g-ok { color: var(--good); font-weight: 600; }
+.g-x { color: var(--bad); font-weight: 600; background: var(--bad-soft); padding: 0 3px; }
+.g-t { color: var(--muted); font-weight: 400; }
 /* dataset */
 .kv { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); border: 1px solid var(--line); background: var(--panel); margin: 4px 0 20px; }
 .kv > div { padding: 12px 14px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -176,7 +187,7 @@ footer .in { max-width: 1200px; margin: 0 auto; padding: 20px 16px 36px; display
     WaterfallBench
   </a>
   <nav class="nav">
-    <a href="#leaderboard">Leaderboard</a><a href="#task">Task</a><a href="#dataset">Dataset</a><a href="#results">Results</a><a href="#methodology">Methodology</a>
+    <a href="#leaderboard">Leaderboard</a><a href="#task">Task</a><a href="#dataset">Dataset</a><a href="#methodology">Methodology</a><a href="#results">Results</a>
     <a class="gh" href="https://github.com/RITIK-12/WaterfallBench">GitHub ↗</a>
   </nav>
 </div></header>
@@ -220,13 +231,26 @@ footer .in { max-width: 1200px; margin: 0 auto; padding: 20px 16px 36px; display
 
 <section id="summary"><div class="prose">
   <h2>Can a model execute an ABS waterfall to the cent?</h2>
-  <p>Every month, an asset-backed securitization pays its investors through a <strong>waterfall</strong>: fees first, then each note class's interest, then principal, reserve top-ups, and the residual. The rules are spread across hundreds of pages of legal documents, and the trustee has to apply them exactly. WaterfallBench gives a model those documents and asks it to produce the payments for a deal's first distribution date, in exact cents. The answer key is what the trustee actually paid, as filed with the SEC.</p>
+  <p>WaterfallBench tests whether a model can read a securitization's legal documents and compute its monthly payments to investors exactly as the trustee did, to the cent. The answer key is what the trustee actually paid, as filed with the SEC.</p>
   <p id="lede">Loading results…</p>
 </div></section>
 
 <section id="task"><div class="prose">
   <h2>The task</h2>
-  <p>One task is one deal's first distribution date. Opening balances come from the prospectus, so there is no prior report to copy from. The model gets three kinds of document, all EDGAR HTML as filed:</p>
+  <h3>What a waterfall is</h3>
+  <p>An asset-backed security turns thousands of car loans or leases into bonds, sold in classes from senior (A) to junior (B, C). Every month the borrowers' payments are collected and paid out in a fixed order of priority, the <strong>waterfall</strong>:</p>
+  <ol class="flow">
+    <li style="--i:0"><b>Servicing fee</b><span>paid to the company that collects the loans</span></li>
+    <li style="--i:1"><b>Interest</b><span>to every class, senior first</span></li>
+    <li style="--i:2"><b>Principal</b><span>to the most senior class still outstanding</span></li>
+    <li style="--i:3"><b>Reserve account</b><span>topped up to its required level</span></li>
+    <li style="--i:4"><b>Residual</b><span>whatever is left, to the deal's equity holder</span></li>
+  </ol>
+  <p class="cap" style="margin:-6px 0 18px">Simplified. Each deal's agreements define the exact order, amounts and targets.</p>
+  <h3>Why it matters</h3>
+  <p>Securitization funds a large share of US car loans and leases: the 20 deals in this benchmark alone issued <strong id="issued">$23.5 billion</strong> of notes. The waterfall decides who gets paid and in what order, so an error moves cash between senior and junior investors, and because each month starts from the last month's balances, it carries forward. Today this is done with deal-specific cash-flow models built by hand from the documents. WaterfallBench asks whether a model can read the documents and get it right on its own.</p>
+  <h3>What the model gets</h3>
+  <p>A deal's <strong>first distribution date</strong>. Opening balances come from the prospectus, so there is no prior report to copy from. All documents are EDGAR HTML as filed:</p>
   <div class="panel tbl-wrap"><table class="inputs">
     <thead><tr><th>Input</th><th>Filed as</th><th>What the waterfall needs from it</th></tr></thead>
     <tbody>
@@ -235,12 +259,12 @@ footer .in { max-width: 1200px; margin: 0 auto; padding: 20px 16px 36px; display
       <tr><td>Servicer report</td><td class="form">10-D Ex. 99.1</td><td>That month's collections, pool balances, rates and dates, with every waterfall result removed</td></tr>
     </tbody>
   </table></div>
+  <p style="margin-top:18px">It must return the servicing fee, each class's interest, principal and ending balance, the reserve balance and the residual, in integer cents. Here is the report from a real task as the model sees it:</p>
 </div>
-<div class="wide" style="max-width:1100px">
-  <div class="io">
-    <div class="panel">
-      <div class="panel-head"><div class="t"><b>Input: servicer report</b><span>as the model sees it</span></div><div class="label">Nissan Auto Lease 2026-B · Aug 2026</div></div>
-      <div class="tbl-wrap"><table class="rep">
+<div class="prose">
+  <div class="panel">
+    <div class="panel-head"><div class="t"><b>Servicer report</b><span>waterfall results removed</span></div><div class="label">Nissan Auto Lease 2026-B · Aug 2026</div></div>
+    <div class="tbl-wrap"><table class="rep">
         <thead><tr><th>Summary</th><th class="num">Coupon</th><th class="num">Initial balance</th><th class="num">Beginning</th><th class="num">Ending</th></tr></thead>
         <tbody>
           <tr><td>Total Portfolio</td><td></td><td class="num">1,447,527,618.00</td><td class="num">1,447,527,618.00</td><td class="num">1,428,611,202.92</td></tr>
@@ -259,28 +283,8 @@ footer .in { max-width: 1200px; margin: 0 auto; padding: 20px 16px 36px; display
           <tr><td colspan="4">&nbsp;&nbsp;&nbsp;Class A-1 Interest Carryover Shortfall</td><td class="num">0.00</td></tr>
         </tbody>
       </table></div>
-    </div>
-    <div class="panel">
-      <div class="panel-head"><div class="t"><b>Output: answer.json</b><span>same schema for every task</span></div><div class="label">24 values</div></div>
-<pre class="json">{
-  <span class="k">"servicing_fee_paid"</span>:     <span class="q">?</span>,
-  <span class="k">"reserve_ending_balance"</span>: <span class="q">?</span>,
-  <span class="k">"released_to_residual"</span>:   <span class="q">?</span>,
-  <span class="k">"classes"</span>: [
-    {<span class="k">"class"</span>: "A-1",  <span class="k">"interest_paid"</span>: <span class="q">?</span>,
-     <span class="k">"principal_paid"</span>: <span class="q">?</span>, <span class="k">"ending_balance"</span>: <span class="q">?</span>},
-    {<span class="k">"class"</span>: "A-2a", …},
-    {<span class="k">"class"</span>: "A-2b", …},
-    {<span class="k">"class"</span>: "A-3",  …},
-    {<span class="k">"class"</span>: "A-4",  …},
-    {<span class="k">"class"</span>: "B",    …},
-    {<span class="k">"class"</span>: "C",    …}
-  ]
-}</pre>
-      <p class="cap" style="padding:0 14px 12px">Integer US cents. The model names the classes itself; <code>A-2a</code>, <code>Class A-2a Notes</code> and <code>a2a</code> all match.</p>
-    </div>
   </div>
-  <p class="cap" style="text-align:center">Excerpt of the real task packet <code>fw-nissanlease-2026-b-2026-07</code>. The same packet also holds the 6.0 MB prospectus and 9 closing agreements.</p>
+  <p class="cap">Excerpt of <code>fw-nissanlease-2026-b-2026-07</code>. The same packet holds the 6.0 MB prospectus and 9 closing agreements.</p>
 </div></section>
 
 <section id="dataset"><div class="prose">
@@ -291,6 +295,81 @@ footer .in { max-width: 1200px; margin: 0 auto; padding: 20px 16px 36px; display
   <p class="cap">Tokens: mean prompt per task, Claude tokenizer, as sent by the harness. No task needed truncation.</p>
   <h3>Release checks</h3>
   <p>Every task passed these checks: the report's classes match the prospectus; each class's opening balance minus principal paid equals its ending balance, to the cent; class payments add up to the report's totals; no graded value is left in the packet; and the true answer grades 100% while an all-zeros answer resolves nothing.</p>
+</div></section>
+
+<section id="methodology"><div class="prose">
+  <h2>Methodology</h2>
+  <h3>Harness</h3>
+  <p>One API call per task: a fixed system prompt, the documents and the task. No tools, no code execution, no second turn, so the comparison is the model alone. EDGAR HTML is converted to text with table rows kept as <code>cell | cell</code>, then packed (report, prospectus, agreements) under a 1M-token cap; no task needed truncation. Reasoning effort is <code>high</code> for every model.</p>
+  <h3>Evaluation metrics</h3>
+  <p>Every task uses the same answer schema, given in the prompt. The model's reply is parsed, its classes are matched to the deal's by name, and every field is compared with the filed value, exactly.</p>
+</div>
+<div class="wide" style="max-width:1200px">
+  <div class="io io-eq">
+    <div class="panel">
+      <div class="panel-head"><div class="t"><b>In the prompt</b><span>answer_schema.json</span></div><div class="label">same for all 20 tasks</div></div>
+<pre class="json">{
+  "type": "object", "additionalProperties": false,
+  "required": ["servicing_fee_paid", "reserve_ending_balance",
+               "released_to_residual", "classes"],
+  "properties": {
+    <span class="k">"servicing_fee_paid"</span>:     {"type": "integer", "description": "US cents"},
+    <span class="k">"reserve_ending_balance"</span>: {"type": "integer", "description": "US cents"},
+    <span class="k">"released_to_residual"</span>:   {"type": "integer", "description": "US cents"},
+    <span class="k">"classes"</span>: {"type": "array", "minItems": 1,
+      "description": "one entry per class of notes the trust issued",
+      "items": {"type": "object",
+        "required": ["class", "interest_paid",
+                     "principal_paid", "ending_balance"],
+        "properties": {
+          <span class="k">"class"</span>: {"type": "string",
+            "description": "the class name as the prospectus gives it, e.g. A-1"},
+          <span class="k">"interest_paid"</span>:  {"type": "integer", "description": "US cents"},
+          <span class="k">"principal_paid"</span>: {"type": "integer", "description": "US cents"},
+          <span class="k">"ending_balance"</span>: {"type": "integer", "description": "US cents"}}}}}
+}</pre>
+    </div>
+    <div class="panel">
+      <div class="panel-head"><div class="t"><b>Actual output, graded</b><span>Kimi K3.1 Pro</span></div><div class="label">Nissan Auto Lease 2026-B</div></div>
+<pre class="json">{
+  <span class="k">"servicing_fee_paid"</span>: <span class="g-ok">✓</span>,
+  <span class="k">"reserve_ending_balance"</span>: <span class="g-ok">✓</span>,
+  <span class="k">"released_to_residual"</span>: <span class="g-x">✗</span>,
+  <span class="k">"classes"</span>: [
+    {<span class="k">"class"</span>: "A-1",  <span class="k">"interest_paid"</span>: <span class="g-ok">✓</span>,
+     <span class="k">"principal_paid"</span>: <span class="g-ok">✓</span>, <span class="k">"ending_balance"</span>: <span class="g-ok">✓</span>},
+    {<span class="k">"class"</span>: "A-2a", <span class="k">"interest_paid"</span>: <span class="g-ok">✓</span>,
+     <span class="k">"principal_paid"</span>: <span class="g-ok g-t">✓</span>, <span class="k">"ending_balance"</span>: <span class="g-ok g-t">✓</span>},
+    {<span class="k">"class"</span>: "A-2b", <span class="k">"interest_paid"</span>: <span class="g-ok">✓</span>,
+     <span class="k">"principal_paid"</span>: <span class="g-ok g-t">✓</span>, <span class="k">"ending_balance"</span>: <span class="g-ok g-t">✓</span>},
+    {<span class="k">"class"</span>: "A-3",  <span class="k">"interest_paid"</span>: <span class="g-x">✗</span>,
+     <span class="k">"principal_paid"</span>: <span class="g-ok g-t">✓</span>, <span class="k">"ending_balance"</span>: <span class="g-ok g-t">✓</span>},
+    {<span class="k">"class"</span>: "A-4",  <span class="k">"interest_paid"</span>: <span class="g-ok">✓</span>,
+     <span class="k">"principal_paid"</span>: <span class="g-ok g-t">✓</span>, <span class="k">"ending_balance"</span>: <span class="g-ok g-t">✓</span>},
+    {<span class="k">"class"</span>: "B",    <span class="k">"interest_paid"</span>: <span class="g-x">✗</span>,
+     <span class="k">"principal_paid"</span>: <span class="g-ok g-t">✓</span>, <span class="k">"ending_balance"</span>: <span class="g-ok g-t">✓</span>},
+    {<span class="k">"class"</span>: "C",    <span class="k">"interest_paid"</span>: <span class="g-ok">✓</span>,
+     <span class="k">"principal_paid"</span>: <span class="g-ok g-t">✓</span>, <span class="k">"ending_balance"</span>: <span class="g-ok g-t">✓</span>}
+  ]
+}</pre>
+      <p class="cap" style="padding:0 14px 12px">Values hidden: answer keys stay private. <span class="g-ok">✓</span> exact to the cent · <span class="g-x">✗</span> wrong · <span class="g-ok g-t">✓</span> trivial field (zero, or an opening balance left untouched).</p>
+    </div>
+  </div>
+</div>
+<div class="prose">
+  <div class="panel tbl-wrap" style="margin-top:18px"><table class="inputs">
+    <thead><tr><th>Metric</th><th>Definition</th><th class="num">This output</th></tr></thead>
+    <tbody>
+      <tr><td>Fully resolved <span class="label">primary</span></td><td>1 if every graded field is exact to the cent, else 0</td><td class="num v">0</td></tr>
+      <tr><td>Field accuracy</td><td>Share of non-trivial fields exactly right. Trivial fields are left out so untouched balances don't inflate the score</td><td class="num v">9 / 12 = 75%</td></tr>
+      <tr><td>All fields</td><td>Share of all graded fields exactly right (the task-by-task grid)</td><td class="num v">21 / 24 = 88%</td></tr>
+    </tbody>
+  </table></div>
+  <p style="margin-top:16px">Leaderboard scores average these over the 20 tasks; ± is one standard error. Grading is deterministic, with no LLM judge. Cost uses each provider's list price for the tokens it reported.</p>
+  <p id="ungraded"><strong>Not graded.</strong> Auditing the runs turned up three places where the documents cannot determine a value. John Deere's first fee needs a pool balance no document prints. CarMax 2025-2's report departs from its own agreement's overcollateralization target. World Omni's agreement prorates the first fee without a day count. Those fields are left out of scoring; the filed values are never changed.</p>
+<pre class="code">valkyrie run start --benchmark waterfallbench --dataset full-html \
+  --agent waterfallbench-direct --model anthropic/claude-haiku-5-5 \
+  -k effort high -s ANTHROPIC_API_KEY anthropic-api-key --concurrency 5</pre>
 </div></section>
 
 <section id="results"><div class="prose">
@@ -305,16 +384,6 @@ footer .in { max-width: 1200px; margin: 0 auto; padding: 20px 16px 36px; display
 </div>
 <div class="wide" style="max-width:1100px"><div class="panel tbl-wrap"><table class="grid" id="grid"></table></div></div>
 </section>
-
-<section id="methodology"><div class="prose">
-  <h2>Methodology</h2>
-  <p><strong>Harness.</strong> One API call per task: a fixed system prompt, the documents and the task. No tools, no code execution, no second turn. EDGAR HTML is converted to text with table rows kept as <code>cell | cell</code>, then packed (report, prospectus, agreements) under a 1M-token cap. Reasoning effort is <code>high</code> for every model.</p>
-  <p><strong>Scoring.</strong> <em>Fully resolved</em> (primary) is 1 when every graded field is exact to the cent, 0 otherwise. <em>Field accuracy</em> is the share of non-trivial fields exactly right: non-zero, and not an untouched opening balance. Grading is deterministic, with no LLM judge. Cost uses each provider's list price.</p>
-  <p id="ungraded"><strong>Not graded.</strong> Auditing the runs turned up three places where the documents cannot determine a value. John Deere's first fee needs a pool balance no document prints. CarMax 2025-2's report departs from its own agreement's overcollateralization target. World Omni's agreement prorates the first fee without a day count. Those fields are left out of scoring; the filed values are never changed.</p>
-<pre class="code">valkyrie run start --benchmark waterfallbench --dataset full-html \
-  --agent waterfallbench-direct --model anthropic/claude-haiku-5-5 \
-  -k effort high -s ANTHROPIC_API_KEY anthropic-api-key --concurrency 5</pre>
-</div></section>
 </main>
 
 <footer><div class="in">

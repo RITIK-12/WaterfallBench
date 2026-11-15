@@ -362,6 +362,125 @@
    }
   },
   {
+   "key": "fireworks/kimi-k3p1-pro",
+   "name": "Kimi K3.1 Pro",
+   "lab": "Moonshot AI",
+   "tasks": 20,
+   "fully_resolved": 45.0,
+   "se": 11.12,
+   "nontrivial": 92.32,
+   "line_item": 96.1,
+   "tolerance": 96.1,
+   "cost": 0.8904,
+   "cost_total": 17.81,
+   "tokens": 418687,
+   "input_tokens": 412055,
+   "output_tokens": 6632,
+   "seconds": 106.6,
+   "results": {
+    "fw-deere-2026-b-2026-08": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2026-b-2026-05": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-worldomni-2026-c-2026-08": {
+     "ok": false,
+     "nt": 77.8,
+     "li": 90.9
+    },
+    "fw-worldomni-2026-a-2026-02": {
+     "ok": false,
+     "nt": 88.9,
+     "li": 95.5
+    },
+    "fw-worldomni-2025-c-2025-08": {
+     "ok": false,
+     "nt": 85.7,
+     "li": 95.0
+    },
+    "fw-worldomni-2025-d-2025-10": {
+     "ok": false,
+     "nt": 100.0,
+     "li": 95.2
+    },
+    "fw-worldomni-2025-b-2025-05": {
+     "ok": false,
+     "nt": 100.0,
+     "li": 95.2
+    },
+    "fw-deere-2026-2026-04": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-deere-2025-b-2025-08": {
+     "ok": false,
+     "nt": 85.7,
+     "li": 93.8
+    },
+    "fw-worldomni-2025-a-2025-01": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2026-b-2026-07": {
+     "ok": false,
+     "nt": 75.0,
+     "li": 87.5
+    },
+    "fw-nissanlease-2026-a-2026-02": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-nissanlease-2025-b-2025-07": {
+     "ok": false,
+     "nt": 91.7,
+     "li": 95.8
+    },
+    "fw-nissanlease-2025-a-2025-01": {
+     "ok": false,
+     "nt": 83.3,
+     "li": 91.7
+    },
+    "fw-carmax-2026-3-2026-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2026-2-2026-04": {
+     "ok": false,
+     "nt": 83.3,
+     "li": 92.6
+    },
+    "fw-carmax-2025-3-2025-07": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2026-1-2026-01": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2025-2-2025-04": {
+     "ok": true,
+     "nt": 100.0,
+     "li": 100.0
+    },
+    "fw-carmax-2025-4-2025-10": {
+     "ok": false,
+     "nt": 75.0,
+     "li": 88.9
+    }
+   }
+  },
+  {
    "key": "anthropic/claude-haiku-5-5",
    "name": "Claude Haiku 5.5",
    "lab": "Anthropic",
